@@ -93,9 +93,9 @@ navbar:
   style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
   expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
-    title   :  Home # Title in navbar
+    title   :  Justin Lanjil
     url     :  # default["url/baseurl"]
-    img     :  # An small image, try 30x30px
+    img     :  "./assets/img/brand_img/brand_logo_social_60x60.png"
   nav:
   - title   : Blog # Label
     url     : /blog/ # url	
@@ -136,14 +136,39 @@ footer:
 # Google Fonts https://fonts.google.com/, add as many as you need
 googlefonts:
  # - url : # 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+  - url: https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
+  - url: https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
+
 
 # Theme and colors
-chulapa-skin: 
-  highlight     :  # default["default"]
-  skin         :  # Optional predefined skins
-  autothemer    :  true # Bool: Use autotheming
-  vars          :    
-    primary     : "#ffbe98" #default ["#007bff"] - Bootstrap blue
+chulapa-skin:
+  # highlight     :  # default["default"]
+  skin         :  lux # Optional predefined skins
+  vars          :
+    headings-font-family : "Montserrat, sans-serif"
+    headings-font-weight : "600" #Semibold
+    font-family-base : "Libre Baskerville, serif"
+    primary: "#babaab"
+    secondary: "#4d4d39"
+    success: "#888844"
+    info: "#8c8c73"
+    warning: "#cc8800"
+    danger: "#99003d"
+    light: "#f6f6ee"
+    dark: "#111109"
+    link-color: "#cc8800"
+    # bootstrap colors, not sure if this will work
+    # nope...how do I override them?
+    # docs say it should work :/
+    gray-100: "#f6f6ee"
+    gray-200: "#f4f4f1"
+    gray-300: "#ddddd5"
+    gray-400: "#babaab"
+    gray-500: "#70705C"
+    gray-600: "#4d4d39"
+    gray-700: "#444422"
+    gray-800: "#2A2A22"
+    gray-900: "#111109"
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 

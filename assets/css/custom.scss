@@ -2,3 +2,147 @@
 ---
 @charset "utf-8";
 // Your custom css /scss here
+// double check the docs to see if I have to do an @import "theme name";
+// just try adding something I guess?
+
+// maybe the sass doesn't work? idk
+
+// TO ADD
+// image dropshadow
+// adjust navbar text DONE
+// primary text color to dark DONE
+// add secondary button outline
+
+////////////
+
+// Lux 4.5.0
+// Bootswatch
+
+//
+// Color system
+//
+
+// brand colors
+
+$primary-light: #f6f6ee;
+$primary-mid: #babaab;
+$primary-dark: #111109;
+
+$secondary-light: #d4d4aa;
+$secondary-mid: #8c8c73;
+$secondary-dark: #4d4d39;
+
+$tertiary-light: #888844;
+$tertiary-mid: #666633;
+$tertiary-dark: #4d3300;
+
+$accent-light-pink: #ff0066;
+$accent-dark-pink: #99003d;
+$accent-light-gold: #cc8800;
+$accent-dark-gold: #996600;
+
+// end brand colors
+
+// additional brand colors assignment
+// not working...these are from bootstrap
+$white: #fff;
+$gray-100: $primary-light;
+$gray-200: #f4f4f1;
+$gray-300: #ddddd5;
+$gray-400: $primary-mid;
+$gray-500: #70705C;
+$gray-600: $secondary-dark;
+$gray-700: #444422;
+$gray-800: #2A2A22;
+$gray-900: $primary-dark;
+$black: #000;
+
+
+$primary: $primary-mid;
+$secondary: $secondary-dark;
+$success: $tertiary-light;
+$info: $secondary-mid;
+$warning: $accent-light-gold; 
+$danger: $accent-dark-pink;
+$light: $primary-light;
+$dark: $primary-dark;
+
+$link-color: $accent-light-gold;
+$link-hover-color: darken($link-color, 15%);
+
+$body-color: $primary-light;
+
+// Overwriting boostrap variables
+
+$blue: $accent-light-gold;
+
+$pagination-hover-color: $link-hover-color;
+$pagination-hover-border-color: $link-hover-color;
+
+$breadcrumb-active-color: $secondary;
+
+.hero-chulapa-image {
+    h1 {
+        color: $primary-light;
+    }
+}
+
+.hero-chulapa {
+    h1 {
+        color:$primary-light;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+// this works! I think the variables just don't work for some reason?
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    margin: 2px 1px;
+}
+
+.btn-group {
+    font-family: 'Montserrat', sans-serif;
+    .dropdown-item {
+        text-transform: uppercase;
+    }   
+}
+
+// primary light text
+// this is applying to the background color for some reason? What?
+
+.bg-primary, .btn-primary, .badge-primary {
+    color: $dark;
+}
+
+// outline-button with border
+
+.btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-info, .btn-outline-warning, .btn-outline-danger {
+    border: 2px solid;
+}
+
+// pagination active
+.page-link {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+}
+
+.page-item {  
+    &.active .page-link {
+      color: $link-color;
+      background-color: transparent;
+      border: 2px solid $link-color;
+    }
+}
+
+.breadcrumb-item {
+    &.active {
+        color: $breadcrumb-active-color;
+    }
+}
