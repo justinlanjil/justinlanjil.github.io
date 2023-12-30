@@ -8,11 +8,11 @@ remote_theme: dieghernan/chulapa
 # Overall options for your site, would affect your site SEO
 # Default values are explained
 locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : Chulapa 101    #default["repository_name"]
+title                   : Justin Lanjil    #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Chulapa Jekyll Theme starter pack    #default [your-repository-tagline]  
-description             : Chulapa Jekyll Theme starter pack #default [your-repository-tagline]
-url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
+subtitle                : Artist & Storyteller    #default [your-repository-tagline]  
+description             : Collected works and creative blog. #default [your-repository-tagline]
+url                     :     https://justinlanjil.art
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
 timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -21,8 +21,8 @@ timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/con
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
 twitter_site            :     #Avoid @
 author:
-  name                  :  Your Name   # Name Surname Company
-  avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
+  name                  :  Justin   # Name Surname Company
+  avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png #should I use the skull here? I think so but do a new one!
   location              :  "Madrid, Spain"   # New York, USA 
 #  links:                
 #    - url:  #A link or email: https://twitter.com/jack, mail@example.com
@@ -93,15 +93,23 @@ navbar:
   style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
   expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
-    title   :  Justin Lanjil
+    title   :  " Justin Lanjil"
+    subtitle: "Artist & Storyteller"
     url     :  # default["url/baseurl"]
     img     :  "./assets/img/brand_img/brand_logo_social_60x60.png"
   nav:
-  - title   : Blog # Label
-    url     : /blog/ # url	
-  - title   : Cheatsheets
-    url     : /cheatsheets
-  - title   : Extras
+  - title   : Blog
+    url     : /blog/
+  - title   : Portfolio
+    url     : /portfolio
+  - title   : Projects
+    child   :
+      - title: /		
+        url  : /
+
+  - title   : About
+    url     : /about
+  - title   : Extras # will probably remove these? Or add them as sublinks in the blog menu
     child   :
       - title : Tags
         url   : /tags
@@ -109,18 +117,8 @@ navbar:
         url   : /categories
       - title : Archive
         url   : /archive
-      - title : Current skin
+      - title : Current skin # keep this but add it to the git_ignore
         url   : /current-skin
-  - title   : Docs
-    url     : https://dieghernan.github.io/chulapa/docs/01-install
-  - title   : Use this template
-    url     : https://github.com/dieghernan/chulapa-101/generate
-#  - title   : # Label submenu
-#    child:		
-#    - title: # Child label		
-#      url  : # child url	
-#    - title: # Child label		
-#      url  : # child url	
 #Social links to be placed on your site footer
 footer:
   links:
@@ -148,27 +146,46 @@ chulapa-skin:
     headings-font-family : "Montserrat, sans-serif"
     headings-font-weight : "600" #Semibold
     font-family-base : "Libre Baskerville, serif"
-    primary: "#babaab"
-    secondary: "#4d4d39"
-    success: "#888844"
-    info: "#8c8c73"
-    warning: "#cc8800"
-    danger: "#99003d"
-    light: "#f6f6ee"
-    dark: "#111109"
-    link-color: "#cc8800"
-    # bootstrap colors, not sure if this will work
-    # nope...how do I override them?
-    # docs say it should work :/
-    gray-100: "#f6f6ee"
-    gray-200: "#f4f4f1"
-    gray-300: "#ddddd5"
-    gray-400: "#babaab"
-    gray-500: "#70705C"
-    gray-600: "#4d4d39"
-    gray-700: "#444422"
-    gray-800: "#2A2A22"
-    gray-900: "#111109"
+    # nav bar custom colors
+    navbar-chulapa-bg-color : "#f6f6ee"
+    navbar-chulapa-text-color : "#111109"
+    navbar-chulapa-active-color: "#4d4d39"
+    navbar-chulapa-hover-color : "#000"
+    navbar-chulapa-disabled-color: "#babaab"
+    # hamburger custom colors
+    navbar-chulapa-toggler-color: "#111109"
+    navbar-chulapa-toggler-color-bg: "#f6f6ee"
+    # foot custom colors
+    footer-chulapa-bg-color : "transparent"
+    footer-chulapa-text-color : "#111109"
+    footer-chulapa-hover-color : "#000"
+    footer-chulapa-icon-color : "#111109"
+    footer-chulapa-icon-hover-color : "#000"
+    # to more easily change all of the white elements
+    white: "#f6f6ee"
+    gray-100 : "#f6f6ee"
+    gray-200 : "#f4f4f1"
+    gray-300 : "#ddddd5"
+    gray-400 : "#babaab"
+    gray-500 : "#70705C"
+    gray-600 : "#4d4d39"
+    gray-700 : "#444422"
+    gray-800 : "#2A2A22"
+    gray-900 : "#111109"
+    blue : "#cc8800" # this doesn't work on the radio buttons? There's something weird there though.
+    primary : "#babaab"
+    secondary : "#4d4d39"
+    success : "#888844"
+    info : "#8c8c73"
+    warning : "#cc8800"
+    danger : "#99003d"
+    light : "#f6f6ee"
+    dark : "#111109"
+    link-color : "#cc8800"
+    # adjustments for primary color contrast (dark text)
+    nav-pills-link-active-color: "#111109"
+    list-group-active-color: "#111109"
+    list-group-action-active-color: "#111109"
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 

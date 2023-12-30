@@ -43,20 +43,19 @@ $accent-dark-gold: #996600;
 
 // end brand colors
 
-// additional brand colors assignment
-// not working...these are from bootstrap
+//Bootstrap overrides
+// Greys
 $white: #fff;
-$gray-100: $primary-light;
-$gray-200: #f4f4f1;
-$gray-300: #ddddd5;
-$gray-400: $primary-mid;
-$gray-500: #70705C;
-$gray-600: $secondary-dark;
-$gray-700: #444422;
-$gray-800: #2A2A22;
-$gray-900: $primary-dark;
+$gray-100: $primary-light !default;
+$gray-200: #f4f4f1 !default;
+$gray-300: #ddddd5 !default;
+$gray-400: $primary-mid !default;
+$gray-500: #70705C !default;
+$gray-600: $secondary-dark !default;
+$gray-700: #444422 !default;
+$gray-800: #2A2A22 !default;
+$gray-900: $primary-dark !default;
 $black: #000;
-
 
 $primary: $primary-mid;
 $secondary: $secondary-dark;
@@ -113,10 +112,31 @@ $breadcrumb-active-color: $secondary;
 }
 
 // primary light text
-// this is applying to the background color for some reason? What?
+// need to apply it to active, hover & disabled as well
 
 .bg-primary, .btn-primary, .badge-primary {
     color: $dark;
+    &:hover {
+        color: $dark;
+    }
+    &.disabled {
+        color: $dark; 
+    }
+    &:disabled {
+        color: $dark;
+    }
+    &:not(:disabled):not(.disabled) {
+        &:active,
+        &.active {
+            color: $dark;
+        }
+    }
+}
+
+.card.text-white.bg-primary.mb-3 {
+    .card-header, .card-body {
+        color: $dark;
+    }
 }
 
 // outline-button with border
