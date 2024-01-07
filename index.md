@@ -1,15 +1,17 @@
 ---
-layout: default
-title: Chulapa on remote
-header_type: hero
-subtitle: Starter pack
+layout: landingpage
+header_type: none
 ---
 
-I’m Justin, a queer artist and storyteller with a fascination for the spooky, fantastical, romantic, and macabre.  
+<img src="assets/img/covers/site_banner_new.jpg" class="img-landing-banner img-circle">
 
-I fancy myself something of a renaissance man, in the sense that I have a lot of creative passion paired with a short attention span.  
+<!-- maybe make this a jumbotron actually -->
+##### I’m Justin, <span style="text-transform: lowercase; font-weight: 500;">a queer artist and storyteller with a fascination for the spooky, fantastical, romantic, and macabre.</span>
+  
+<br>
+I fancy myself something of a renaissance man, in the sense that I have a lot of creative passion paired with a short attention span.
 
-This site is a space for me to collect and chronicle my various creative works. Expect to find a hodgepodge of subjects, including (in no particular order of importance or frequency):  
+This site is a space for me to collect and chronicle my various creative works. Expect to find a hodgepodge of subjects, including:
 - visual art
 - prose
 - sculpting
@@ -18,4 +20,9 @@ This site is a space for me to collect and chronicle my various creative works. 
 
 …along with any other artistic pursuit that captures the attention of my magpie brain.  
 
-I’ll be documenting works in progress, resources I’ve found, and things I’ve learned along the way.
+<br>
+<br>
+<!-- add card group? -->
+## Recent posts
+
+{% include_cached components/indexcards.html cacheddocs=site.blog cachedlimit=3 %}

@@ -166,3 +166,54 @@ $breadcrumb-active-color: $secondary;
         color: $breadcrumb-active-color;
     }
 }
+
+// round carousel indicators
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.chulapa-border-card-index {
+    border: none;
+}
+
+.hero-chulapa h1,
+.splash-chulapa h1 {
+  color: $dark !important;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-landing-banner {
+    margin-bottom: 2em;
+    max-height: 80vh;
+}
+
+.chulapa-footer-brand {
+    opacity: 0.4
+}
+
+.text-standout {
+    font-family:Montserrat,sans-serif;
+    font-weight:600;
+    line-height:1.2;
+    text-transform: uppercase;
+}
+
+.montserrat {
+    font-family:Montserrat,sans-serif;
+    font-weight:600;
+}
+
+.short-story-info-card {
+    margin-bottom: 40vh;
+}
+
+.story-spacer {
+    margin: 100px;
+    margin-bottom: 200px;
+}

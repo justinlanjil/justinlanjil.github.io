@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2023-12-30 09:18:18 -0500 -->
+    <!-- Page build 2024-01-06 19:10:32 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Categories",
       "image": "https://github.com/justinlanjil.png",
-      "datePublished": "2023-12-30T09:18:18-05:00",
-      "dateModified": "2023-12-30T09:18:18-05:00",
+      "datePublished": "2024-01-06T19:10:32-05:00",
+      "dateModified": "2024-01-06T19:10:32-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -136,23 +136,57 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav ml-auto"><li class="nav-item">
+				<ul class="navbar-nav ml-auto"><li class="rnav-item">
 						<a class="nav-link " href="http://localhost:4000/blog/">Blog</a>
-					</li><li class="nav-item">
-						<a class="nav-link " href="http://localhost:4000/portfolio">Portfolio</a>
-					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Projects"><a class="dropdown-item " href="http://localhost:4000/">/</a></div>
-					</li><li class="nav-item">
-						<a class="nav-link " href="http://localhost:4000/about">About</a>
-					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle  active font-weight-bold" href="#" id="Extras" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extras</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Extras"><a class="dropdown-item " href="http://localhost:4000/tags">Tags</a><a class="dropdown-item  active font-weight-bold" href="http://localhost:4000/categories">Categories<span class="sr-only">(current)</span></a><a class="dropdown-item " href="http://localhost:4000/archive">Archive</a><a class="dropdown-item " href="http://localhost:4000/current-skin">Current skin</a></div>
+					</li><li class="rnav-item">
+						<a class="nav-link " href="http://localhost:4000/stories/">Stories</a>
+					</li><li class="rnav-item">
+						<a class="nav-link " href="http://localhost:4000/games/">Games</a>
+					</li><li class="rnav-item">
+						<a class="nav-link " href="http://localhost:4000/current-skin">Current skin</a>
 					</li><li class="nav-item">
 						<a class="nav-link " href="http://localhost:4000/search">
 							<span class="d-md-none p-0 pr-1">Search</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
 						</a>
+					</li>
+					<!-- light and dark mode toggle -->
+					<li class="nav-item" aria-label="Dark mode toggle">
+						<a class="nav-link dark-mode-button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+							<span id="dark-text" aria-hidden="true"></span>
+						  </a>						  
 					</li></ul>
 			</div></div>
-</nav>	<header class="text-center header-chulapa"><div class="container-lg mt-2">
+</nav><!-- darkmode toggle -->
+<script>
+	document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
+    darkmode()
+}
+function darkmode() {
+  let enabled = localStorage.getItem('dark-mode')
+  if (enabled === null) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        enable();
+    }
+  } else if (enabled === 'true') {
+    enable()
+  }
+  if (localStorage.getItem('dark-mode') === 'false') {
+      enable();
+  } else {
+      disable();
+  }
+}
+function enable()  {
+  DarkReader.setFetchMethod(window.fetch)
+  DarkReader.enable();
+  localStorage.setItem('dark-mode', 'true');
+}
+function disable() {
+  DarkReader.disable();
+  localStorage.setItem('dark-mode', 'false');
+}
+</script>	<header class="text-center header-chulapa"><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
            <h1 class="p-name">Categories</h1>
@@ -181,47 +215,8 @@
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
 <div class="row g-0 pt-5" id="categories">
-<div class="col"><a href="#picture" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(3rem - 2rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>picture<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">3</span></a><a href="#tutorial" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(2rem - 2rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>tutorial<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">2</span></a><a href="#landing-page" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(1rem - 2rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>landing-page<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</span></a><a href="#skins" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(1rem - 2rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>skins<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</span></a></div>
+<div class="col"><a href="#tutorial" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(2rem - 1rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>tutorial<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">2</span></a><a href="#blog" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(1rem - 1rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>blog<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</span></a><a href="#picture" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(1rem - 1rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>picture<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</span></a><a href="#stories" class="btn btn-secondary m-1" role="button" style="font-size:  min(1.2rem , max(0.8rem , calc(1rem + 0.025*(1rem - 1rem))));"><i class="far fa-folder-open mr-2" aria-hidden="true"></i>stories<span class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</span></a></div>
 </div>
-<section id="picture" class="py-3 chulapa-cloudcategory">
-<div class="d-flex  align-items-center border-bottom border-chulapa mt-5">
- <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>picture</h5>
- <div class="badge rounded-pill chulapa-pill-bg-secondary ml-2">3</div>
-</div>
- <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
-   <div class="col">
-     <h6><a href="http://localhost:4000/20191127_acueduct-of-segovia/" class="p-name u-url">The Acueduct of Segovia</a></h6><p>20 centuries ago</p><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2019-11-27T00:00:00-05:00">november 27, 2019</time>
- | 
-        <i class="far fa-clock" aria-hidden="true"></i> &lt; 1’<span class="ml-2 badge chulapa-pill-bg-body p-category">posts</span></div>
-   </div>
-    <a href="http://localhost:4000/20191127_acueduct-of-segovia/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG')">
-    </a>
- </article>
- <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
-   <div class="col">
-     <h6><a href="http://localhost:4000/20190502_dean-village/" class="p-name u-url">Dean Village</a></h6><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2019-05-02T00:00:00-04:00">may 02, 2019</time>
- | 
-        <i class="far fa-clock" aria-hidden="true"></i> &lt; 1’<span class="ml-2 badge chulapa-pill-bg-body p-category">posts</span></div>
-   </div>
-    <a href="http://localhost:4000/20190502_dean-village/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg')">
-    </a>
- </article>
- <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
-   <div class="col">
-     <h6><a href="http://localhost:4000/20181109_urban_art/" class="p-name u-url">Urban art</a></h6><p>Creativity is everywhere</p><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2018-11-09T00:00:00-05:00">november 09, 2018</time>
- | 
-        <i class="far fa-clock" aria-hidden="true"></i> &lt; 1’<span class="ml-2 badge chulapa-pill-bg-body p-category">posts</span></div>
-   </div>
-    <a href="http://localhost:4000/20181109_urban_art/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Madrid_-_Graffiti_11.jpg/407px-Madrid_-_Graffiti_11.jpg')">
-    </a>
- </article>
- <div class="text-right">
-      <a href="#categories" class="btn btn-lg border-0 chulapa-text-body-color"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i><span class="sr-only">Top</span></a>
- </div>
-</section>
 <section id="tutorial" class="py-3 chulapa-cloudcategory">
 <div class="d-flex  align-items-center border-bottom border-chulapa mt-5">
  <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>tutorial</h5>
@@ -230,7 +225,7 @@
  <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
    <div class="col">
      <h6><a href="http://localhost:4000/cheatsheets/02-kramdown-cheat-sheet" class="p-name u-url">kramdown cheatsheet</a></h6><p>Beyond Markdown</p><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2023-12-30T09:18:18-05:00">december 30, 2023</time>
+        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2024-01-06T19:10:32-05:00">january 06, 2024</time>
  | 
         <i class="far fa-clock" aria-hidden="true"></i> 2’<span class="ml-2 badge chulapa-pill-bg-body p-category">cheatsheet</span></div>
    </div>
@@ -238,7 +233,7 @@
  <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
    <div class="col">
      <h6><a href="http://localhost:4000/cheatsheets/01-markdown-cheat-sheet" class="p-name u-url">Markdown cheatsheet</a></h6><p>The basic syntax of your page</p><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2023-12-30T09:18:18-05:00">december 30, 2023</time>
+        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2024-01-06T19:10:32-05:00">january 06, 2024</time>
  | 
         <i class="far fa-clock" aria-hidden="true"></i> 3’<span class="ml-2 badge chulapa-pill-bg-body p-category">cheatsheet</span></div>
    </div>
@@ -247,38 +242,57 @@
       <a href="#categories" class="btn btn-lg border-0 chulapa-text-body-color"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i><span class="sr-only">Top</span></a>
  </div>
 </section>
-<section id="landing-page" class="py-3 chulapa-cloudcategory">
+<section id="blog" class="py-3 chulapa-cloudcategory">
 <div class="d-flex  align-items-center border-bottom border-chulapa mt-5">
- <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>landing-page</h5>
+ <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>blog</h5>
  <div class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</div>
 </div>
  <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
    <div class="col">
-     <h6><a href="http://localhost:4000/20190803_landing-page/" class="p-name u-url">A landing page</a></h6><p>With image header</p><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2019-08-03T00:00:00-04:00">august 03, 2019</time>
+     <h6><a href="http://localhost:4000/20150104_first-post/" class="p-name u-url">First post!</a></h6><div class="small">
+        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2015-01-04T00:00:00-05:00">january 04, 2015</time>
  | 
         <i class="far fa-clock" aria-hidden="true"></i> &lt; 1’<span class="ml-2 badge chulapa-pill-bg-body p-category">posts</span></div>
    </div>
-    <a href="http://localhost:4000/20190803_landing-page/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('https://dieghernan.github.io/chulapa/assets/img/site/transparent.png')">
+    <a href="http://localhost:4000/20150104_first-post/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('http://localhost:4000/assets/img/placeholder/placeholder_image159to1.jpg')">
     </a>
  </article>
  <div class="text-right">
       <a href="#categories" class="btn btn-lg border-0 chulapa-text-body-color"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i><span class="sr-only">Top</span></a>
  </div>
 </section>
-<section id="skins" class="py-3 chulapa-cloudcategory">
+<section id="picture" class="py-3 chulapa-cloudcategory">
 <div class="d-flex  align-items-center border-bottom border-chulapa mt-5">
- <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>skins</h5>
+ <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>picture</h5>
  <div class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</div>
 </div>
  <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
    <div class="col">
-     <h6><a href="http://localhost:4000/20201231_current-skin/" class="p-name u-url">Current skin</a></h6><p>Showing al the different Bootstrap components available</p><div class="small">
-        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2020-12-31T00:00:00-05:00">december 31, 2020</time>
- <i class="fa fa-redo" aria-hidden="true"></i> | 
-        <i class="far fa-clock" aria-hidden="true"></i> 8’<span class="ml-2 badge chulapa-pill-bg-body p-category">posts</span></div>
+     <h6><a href="http://localhost:4000/20190101_imahegf/" class="p-name u-url">The Acueduct of Segovia</a></h6><p>20 centuries ago</p><div class="small">
+        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2019-01-01T00:00:00-05:00">january 01, 2019</time>
+ | 
+        <i class="far fa-clock" aria-hidden="true"></i> &lt; 1’<span class="ml-2 badge chulapa-pill-bg-body p-category">posts</span></div>
    </div>
-    <a href="http://localhost:4000/20201231_current-skin/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('https://picsum.photos/id/1018/2000/2000')">
+    <a href="http://localhost:4000/20190101_imahegf/" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG')">
+    </a>
+ </article>
+ <div class="text-right">
+      <a href="#categories" class="btn btn-lg border-0 chulapa-text-body-color"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i><span class="sr-only">Top</span></a>
+ </div>
+</section>
+<section id="stories" class="py-3 chulapa-cloudcategory">
+<div class="d-flex  align-items-center border-bottom border-chulapa mt-5">
+ <h5 class="my-0"><i class="far fa-folder-open mr-1" aria-hidden="true"></i>stories</h5>
+ <div class="badge rounded-pill chulapa-pill-bg-secondary ml-2">1</div>
+</div>
+ <article class="chulapa-links-hover-only my-1 mb-4 row g-0 h-entry">
+   <div class="col">
+     <h6><a href="http://localhost:4000/stories/battlecrier" class="p-name u-url">Battlecrier</a></h6><div class="small">
+        <i class="far fa-calendar" aria-hidden="true"></i> <time class="dt-published" datetime="2024-01-06T19:10:32-05:00">january 06, 2024</time>
+ | 
+        <i class="far fa-clock" aria-hidden="true"></i> 12’<span class="ml-2 badge chulapa-pill-bg-body p-category">stories</span></div>
+   </div>
+    <a href="http://localhost:4000/stories/battlecrier" class="col-2 btn chulapa-overlay-img chulapa-gradient" style="background-image: url('http://localhost:4000/assets/img/covers/stories/battlecrier_cover.jpg')">
     </a>
  </article>
  <div class="text-right">
@@ -287,19 +301,28 @@
 </section>
 			</article>
 		</div>
-	</main><!-- Footer -->
+	</main>
+		<!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">
    <div class="container">
      <div class="row">
-       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://github.com/dieghernan/chulapa-101" title="footerRepo on Github" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://www.tumblr.com/wickedliltongue" title="footerTumblr" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span><span class="sr-only">Repo on Github</span>
-            </a><a href="http://localhost:4000/atom.xml" title="footerRSS" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fab fa-tumblr fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Tumblr</span>
+            </a><a href="https://www.instagram.com/justinlart/" title="footerInstagram" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-              </span><span class="sr-only">RSS</span>
-            </a></div><p class="mt-2 mb-3">&copy; 2023 Justin</p>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Instagram</span>
+            </a><a href="https://wicked-little-tongue.itch.io/" title="footerItch" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Itch</span>
+            </a><a href="https://twitter.com/wickedliltongue" title="footerTwitter" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Twitter</span>
+            </a></div><p class="mt-2 mb-3">© <year> Justin Lanjil</p>
           <!-- Do not remove this in order to give  attributions -->
          <p class="chulapa-footer-brand">Powered by <a href="https://dieghernan.github.io/chulapa"> <span class="chulapa">Chulapa</span> Jekyll Theme</a><br><b>Lux</b> skin by <a href="https://bootswatch.com/">Bootswatch</a></p>
           <!-- End  attributions -->
@@ -314,9 +337,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
-<!-- for lightbox, not working, naturally lol-->
-<link rel="stylesheet" href="/assets/css/lightbox.css">
-<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+<!-- darkreader.js for light and dark toggle -->
+<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
 <!-- end custom bottom scripts -->
 	</body>
 </html>

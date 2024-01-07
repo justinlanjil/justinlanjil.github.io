@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2023-12-30 09:18:18 -0500 -->
+    <!-- Page build 2024-01-06 19:10:32 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Blog",
       "image": "http://localhost:4000/assets/img/site/banner-blog.png",
-      "datePublished": "2023-12-30T09:18:18-05:00",
-      "dateModified": "2023-12-30T09:18:18-05:00",
+      "datePublished": "2024-01-06T19:10:32-05:00",
+      "dateModified": "2024-01-06T19:10:32-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -136,23 +136,57 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav ml-auto"><li class="nav-item">
+				<ul class="navbar-nav ml-auto"><li class="rnav-item">
 						<a class="nav-link  active font-weight-bold" href="http://localhost:4000/blog/">Blog<span class="sr-only">(current)</span></a>
-					</li><li class="nav-item">
-						<a class="nav-link " href="http://localhost:4000/portfolio">Portfolio</a>
-					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Projects"><a class="dropdown-item " href="http://localhost:4000/">/</a></div>
-					</li><li class="nav-item">
-						<a class="nav-link " href="http://localhost:4000/about">About</a>
-					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Extras" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extras</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Extras"><a class="dropdown-item " href="http://localhost:4000/tags">Tags</a><a class="dropdown-item " href="http://localhost:4000/categories">Categories</a><a class="dropdown-item " href="http://localhost:4000/archive">Archive</a><a class="dropdown-item " href="http://localhost:4000/current-skin">Current skin</a></div>
+					</li><li class="rnav-item">
+						<a class="nav-link " href="http://localhost:4000/stories/">Stories</a>
+					</li><li class="rnav-item">
+						<a class="nav-link " href="http://localhost:4000/games/">Games</a>
+					</li><li class="rnav-item">
+						<a class="nav-link " href="http://localhost:4000/current-skin">Current skin</a>
 					</li><li class="nav-item">
 						<a class="nav-link " href="http://localhost:4000/search">
 							<span class="d-md-none p-0 pr-1">Search</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
 						</a>
+					</li>
+					<!-- light and dark mode toggle -->
+					<li class="nav-item" aria-label="Dark mode toggle">
+						<a class="nav-link dark-mode-button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+							<span id="dark-text" aria-hidden="true"></span>
+						  </a>						  
 					</li></ul>
 			</div></div>
-</nav><!-- Chulapa template for pagination --><header class="text-center header-chulapa"><div class="container-lg mt-2">
+</nav><!-- darkmode toggle -->
+<script>
+	document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
+    darkmode()
+}
+function darkmode() {
+  let enabled = localStorage.getItem('dark-mode')
+  if (enabled === null) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        enable();
+    }
+  } else if (enabled === 'true') {
+    enable()
+  }
+  if (localStorage.getItem('dark-mode') === 'false') {
+      enable();
+  } else {
+      disable();
+  }
+}
+function enable()  {
+  DarkReader.setFetchMethod(window.fetch)
+  DarkReader.enable();
+  localStorage.setItem('dark-mode', 'true');
+}
+function disable() {
+  DarkReader.disable();
+  localStorage.setItem('dark-mode', 'false');
+}
+</script><!-- Chulapa template for pagination --><header class="text-center header-chulapa"><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
            <h1 class="p-name">Blog</h1><p class="lead chulapa-subtitle p-summary">News and updates</p>
@@ -166,38 +200,18 @@
 <div class="col-12 mb-2">
 <div class="card chulapa-border-card-index">
 	<div class="row g-0">
-		<a href="http://localhost:4000/20201231_current-skin/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient  "
-style="background-image: url('https://picsum.photos/id/1018/2000/2000')">
-		</a>
-		<div class="col-sm">
-			<article class="card-body chulapa-links-hover-only">
-				<a href="http://localhost:4000/20201231_current-skin/"><h5 class="card-title">Current skin</h5></a>
-				<h6 class="card-subtitle mb-2 text-muted">Showing al the different Bootstrap components available</h6><div class="card-text">This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.
-</div>
-			</article>
-			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
-				<p class="small text-right font-italic mb-1">
-<i class="fa fa-redo fa-xs" aria-hidden="true"></i> 
-<time datetime="2020-12-31T00:00:00-05:00">31/12/2020</time></p><a href="http://localhost:4000/categories#skins" class="badge chulapa-pill-bg-secondary mx-1">skins</a><a href="http://localhost:4000/tags#skin" class="badge chulapa-pill-bg-primary mx-1">skin</a><a href="http://localhost:4000/tags#bootstrap" class="badge chulapa-pill-bg-primary mx-1">bootstrap</a><a href="http://localhost:4000/tags#current-theme" class="badge chulapa-pill-bg-primary mx-1">current-theme</a><a href="http://localhost:4000/tags#header-hero" class="badge chulapa-pill-bg-primary mx-1">header-hero</a><a href="http://localhost:4000/tags#image" class="badge chulapa-pill-bg-primary mx-1">image</a><a href="http://localhost:4000/tags#demo" class="badge chulapa-pill-bg-primary mx-1">demo</a></div>
-		</div>
-	</div>
-</div>
-</div>
-<div class="col-12 mb-2">
-<div class="card chulapa-border-card-index">
-	<div class="row g-0">
-		<a href="http://localhost:4000/20191127_acueduct-of-segovia/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient  "
+		<a href="http://localhost:4000/20190101_imahegf/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient  "
 style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG')">
 		</a>
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
-				<a href="http://localhost:4000/20191127_acueduct-of-segovia/"><h5 class="card-title">The Acueduct of Segovia</h5></a>
+				<a href="http://localhost:4000/20190101_imahegf/"><h5 class="card-title">The Acueduct of Segovia</h5></a>
 				<h6 class="card-subtitle mb-2 text-muted">20 centuries ago</h6><div class="card-text">The Aqueduct of Segovia (Spanish: Acueducto de Segovia; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.
 </div>
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
 				<p class="small text-right font-italic mb-1">
-<time datetime="2019-11-27T00:00:00-05:00">27/11/2019</time></p><a href="http://localhost:4000/categories#picture" class="badge chulapa-pill-bg-secondary mx-1">picture</a><a href="http://localhost:4000/tags#landscape" class="badge chulapa-pill-bg-primary mx-1">landscape</a><a href="http://localhost:4000/tags#trips" class="badge chulapa-pill-bg-primary mx-1">trips</a><a href="http://localhost:4000/tags#downtown" class="badge chulapa-pill-bg-primary mx-1">downtown</a><a href="http://localhost:4000/tags#project-links" class="badge chulapa-pill-bg-primary mx-1">project-links</a><a href="http://localhost:4000/tags#wikipedia" class="badge chulapa-pill-bg-primary mx-1">wikipedia</a><a href="http://localhost:4000/tags#image" class="badge chulapa-pill-bg-primary mx-1">image</a></div>
+<time datetime="2019-01-01T00:00:00-05:00">01/01/2019</time></p><a href="http://localhost:4000/categories#picture" class="badge chulapa-pill-bg-secondary mx-1">picture</a><a href="http://localhost:4000/tags#landscape" class="badge chulapa-pill-bg-primary mx-1">landscape</a><a href="http://localhost:4000/tags#trips" class="badge chulapa-pill-bg-primary mx-1">trips</a><a href="http://localhost:4000/tags#downtown" class="badge chulapa-pill-bg-primary mx-1">downtown</a><a href="http://localhost:4000/tags#project-links" class="badge chulapa-pill-bg-primary mx-1">project-links</a><a href="http://localhost:4000/tags#wikipedia" class="badge chulapa-pill-bg-primary mx-1">wikipedia</a><a href="http://localhost:4000/tags#image" class="badge chulapa-pill-bg-primary mx-1">image</a></div>
 		</div>
 	</div>
 </div>
@@ -205,88 +219,45 @@ style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thu
 <div class="col-12 mb-2">
 <div class="card chulapa-border-card-index">
 	<div class="row g-0">
-		<a href="http://localhost:4000/20190803_landing-page/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient  "
-style="background-image: url('https://dieghernan.github.io/chulapa/assets/img/site/transparent.png')">
+		<a href="http://localhost:4000/20150104_first-post/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient  "
+style="background-image: url('http://localhost:4000/assets/img/placeholder/placeholder_image159to1.jpg')">
 		</a>
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
-				<a href="http://localhost:4000/20190803_landing-page/"><h5 class="card-title">A landing page</h5></a>
-				<h6 class="card-subtitle mb-2 text-muted">With image header</h6><div class="card-text">A simple landing page with an image on top. Transparencies (png) works better on this combination.
-</div>
+				<a href="http://localhost:4000/20150104_first-post/"><h5 class="card-title">First post!</h5></a>
+				<div class="card-text">testing</div>
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
 				<p class="small text-right font-italic mb-1">
-<time datetime="2019-08-03T00:00:00-04:00">03/08/2019</time></p><a href="http://localhost:4000/categories#landing-page" class="badge chulapa-pill-bg-secondary mx-1">landing-page</a><a href="http://localhost:4000/tags#example" class="badge chulapa-pill-bg-primary mx-1">example</a><a href="http://localhost:4000/tags#demo" class="badge chulapa-pill-bg-primary mx-1">demo</a><a href="http://localhost:4000/tags#layout" class="badge chulapa-pill-bg-primary mx-1">layout</a><a href="http://localhost:4000/tags#guest-author" class="badge chulapa-pill-bg-primary mx-1">guest-author</a><a href="http://localhost:4000/tags#image" class="badge chulapa-pill-bg-primary mx-1">image</a></div>
-		</div>
-	</div>
-</div>
-</div>
-<div class="col-12 mb-2">
-<div class="card chulapa-border-card-index">
-	<div class="row g-0">
-		<a href="http://localhost:4000/20190502_dean-village/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient  "
-style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg')">
-		</a>
-		<div class="col-sm">
-			<article class="card-body chulapa-links-hover-only">
-				<a href="http://localhost:4000/20190502_dean-village/"><h5 class="card-title">Dean Village</h5></a>
-				<div class="card-text">
-  Dean Village (from dene, meaning ‘deep valley’) is a former village immediately northwest of the city centre of Edinburgh, Scotland. It was known as the “Water of Leith Village” and was the centre of a successful grain milling area for more than 800 years. At one time there were no fewer than eleven working mills there, driven by the strong currents of the Water of Leith.
-  From Wikipedia
-</div>
-			</article>
-			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
-				<p class="small text-right font-italic mb-1">
-<time datetime="2019-05-02T00:00:00-04:00">02/05/2019</time></p><a href="http://localhost:4000/categories#picture" class="badge chulapa-pill-bg-secondary mx-1">picture</a><a href="http://localhost:4000/tags#landscape" class="badge chulapa-pill-bg-primary mx-1">landscape</a><a href="http://localhost:4000/tags#trips" class="badge chulapa-pill-bg-primary mx-1">trips</a><a href="http://localhost:4000/tags#downtown" class="badge chulapa-pill-bg-primary mx-1">downtown</a><a href="http://localhost:4000/tags#edinburgh" class="badge chulapa-pill-bg-primary mx-1">edinburgh</a><a href="http://localhost:4000/tags#kramdown" class="badge chulapa-pill-bg-primary mx-1">kramdown</a><a href="http://localhost:4000/tags#bootstrap" class="badge chulapa-pill-bg-primary mx-1">bootstrap</a><a href="http://localhost:4000/tags#wikipedia" class="badge chulapa-pill-bg-primary mx-1">wikipedia</a><a href="http://localhost:4000/tags#demo" class="badge chulapa-pill-bg-primary mx-1">demo</a><a href="http://localhost:4000/tags#image" class="badge chulapa-pill-bg-primary mx-1">image</a></div>
+<time datetime="2015-01-04T00:00:00-05:00">04/01/2015</time></p><a href="http://localhost:4000/categories#blog" class="badge chulapa-pill-bg-secondary mx-1">blog</a><a href="http://localhost:4000/tags#random" class="badge chulapa-pill-bg-primary mx-1">random</a><a href="http://localhost:4000/tags#exciting-stuff" class="badge chulapa-pill-bg-primary mx-1">exciting-stuff</a></div>
 		</div>
 	</div>
 </div>
 </div>
    </section>
  </div>
-</main><nav aria-label="Page navigation example" class="container-lg mt-4 chulapa-pagination text-center">
-               <ul class="col-md-8 offset-md-2 pagination justify-content-around ">
-                   <li class="page-item invisible ">
-                        <a class="page-link border-0 px-3 px-sm-4" href="/blog" tabindex="-1">
-                            <i class="fa fa-step-backward" aria-hidden="true"></i><span class="sr-only">First</span>
-                        </a>
-                   </li>
-                   <li class="page-item invisible">
-                        <a class="page-link border-0 px-3 px-sm-4" href="">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Previous</span>
-                        </a>
-                   </li>
-                   <li class="d-flex flex-grow-1">
-                   <ul class="list-unstyled d-flex flex-grow-1 justify-content-center chulapa-pagination-inner">
-                     <li class="page-item  active">
-                          <a class="page-link border-0 rounded-0" href="/blog">1</a></li><li class="page-item ">
-                          <a class="page-link border-0 rounded-0" href="/blog/page2/">2</a></li><li class="page-item ">
-                          <a class="page-link border-0 rounded-0" href="/blog/page3/">3</a></li>
-                   </ul>
-                   </li>
-                   <li class="page-item ">
-                        <a class="page-link border-0 px-3 px-sm-4" href="/blog/page2/">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
-                   </li>
-                   <li class="page-item ">
-                        <a class="page-link border-0 px-3 px-sm-4" href="/blog/page3/">
-                            <i class="fa fa-step-forward" aria-hidden="true"></i><span class="sr-only">Last</span></a>
-                   </li>
-               </ul>
-           </nav>
+</main>
 <!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">
    <div class="container">
      <div class="row">
-       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://github.com/dieghernan/chulapa-101" title="footerRepo on Github" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://www.tumblr.com/wickedliltongue" title="footerTumblr" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span><span class="sr-only">Repo on Github</span>
-            </a><a href="http://localhost:4000/atom.xml" title="footerRSS" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fab fa-tumblr fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Tumblr</span>
+            </a><a href="https://www.instagram.com/justinlart/" title="footerInstagram" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-              </span><span class="sr-only">RSS</span>
-            </a></div><p class="mt-2 mb-3">&copy; 2023 Justin</p>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Instagram</span>
+            </a><a href="https://wicked-little-tongue.itch.io/" title="footerItch" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Itch</span>
+            </a><a href="https://twitter.com/wickedliltongue" title="footerTwitter" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Twitter</span>
+            </a></div><p class="mt-2 mb-3">© <year> Justin Lanjil</p>
           <!-- Do not remove this in order to give  attributions -->
          <p class="chulapa-footer-brand">Powered by <a href="https://dieghernan.github.io/chulapa"> <span class="chulapa">Chulapa</span> Jekyll Theme</a><br><b>Lux</b> skin by <a href="https://bootswatch.com/">Bootswatch</a></p>
           <!-- End  attributions -->
@@ -301,9 +272,8 @@ style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thu
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
-<!-- for lightbox, not working, naturally lol-->
-<link rel="stylesheet" href="/assets/css/lightbox.css">
-<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+<!-- darkreader.js for light and dark toggle -->
+<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
 <!-- end custom bottom scripts -->
 	</body>
 </html>

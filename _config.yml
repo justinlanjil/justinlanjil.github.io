@@ -100,35 +100,28 @@ navbar:
   nav:
   - title   : Blog
     url     : /blog/
-  - title   : Portfolio
-    url     : /portfolio
-  - title   : Projects
-    child   :
-      - title: /		
-        url  : /
-
-  - title   : About
-    url     : /about
-  - title   : Extras # will probably remove these? Or add them as sublinks in the blog menu
-    child   :
-      - title : Tags
-        url   : /tags
-      - title : Categories
-        url   : /categories
-      - title : Archive
-        url   : /archive
-      - title : Current skin # keep this but add it to the git_ignore
-        url   : /current-skin
+  - title: Stories	
+    url  : /stories/
+  - title: Games	
+    url  : /games/
+  - title : Current skin # keep this but add it to the git_ignore
+    url   : /current-skin
 #Social links to be placed on your site footer
 footer:
   links:
-    - label : Repo on Github # Label
-      icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://github.com/dieghernan/chulapa-101 # A link or email: https://twitter.com/jack, mail@example.com
-    - label: "RSS"
-      icon: "fa fa-rss"
-      url:  "./atom.xml"
-  copyright: # default is © <year> <name> 
+    - label : Tumblr # Label
+      icon  : fab fa-tumblr # Fontawesome 5 icon
+      url   : https://www.tumblr.com/wickedliltongue # A link or email: https://twitter.com/jack, mail@example.com
+    - label : Instagram
+      icon  : fab fa-instagram
+      url   : https://www.instagram.com/justinlart/
+    - label : Itch
+      icon  : fab fa-itch-io
+      url   : https://wicked-little-tongue.itch.io/
+    - label : Twitter
+      icon  : fab fa-twitter
+      url   : https://twitter.com/wickedliltongue
+  copyright: © <year> Justin Lanjil 
   
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
@@ -186,6 +179,13 @@ chulapa-skin:
     nav-pills-link-active-color: "#111109"
     list-group-active-color: "#111109"
     list-group-action-active-color: "#111109"
+    # carousel colors
+    carousel-control-color: "#111109"
+    carousel-indicator-active-bg: "#111109"
+    # icon hover
+    footer-chulapa-icon-hover-color: "#babaab"
+
+
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
@@ -199,6 +199,9 @@ collections:
   cheatsheet:
     output: true
     permalink: /cheatsheets/:name
+  stories:
+    output: true
+    permalink: /stories/:name
 collections_dir     : 
 permalink           : /:year:month:day_:title/
 
@@ -223,17 +226,26 @@ defaults:
       include_on_search : true
       include_on_feed   : true
       show_date         : true
-      show_related      : true
+      show_related      : false
       show_bottomnavs   : true
-      show_sociallinks  : true
+      show_sociallinks  : false
       show_comments     : true
       show_tags         : true
       show_categories   : true
-      show_author       : true
-      show_breadcrumb   : true
+      show_author       : false
+      show_breadcrumb   : false
       breadcrumb_list   :
         - label: Blog
           url: /blog/
+  -
+    scope:
+      path: ""
+    values:
+      layout: "short_story"
+      header_type: "image"
+      include_on_search   : true
+      show_comments       : true
+      show_tags           : true
   -
     scope:
       path: ""
@@ -247,6 +259,16 @@ defaults:
       breadcrumb_list   :
         - label: Cheatsheets
           url: /cheatsheets
+  -
+    scope:
+      path: "assets/img/gallery"
+    values:
+      image_col         : gallery
+  -
+    scope:
+      path: "assets/img/placeholder"
+    values:
+      image_col         : placeholder
 
 
 # XX. Other settings - no need to modify

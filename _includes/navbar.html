@@ -189,7 +189,7 @@
 						</div>
 					</li>
 					{%- else -%}
-					<li class="nav-item">
+					<li class="rnav-item">
 						<a class="nav-link {% if item.url == thispageurl %} active font-weight-bold {%- endif -%}" href="{{- item.url | absolute_url -}}">{{- item.title -}}{%- if item.url == thispageurl -%}<span class="sr-only">(current)</span>{%- endif -%}</a>
 					</li>
 					{%- endif -%}
@@ -201,6 +201,13 @@
 							<span class="d-md-none p-0 pr-1">{{- site.search.label | default: 'Search' -}}</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">{{- site.search.label | default: 'Search' -}}</span>
 						</a>
 					</li>
+					<!-- light and dark mode toggle -->
+					<li class="nav-item" aria-label="Dark mode toggle">
+						<a class="nav-link dark-mode-button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+							<span id="dark-text" aria-hidden="true"></span>
+						  </a>						  
+					</li>
 			{%- endif -%}
 			</ul>
 			</div>
@@ -208,3 +215,37 @@
 	</div>
 </nav>
 {%- endif -%}
+
+<!-- darkmode toggle -->
+<script>
+	document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
+    darkmode()
+}
+function darkmode() {
+  let enabled = localStorage.getItem('dark-mode')
+
+  if (enabled === null) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        enable();
+    }
+  } else if (enabled === 'true') {
+    enable()
+  }
+
+  if (localStorage.getItem('dark-mode') === 'false') {
+      enable();
+  } else {
+      disable();
+  }
+}
+function enable()  {
+  DarkReader.setFetchMethod(window.fetch)
+  DarkReader.enable();
+  localStorage.setItem('dark-mode', 'true');
+}
+
+function disable() {
+  DarkReader.disable();
+  localStorage.setItem('dark-mode', 'false');
+}
+</script>
