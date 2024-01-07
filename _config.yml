@@ -101,9 +101,15 @@ navbar:
   - title   : Blog
     url     : /blog/
   - title: Stories	
-    url  : /stories/
-  - title: Games	
-    url  : /games/
+    child   :
+    - title : All
+      url   : /stories
+    - title : Standalone
+      url   : /stories/standalone
+    - title : Patron Saints
+      url   : /stories/patron_saints
+
+
   - title : Current skin # keep this but add it to the git_ignore
     url   : /current-skin
 #Social links to be placed on your site footer
@@ -201,7 +207,7 @@ collections:
     permalink: /cheatsheets/:name
   stories:
     output: true
-    permalink: /stories/:name
+    permalink: /:path/
 collections_dir     : 
 permalink           : /:year:month:day_:title/
 

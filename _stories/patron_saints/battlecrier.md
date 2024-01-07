@@ -3,11 +3,13 @@ layout: short_story
 title: Battlecrier
 tags: [patron saints]
 category: stories
+permalink: /patron_saints/battlecrier
 header_img: assets/img/covers/stories/battlecrier_cover.jpg
 excerpt: |
     Bertie Horner joins his first battle. The small statue that his mother sent off with him for protection offers that, but at a cost.   
 wordcount: 2500
 warnings: violence, brief mention of animal death
+order: 1
 ---
 
 Albert ‘Bertie’ Horner clutched the small stone tightly to his chest, running his fingers over the familiar grooves and notches that defined its form. Overhead the boom of cannon shot thundered over the skies blasting men, horses and the very earth indiscriminately to pieces.

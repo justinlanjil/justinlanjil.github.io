@@ -57,7 +57,7 @@ var store = [{
         "title": null,
         "subtitle": null,
         "excerpt":
-            ".hero-chulapa-image h1{color:#f6f6ee}.hero-chulapa h1{color:#f6f6ee;font-family:'Montserrat', sans-serif}.navbar{font-family:'Montserrat', sans-serif;font-weight:600}.btn{font-family:'Montserrat', sans-serif;margin:2px 1px}.btn-group{font-family:'Montserrat', sans-serif}.btn-group .dropdown-item{text-transform:uppercase}.bg-primary,.btn-primary,.badge-primary{color:#111109}.bg-primary:hover,.btn-primary:hover,.badge-primary:hover{color:#111109}.bg-primary.disabled,.btn-primary.disabled,.badge-primary.disabled{color:#111109}.bg-primary:disabled,.btn-primary:disabled,.badge-primary:disabled{color:#111109}.bg-primary:not(:disabled):not(.disabled):active,.bg-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.badge-primary:not(:disabled):not(.disabled):active,.badge-primary:not(:disabled):not(.disabled).active{color:#111109}.card.text-white.bg-primary.mb-3 .card-header,.card.text-white.bg-primary.mb-3 .card-body{color:#111109}.btn-outline-primary,.btn-outline-secondary,.btn-outline-success,.btn-outline-info,.btn-outline-warning,.btn-outline-danger{border:2px solid}.page-link{background-color:transparent}.page-link:hover{background-color:transparent}.page-item.active .page-link{color:#c80;background-color:transparent;border:2px solid #c80}.breadcrumb-item.active{color:#4d4d39}.carousel-indicators li{border-radius:50%;width:10px;height:10px}.chulapa-border-card-index{border:none}.hero-chulapa h1,.splash-chulapa h1{color:#111109 !important}.img-circle{border-radius:50%}.img-landing-banner{margin-bottom:2em;max-height:80vh}.chulapa-footer-brand{opacity:0.4}.text-standout{font-family:Montserrat,sans-serif;font-weight:600;line-height:1.2;text-transform:uppercase}.montserrat{font-family:Montserrat,sans-serif;font-weight:600}.short-story-info-card{margin-bottom:40vh}.story-spacer{margin:100px;margin-bottom:200px;background:transparent}.hr-primary{background-color:#babaab} ",
+            ".hero-chulapa-image h1{color:#f6f6ee}.hero-chulapa h1{color:#f6f6ee;font-family:'Montserrat', sans-serif}.navbar{font-family:'Montserrat', sans-serif;font-weight:600}.btn{font-family:'Montserrat', sans-serif;margin:2px 1px}.btn-group{font-family:'Montserrat', sans-serif}.btn-group .dropdown-item{text-transform:uppercase}.bg-primary,.btn-primary,.badge-primary{color:#111109}.bg-primary:hover,.btn-primary:hover,.badge-primary:hover{color:#111109}.bg-primary.disabled,.btn-primary.disabled,.badge-primary.disabled{color:#111109}.bg-primary:disabled,.btn-primary:disabled,.badge-primary:disabled{color:#111109}.bg-primary:not(:disabled):not(.disabled):active,.bg-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.badge-primary:not(:disabled):not(.disabled):active,.badge-primary:not(:disabled):not(.disabled).active{color:#111109}.card.text-white.bg-primary.mb-3 .card-header,.card.text-white.bg-primary.mb-3 .card-body{color:#111109}.btn-outline-primary,.btn-outline-secondary,.btn-outline-success,.btn-outline-info,.btn-outline-warning,.btn-outline-danger{border:2px solid}.page-link{background-color:transparent}.page-link:hover{background-color:transparent}.page-item.active .page-link{color:#c80;background-color:transparent;border:2px solid #c80}.breadcrumb-item.active{color:#4d4d39}.carousel-indicators li{border-radius:50%;width:10px;height:10px}.chulapa-border-card-index{border:none}.hero-chulapa h1,.splash-chulapa h1{color:#111109 !important}.img-circle{border-radius:50%}.img-landing-banner{margin-bottom:2em;max-height:80vh}.chulapa-footer-brand{opacity:0.4}.text-standout{font-family:Montserrat,sans-serif;font-weight:600;line-height:1.2;text-transform:uppercase}.montserrat{font-family:Montserrat,sans-serif;font-weight:600}.short-story-info-card{margin-bottom:40vh}.story-spacer{margin:100px;margin-bottom:200px;background:transparent}.hr-primary{background-color:#babaab}.jumbotron{background-color:transparent}.chulapa-gradient{background-color:#babaab;background:linear-gradient(180deg, #babaab 0%, rgba(186,186,171,0.5) 35%, rgba(186,186,171,0) 100%)}.nav-item.dropdown{margin-right:0px !important} ",
         "categories": null,
         "date": null,
         "tags": null,
@@ -67,7 +67,7 @@ var store = [{
         "title": "Interactive fiction",
         "subtitle": "Games index page",
         "excerpt":
-            "Mary's Hare Mary's Hare is short interactive horror story about a woman and a rabbit, based on the story of Mary Toft. Play on itch.io Neighbour &amp; Way You are...",
+            "Mary's Hare Mary's Hare is short interactive horror story about a woman and a rabbit, based on the story of Mary Toft. Neighbour &amp; Way You are living in a...",
         "categories": null,
         "date": null,
         "tags": null,
@@ -87,11 +87,11 @@ var store = [{
         "title": "Stories",
         "subtitle": "Short stories",
         "excerpt":
-            "Stories Short stories Battlecrier Bertie Horner joins his first battle. The small statue that his mother sent off with him for protection offers that, but at a cost. Read Word...",
+            "Stories Short stories sdfds this isn't working, should show patron_saints Patron Saints Testing testing Patron SaintsTesting testing Read Word count:&nbsp;&nbsp;words Warnings for:&nbsp; Battlecrier Bertie Horner joins his first battle. The...",
         "categories": null,
         "date": null,
         "tags": null,
-        "url": "http://localhost:4000/stories/",
+        "url": "http://localhost:4000/stories",
         "img": "http://localhost:4000/assets/img/site/banner-blog.png"
       },{
         "title": null,
@@ -137,7 +137,7 @@ var store = [{
         "title": null,
         "subtitle": null,
         "excerpt":
-            "Chulapa 2024-01-06T20:05:05-05:00 http://localhost:4000/atom.xml Justin Lanjil | Artist & Storyteller Artist & Storyteller Justin (c) 2024, Justin http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png https://github.com/justinlanjil.png The Acueduct of Segovia 2019-01-01T00:00:00-05:00 2019-01-01T00:00:00-05:00 http://localhost:4000/20190101_imahegf/ &lt;h3&gt;20 centuries ago&lt;/h3&gt; &lt;img src=&#39;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG&#39;...",
+            "Chulapa 2024-01-07T13:10:50-05:00 http://localhost:4000/atom.xml Justin Lanjil | Artist & Storyteller Artist & Storyteller Justin (c) 2024, Justin http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png https://github.com/justinlanjil.png The Acueduct of Segovia 2019-01-01T00:00:00-05:00 2019-01-01T00:00:00-05:00 http://localhost:4000/20190101_imahegf/ &lt;h3&gt;20 centuries ago&lt;/h3&gt; &lt;img src=&#39;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG&#39;...",
         "categories": null,
         "date": null,
         "tags": null,
@@ -252,7 +252,7 @@ var store = [{
         "date": "2015-01-04",
         "tags": ["random","exciting-stuff"],
         "url": "http://localhost:4000/20150104_first-post/",
-        "img": "http://localhost:4000/assets/img/placeholder/placeholder_image159to1.jpg"
+        "img": null
       },{
         "title": "The Acueduct of Segovia",
         "subtitle": "20 centuries ago",
@@ -269,7 +269,7 @@ var store = [{
         "excerpt":
             "What’s Markdown? Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one...",
         "categories": ["tutorial"],
-        "date": "2024-01-06",
+        "date": "2024-01-07",
         "tags": ["starter","syntax","markdown"],
         "url": "http://localhost:4000/cheatsheets/01-markdown-cheat-sheet",
         "img": null
@@ -279,18 +279,58 @@ var store = [{
         "excerpt":
             "What’s kramdown? kramdown supercharges Markdown with some interesting features. kramdown is the default Jekyll Markdown processor. When creating your site with Jekyll, you can use the standard Markdown syntax plus...",
         "categories": ["tutorial"],
-        "date": "2024-01-06",
+        "date": "2024-01-07",
         "tags": ["starter","syntax","kramdown"],
         "url": "http://localhost:4000/cheatsheets/02-kramdown-cheat-sheet",
         "img": null
+      },{
+        "title": "All's Fair",
+        "subtitle": null,
+        "excerpt":
+            "It was a sunny afternoon and Ned was making his way down the main road at a leisurely pace. He had a bodyguarding contract lined up in a country estate...",
+        "categories": ["stories"],
+        "date": "2024-01-07",
+        "tags": ["patron saints"],
+        "url": "http://localhost:4000/patron_saints/alls-fair/",
+        "img": "http://localhost:4000/assets/img/covers/stories/allsfair_cover.jpg"
       },{
         "title": "Battlecrier",
         "subtitle": null,
         "excerpt":
             "Albert ‘Bertie’ Horner clutched the small stone tightly to his chest, running his fingers over the familiar grooves and notches that defined its form. Overhead the boom of cannon shot...",
         "categories": ["stories"],
-        "date": "2024-01-06",
+        "date": "2024-01-07",
         "tags": ["patron saints"],
-        "url": "http://localhost:4000/stories/battlecrier",
+        "url": "http://localhost:4000/patron_saints/battlecrier",
         "img": "http://localhost:4000/assets/img/covers/stories/battlecrier_cover.jpg"
+      },{
+        "title": "Patron Saints",
+        "subtitle": "Testing testing",
+        "excerpt":
+            "Patron Saints Testing testing sdfds this isn't working, should show patron_saints Patron Saints Testing testing Patron SaintsTesting testing Read Word count:&nbsp;&nbsp;words Warnings for:&nbsp; Battlecrier Bertie Horner joins his first battle....",
+        "categories": [],
+        "date": "2024-01-07",
+        "tags": [],
+        "url": "http://localhost:4000/stories/patron_saints",
+        "img": "http://localhost:4000/assets/img/site/banner-blog.png"
+      },{
+        "title": "Spilt Blood",
+        "subtitle": null,
+        "excerpt":
+            "His mare had injured her foot stepping on a nasty thorn so it was slow going down the quiet tree lined road. Had he been mounted he may not have...",
+        "categories": ["stories"],
+        "date": "2024-01-07",
+        "tags": ["patron saints"],
+        "url": "http://localhost:4000/patron_saints/spilt-blood/",
+        "img": "http://localhost:4000/assets/img/covers/stories/bloodspilt_cover.jpg"
+      },{
+        "title": "Lost Lenore",
+        "subtitle": null,
+        "excerpt":
+            "Lord Sterling had taken things a bit far when he had commissioned, with the utmost secrecy, a portrait of his lost lady love. It was a massive painting, a ghastly...",
+        "categories": ["stories"],
+        "date": "2024-01-07",
+        "tags": [],
+        "url": "http://localhost:4000/standalone/lost-lenore",
+        "img": "http://localhost:4000/assets/img/covers/stories/lostlenore_cover.jpg"
       }]

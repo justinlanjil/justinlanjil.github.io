@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-06 20:05:05 -0500 -->
+    <!-- Page build 2024-01-07 13:10:50 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Interactive fiction",
       "image": "https://github.com/justinlanjil.png",
-      "datePublished": "2024-01-06T20:05:05-05:00",
-      "dateModified": "2024-01-06T20:05:05-05:00",
+      "datePublished": "2024-01-07T13:10:50-05:00",
+      "dateModified": "2024-01-07T13:10:50-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -138,10 +138,8 @@
 			<div class="collapse navbar-collapse" id="navbarToggler">
 				<ul class="navbar-nav ml-auto"><li class="rnav-item">
 						<a class="nav-link " href="http://localhost:4000/blog/">Blog</a>
-					</li><li class="rnav-item">
-						<a class="nav-link " href="http://localhost:4000/stories/">Stories</a>
-					</li><li class="rnav-item">
-						<a class="nav-link " href="http://localhost:4000/games/">Games</a>
+					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Stories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Stories"><a class="dropdown-item " href="http://localhost:4000/stories">All</a><a class="dropdown-item " href="http://localhost:4000/stories/standalone">Standalone</a><a class="dropdown-item " href="http://localhost:4000/stories/patron_saints">Patron Saints</a></div>
 					</li><li class="rnav-item">
 						<a class="nav-link " href="http://localhost:4000/current-skin">Current skin</a>
 					</li><li class="nav-item">
@@ -195,17 +193,18 @@ function disable() {
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			 <!-- Mary's Hare -->
+			 <!-- I think scrap this? and just use the story index info page template TBH. Yeah. -->
+<!-- omg there's literally img/img overlay classes, look at default blog post -->
+<!-- Mary's Hare -->
 <!-- image with text card -->
 <!-- fix image placement -->
 <!-- add button parameter as well-->
 <!-- can I just do an alternating color thing for the border with even/odd childs? -->
 <div class="card border-light col=12 mb-3">
-   <div class="row g-0"><div class="col-4" style="background-image: url('/assets/img/covers/games/marys_hare.jpg')">
-     </div><div class="col-md-8"><div class="card-body"><h5 class="card-title">Mary's Hare</h5><p class="card-text">Mary's Hare is short interactive horror story about a woman and a rabbit, based on the story of Mary Toft.</p>
-          <!-- this is adding an underline which I don't like -->
-          <button type="button" class="btn btn-secondary"><a href="/">Play on itch.io</a></button>
-       </div>
+   <div class="row g-0"><div class="col-4" style="background-image: cover; background-image: url('/assets/img/covers/games/marys_hare.jpg')">
+     </div><div class="col-md-8"><div class="card-body"><h5 class="card-title">Mary's Hare</h5><p class="card-text">
+Mary's Hare is short interactive horror story about a woman and a rabbit, based on the story of <a href="http://mentalfloss.com/article/54643/woman-who-gave-birth-rabbits">Mary Toft</a>.
+</p></div>
      </div></div>
  </div>
 <!-- Neighbour & Way -->
@@ -215,13 +214,9 @@ function disable() {
 <!-- can I just do an alternating color thing for the border with even/odd childs? -->
 <div class="card border-light col=12 mb-3">
    <div class="row g-0"><div class="col-md-8"><div class="card-body"><h5 class="card-title">Neighbour &amp; Way</h5><p class="card-text">
-You are living in a gloomy flat in the city.
-<br />
-A mysterious woman has just moved in upstairs and though you haven’t seen her, her servant has stopped by for a favour. They say good fences make good neighbours, but what harm could come from being friendly?
-</p>
-          <!-- this is adding an underline which I don't like -->
-          <button type="button" class="btn btn-secondary"><a href="/">Play on itch.io</a></button>
-       </div>
+<p>You are living in a gloomy flat in the city. A mysterious woman has just moved in upstairs and though you haven’t seen her, her servant has stopped by for a favour.</p>
+<p>They say good fences make good neighbours, but what harm could come from being friendly?</p>
+</p></div>
      </div><div class="col-md-4">
         <img src="/assets/img/covers/games/neighbour_and_way.jpg" class="card-img" alt="social logo for text" />
      </div></div>

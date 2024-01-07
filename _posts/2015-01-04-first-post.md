@@ -2,8 +2,7 @@
 title: First post!
 tags: [random, exciting-stuff]
 category: blog
-header_type: image
-header_img: assets/img/placeholder/placeholder_image159to1.jpg
+header_type: hero
 excerpt: "testing"
 ---
 

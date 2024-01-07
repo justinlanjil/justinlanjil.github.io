@@ -1,4 +1,6 @@
-{%- assign alldocs = include.cacheddocs -%}
+{%- assign alldocs = include.cacheddocs | sort:"order" -%}
+sdfds
+{{ include.selection }} this isn't working, should show patron_saints
    {% for post in alldocs limit: include.cachedlimit %} 
 <div class="col-12 mb-2">
 <div class="card chulapa-border-card-index">
@@ -8,7 +10,7 @@
 	<div class="row g-0">
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
-				<a href="{{- post.url | absolute_url -}}"><h4 class="card-title">{{- post.title  | default: "---" -}}</h4></a>
+				<a href="{{- post.url -}}"><h4 class="card-title">{{- post.title  | default: "---" -}}</h4></a>
 				{% if post.subtitle -%}<h6 class="card-subtitle mb-2 text-muted">{{- post.subtitle -}}</h6>{%- endif %}
 				
 {%- assign fallbackdesc = post.content | 
@@ -48,4 +50,4 @@
 	</div>
 </div>
 </div>
-{% endfor %} 
+{% endfor %}

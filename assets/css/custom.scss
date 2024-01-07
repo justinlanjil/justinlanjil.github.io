@@ -222,3 +222,22 @@ $breadcrumb-active-color: $secondary;
 .hr-primary {
     background-color: $primary;
 }
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.chulapa-gradient {
+background-color: rgba($primary, 1);
+background: linear-gradient(
+    180deg,
+    rgba($primary,1) 0%,
+    rgba($primary,0.5) 35%,
+    rgba($primary,0) 100%
+    ); 
+}
+
+// stops weird spacing for dropdown menu
+.nav-item.dropdown {
+    margin-right: 0px !important;
+  }

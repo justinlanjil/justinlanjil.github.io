@@ -5,7 +5,7 @@
 <div class="card {% if include.card_class %}{{ include.card_class }}{% else %}border-light{% endif %} col=12 mb-3">
     <div class="row g-0">
     {%- if include.img_layout == "left" -%}
-      <div class="col-4" style="background-image: url('{{ include.img_url }}')">
+      <div class="col-4" style="background-image: cover; background-image: url('{{ include.img_url }}')">
       </div>
       {%- endif -%}
       <div class="col-md-8">
@@ -17,8 +17,9 @@
           <h5 class="card-title">{{ include.title }}</h5>
           {%- endif -%}
           <p class="card-text">{{ include.content }}</p>
-          <!-- this is adding an underline which I don't like -->
-          <button type="button" class="btn btn-secondary"><a href="/">Play on itch.io</a></button>
+          {%- if include.button_link and include.button_title -%}
+            <a class="btn btn-secondary" href="{{ include.button_link }}" role="button">{{ include.button_title }}</a>
+          {%- endif -%}
         </div>
       </div>
       {%- if include.img_layout == "right" -%}

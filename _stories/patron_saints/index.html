@@ -1,15 +1,17 @@
 ---
 layout: minimal
-title: Stories
-subtitle: 'Short stories'
-permalink: /stories
+title: Patron Saints
+subtitle: Testing testing
+permalink: stories/patron_saints
 og_image: /assets/img/site/banner-blog.png
 ---
 {%- include components/headers.html headertype= page.header_type imghero=page.header_img -%}
+
+<!-- should this be subdivided? Can I use the category index page maybe? -->
 <main class="container-lg pb-3 flex-fill">
   <div class="row pt-2 mt-3">
     <section class="col-md-8 offset-md-2">
-    {%- include_cached components/indexcards_stories.html cacheddocs=site.stories cachedlimit=site.paginate -%}
+    {%- include_cached components/indexcards_stories.html cacheddocs=site.stories -%}
     </section>
   </div>
 </main>

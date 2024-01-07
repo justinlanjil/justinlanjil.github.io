@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-	<updated>2024-01-06T20:05:05-05:00</updated>
+	<updated>2024-01-07T13:10:50-05:00</updated>
 	<id>http://localhost:4000/atom.xml</id>
 	<title>Justin Lanjil | Artist & Storyteller</title>
 	<subtitle>Artist & Storyteller</subtitle>
@@ -47,8 +47,6 @@
 		<content type="html" xml:base="http://localhost:4000/20150104_first-post/">
 		
   		
-			&lt;img src=&#39;http://localhost:4000/assets/img/placeholder/placeholder_image159to1.jpg&#39; &gt;
-			
 	&lt;p&gt;1 min.&lt;/p&gt;
 			&lt;p&gt;This is a sample post for the general blog!&lt;/p&gt;
 

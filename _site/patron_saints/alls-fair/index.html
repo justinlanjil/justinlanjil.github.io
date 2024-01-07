@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-06 20:05:05 -0500 -->
+    <!-- Page build 2024-01-07 13:10:50 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -13,12 +13,12 @@
 	  "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/stories/"
+        "@id": "http://localhost:4000/patron_saints/alls-fair/"
       },
-      "headline": "Stories",
-      "image": "http://localhost:4000/assets/img/site/banner-blog.png",
-      "datePublished": "2024-01-06T20:05:05-05:00",
-      "dateModified": "2024-01-06T20:05:05-05:00",
+      "headline": "All's Fair",
+      "image": "http://localhost:4000/assets/img/covers/stories/allsfair_cover.jpg",
+      "datePublished": "2024-01-07T13:10:50-05:00",
+      "dateModified": "2024-01-07T13:10:50-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -46,7 +46,7 @@
       },{
         "@type": "ListItem",
         "position": 2,
-        "name": "Stories"
+        "name": "All's Fair"
       }]
     }
     </script>
@@ -54,8 +54,11 @@
 {
     "@context": "http://schema.org",
     "@type": "WebPage",
-    "name": "Stories",
-    "description": "Short stories - "
+    "name": "All's Fair",
+    "description": "Ned and his companion encounter an old enemy of the spirit.
+Follow up to Battlecrier and Spilt Blood.
+Set after Spilt Blood.
+"
     }
 }
 </script><script type="application/ld+json">
@@ -71,8 +74,8 @@
   "url" : "http://localhost:4000/"
 }
 </script>
-   <title>Stories | Justin Lanjil</title>
-  <link rel="canonical" href="http://localhost:4000/stories/">
+   <title>All's Fair | Justin Lanjil</title>
+  <link rel="canonical" href="http://localhost:4000/patron_saints/alls-fair/">
     <!-- Atom feed -->
   <link href="http://localhost:4000/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed Justin Lanjil" >
     <!-- RSS 2.0 feed -->
@@ -81,19 +84,22 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="author" content="Justin" >
    <meta name="copyright" content="Justin" >
-   <meta name="description" content="Short stories - ">
-   <meta name="thumbnail" content="http://localhost:4000/assets/img/site/banner-blog.png" >
+   <meta name="description" content="Ned and his companion encounter an old enemy of the spirit.
+Follow up to Battlecrier and Spilt Blood.
+Set after Spilt Blood.
+">
+   <meta name="thumbnail" content="http://localhost:4000/assets/img/covers/stories/allsfair_cover.jpg" >
    <meta name="robots" content="index, follow"><meta name="keywords" content="">
     <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#babaab">
     <!-- OpenGraph -->
-   <meta property="og:title" content="Stories | Justin Lanjil" >
+   <meta property="og:title" content="All's Fair | Justin Lanjil" >
    <meta property="og:site_name" content="Justin Lanjil | Artist & Storyteller" >
-   <meta property="og:url" content="http://localhost:4000/stories/" >
+   <meta property="og:url" content="http://localhost:4000/patron_saints/alls-fair/" >
    <meta property="og:type" content="website" >
-   <meta property="og:description" content="Short stories - " >
+   <meta property="og:description" content="Ned and his companion encounter an old enemy of the spirit. Follow up to Battlecrier and Spilt Blood. Set after..." >
    <meta property="og:locale" content="en-US" >
-   <meta property="og:image" content="http://localhost:4000/assets/img/site/banner-blog.png" >
+   <meta property="og:image" content="http://localhost:4000/assets/img/covers/stories/allsfair_cover.jpg" >
     <!-- Twitter/X Cards -->
    <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
 <!-- this script is inserted before the css stylesheet -->
@@ -128,7 +134,7 @@
 <!-- end custom head snippets -->
 </head>
 <body class="d-flex flex-column h-entry" id="body">
-	<a class="u-url d-none" href="http://localhost:4000/stories/">Invisible link to canonical for Microformats</a>
+	<a class="u-url d-none" href="http://localhost:4000/patron_saints/alls-fair/">Invisible link to canonical for Microformats</a>
 	<!-- This is the one that appears on desktop -->
 <nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
 	<div class="container-fluid mx-md-2">
@@ -138,10 +144,8 @@
 			<div class="collapse navbar-collapse" id="navbarToggler">
 				<ul class="navbar-nav ml-auto"><li class="rnav-item">
 						<a class="nav-link " href="http://localhost:4000/blog/">Blog</a>
-					</li><li class="rnav-item">
-						<a class="nav-link  active font-weight-bold" href="http://localhost:4000/stories/">Stories<span class="sr-only">(current)</span></a>
-					</li><li class="rnav-item">
-						<a class="nav-link " href="http://localhost:4000/games/">Games</a>
+					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Stories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Stories"><a class="dropdown-item " href="http://localhost:4000/stories">All</a><a class="dropdown-item " href="http://localhost:4000/stories/standalone">Standalone</a><a class="dropdown-item " href="http://localhost:4000/stories/patron_saints">Patron Saints</a></div>
 					</li><li class="rnav-item">
 						<a class="nav-link " href="http://localhost:4000/current-skin">Current skin</a>
 					</li><li class="nav-item">
@@ -186,43 +190,65 @@ function disable() {
   DarkReader.disable();
   localStorage.setItem('dark-mode', 'false');
 }
-</script><header class="text-center header-chulapa"><div class="container-lg mt-2">
+</script>	<header class="text-center header-chulapa"><div class="container-fluid">
+        <img src="http://localhost:4000/assets/img/covers/stories/allsfair_cover.jpg" alt="banner All's Fair" class="chulapa-header-image mw-75 h-auto">
+     </div><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
-           <h1 class="p-name">Stories</h1><p class="lead chulapa-subtitle p-summary">Short stories</p>
+           <h1 class="p-name">All's Fair</h1>
            <hr class="mb-0">
 			</div>
 		</div>
 	</div>
-</header><main class="container-lg pb-3 flex-fill">
- <div class="row pt-2 mt-3">
-   <section class="col-md-8 offset-md-2"> 
-<div class="col-12 mb-2">
-<div class="card chulapa-border-card-index">
-    <img src="http://localhost:4000/assets/img/covers/stories/battlecrier_cover.jpg">
-	<div class="row g-0">
-		<div class="col-sm">
-			<article class="card-body chulapa-links-hover-only">
-				<a href="http://localhost:4000/stories/battlecrier"><h4 class="card-title">Battlecrier</h4></a>
-				<div class="card-text">Bertie Horner joins his first battle. The small statue that his mother sent off with him for protection offers that, but at a cost.   
-</div>
-			</article>
-			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
-               <h6 class="mb-4"><a href="/stories/battlecrier">Read <i class="fa-solid fa-arrow-right"></i></a></h6>
-               <hr class="hr-primary">
-               <div class="d-flex justify-content-between">
-                   <p class="small font-italic mb-1"><strong>Word count:</strong>&nbsp;2500&nbsp;words</p>
-                   <p class="small font-italic mb-1"><strong>Warnings for:</strong>&nbsp;violence, brief mention of animal death</p>
-               </div>
-            <a href="http://localhost:4000/categories#stories" class="badge chulapa-pill-bg-secondary mx-1">stories</a><a href="http://localhost:4000/tags#patron-saints" class="badge chulapa-pill-bg-primary mx-1">patron saints</a>
+</header>
+	<main class="container-lg pb-3 flex-fill">
+		<div class="row pt-2">
+			<aside class="col-lg-2 mt-lg-3 small"></aside>
+			<article id="maincontent" class="col-lg-8 mt-3 e-content">
+            <!-- maybe change this to a modal that's open by default? -->
+           <div class="jumbotron">
+           <p class="lead">Ned and his companion encounter an old enemy of the spirit.
+<p>Follow up to <a href="battlecrier">Battlecrier</a> and <a href="spilt-blood">Spilt Blood</a>.</p>
+<p>Set after Spilt Blood.</p>
+</p>
+           <hr class="my-4 hr-primary">
+            <!-- change to stacked on mobile-->
+           <div class="d-flex justify-content-between">
+               <p><strong>Word count:</strong> 500 words</p>
+               <p><strong>Warnings for:</strong> no warnings</p>
            </div>
+            <a class="btn btn-info" href="#read" role="button">Read</a>
+           </div>
+           <hr id="read" class="story-spacer" height="50px"><p>It was a sunny afternoon and Ned was making his way down the main road at a leisurely pace. He had a bodyguarding contract lined up in a country estate that was bound to be as uneventful as it was well paying and was in no rush to be stuck standing around looking intimidating for weeks on end and bored out of his skull. He felt the slight shift in the air that he knew after months of companionship meant that his invisible companion had spotted something.</p>
+<p>He veered his mare over to the side of the road and slowed her to a halt to look around for what had caught its attention. He expected to see a duel or some battle but the countryside was green and peaceful. Under the shade of a large tree by a stream there were two soldiers laughing and hanging up wet clothes. They were an attractive pair and since Ned was in no particular hurry he took his time admiring them. Almost immediately he felt cold claws dig into his shoulders and a hiss in his ear.</p>
+<p>“That him then?”</p>
+<p>He took a closer look. The slightly taller of the men was a real stunner even from a distance, his smile was infectious under his well kept mustache and he had a solid well-made frame. They could have used his portrait for recruitment posters, it might have even tempted him to enlist. Ned let out a low whistle. The claws dug in further. “I see why you’re so upset to have lost him.”</p>
+<p>The spirit gave something approximating a snort, “The other one then?”</p>
+<p>The slightly smaller man wasn’t bad either, he was a bit slimmer and more fine featured than the other but there was a wiry look to him like a man who would fight like the devil once he got his back up. “Well then I see why you lost him to the other.”</p>
+<p>The spirit dug its claws in painfully, causing Ned to yelp. Luckily the soldiers were too caught up in each other to notice it. “Alright, that’s enough of that. I’m not going to go running off with him you bloody pest.”</p>
+<p>“<em>Bertie…kill…</em>” the spirit attempted a seductive plea but it was like a fly buzzing in his ear.</p>
+<p>“I’m not going to cut down the poor sod because he threw you away for trying to kill him.”</p>
+<p>There was no response.</p>
+<p>Ned watched the soldiers a bit longer, they looked happy together and well matched, and Ned was glad that his companion hadn’t gotten its way.</p>
+<p>The silence was getting pointed now.</p>
+<p>“Sulk all you like then.”</p>
+<p>Still nothing.</p>
+<p>“If you’re unsatisfied with my company then I can throw you down right here and let you try your chances with the next unfortunate to stumble across you.”</p>
+<p>Icy hands wrapped around his chest, curling possessively. They were gentler now, as gentle as it knew how to be at any rate and Ned felt the plea in them.</p>
+<p>“There you are then. Let them alone and let’s be off.”</p>
+<p>He squeezed his knees and gave the reins a slight tug to spur his mare back into motion and continued down the road. The spirit gave a final spitting hiss as they passed the pair and Ned chuckled and shook his head, wishing the pair well.</p>
+<h4 class="text-right">END.</h4>
+			</article>
 		</div>
-	</div>
+	</main>
+<div class="container-lg my-1">
+ <div class="row">
+   <div class="col-lg-8 offset-lg-2 col">
+      <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
+      <a href="http://localhost:4000/tags#patron-saints" class="badge chulapa-pill-bg-primary p-category" rel="tag" >patron saints</a>
+     </div>
+   </div>
 </div>
-</div>
-   </section>
- </div>
-</main>
 <!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">
    <div class="container">
