@@ -205,9 +205,9 @@ collections:
   cheatsheet:
     output: true
     permalink: /cheatsheets/:name
-  stories:
+  pages:
     output: true
-    permalink: /:path/
+    permalink: /:path
 collections_dir     : 
 permalink           : /:year:month:day_:title/
 

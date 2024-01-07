@@ -3,7 +3,7 @@ layout: short_story
 title: Battlecrier
 tags: [patron saints]
 category: stories
-permalink: /patron_saints/battlecrier
+permalink: stories/patron_saints/battlecrier
 header_img: assets/img/covers/stories/battlecrier_cover.jpg
 excerpt: |
     Bertie Horner joins his first battle. The small statue that his mother sent off with him for protection offers that, but at a cost.   
