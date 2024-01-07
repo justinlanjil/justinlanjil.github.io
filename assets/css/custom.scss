@@ -216,4 +216,9 @@ $breadcrumb-active-color: $secondary;
 .story-spacer {
     margin: 100px;
     margin-bottom: 200px;
+    background: transparent;
+}
+
+.hr-primary {
+    background-color: $primary;
 }

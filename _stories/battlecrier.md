@@ -42,7 +42,8 @@ The battle was won, and he had lived to see it.
 
 He rubbed at his chest, fingers brushing against the cool stone pressed against his heart.
 
-***
+\***
+{: .text-center}
 
 They arrived back at the encampment backed by the setting sun, and Bertie was carried along with the group and deposited in front of one of the many campfires that had sprung up. The atmosphere was festive, an almost manic relief at having won the day and survived to enjoy it. Hands deposited a mug of strong ale in his, gone before he could thank them, and he sipped at it as he basked in the warm huddle of light and laughter.
 
@@ -76,7 +77,8 @@ A sharp stab shot through his chest and he cried out, not in pleasure but in pai
 
 He sat up in a panic, his arousal doused. Perhaps he had been hurt after all. He unbuttoned his jacket and shirt, feeling across his chest for broken or tender flesh but there was nothing amiss. He quickly stripped off the jacket and tossed it aside, his eyes heavy. As he slipped into sleep he felt the ghost of an icy kiss press to his forehead and cold fingers around his heart.
 
-***
+\***
+{: .text-center}
 
 They marched ahead through rough road walled by a thick forest, a small party sent to scout this stretch of road before the main force marched through to the site of their next battle. The silence of the dense forest on either side of the road unnerved him more than the cacophony of the battle had the previous day. No doubt the other men felt it too, they were quiet as they marched. He thumbed at the statue again, the familiar ridges soothing.
 
@@ -139,7 +141,3 @@ Some time later the surgeon came round. His shoulder hurt but he reassured him t
 Bertie bent to pick up his jacket but before putting it on he flipped open the breast pocket and shook it out. The statue tumbled to the ground, unchanged in appearance but now filling Bertie with a cold dread.
 
 He stared down at it a moment before pulling his jacket over his shoulders and turning to his companion, fitting himself under the officer’s shoulders and walking forward, wound round each other.
-
- 
-
-_END_

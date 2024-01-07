@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-06 19:10:32 -0500 -->
+    <!-- Page build 2024-01-06 20:05:05 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "kramdown cheatsheet",
       "image": "https://github.com/justinlanjil.png",
-      "datePublished": "2024-01-06T19:10:32-05:00",
-      "dateModified": "2024-01-06T19:10:32-05:00",
+      "datePublished": "2024-01-06T20:05:05-05:00",
+      "dateModified": "2024-01-06T20:05:05-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -219,11 +219,16 @@ function disable() {
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-           <div class="short-story-info-card text-center">
-               <p>kramdown supercharges Markdown with some interesting features.</p>
-               <p><em> words</em></p>
+            <!-- maybe change this to a modal that's open by default? -->
+           <div class="jumbotron">
+           <p class="lead">kramdown supercharges Markdown with some interesting features.</p>
+           <hr class="my-4 hr-primary">
+            <!-- change to stacked on mobile-->
+           <div class="d-flex justify-content-between">
+               <p><strong>Word count:</strong>  words</p>
                <p><strong>Warnings for:</strong></p>
-                <a href="#read" role="button" class="btn btn-secondary">Read</a>
+           </div>
+            <a class="btn btn-info" href="#read" role="button">Read</a>
            </div>
            <hr id="read" class="story-spacer" height="50px"><h2 id="whats-kramdown">What’s kramdown?</h2>
 <p><strong>kramdown</strong> supercharges Markdown with some interesting features.</p>
@@ -466,6 +471,7 @@ which is continued here.</p>
    </li>
  </ol>
 </div>
+<h4 class="text-right">END.</h4>
 			</article>
 		</div>
 	</main><nav aria-label="Navigation" class="container-lg chulapa-pagination  ">

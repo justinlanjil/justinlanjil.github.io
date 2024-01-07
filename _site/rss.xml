@@ -7,8 +7,8 @@
 		<description>Collected works and creative blog.</description>
 		<language>en-US</language>
 		<copyright>(c) 2024, Justin</copyright>	
-		<pubDate>Sat, 06 Jan 2024 19:10:32 -0500</pubDate>
-		<lastBuildDate>Sat, 06 Jan 2024 19:10:32 -0500</lastBuildDate>
+		<pubDate>Sat, 06 Jan 2024 20:05:05 -0500</pubDate>
+		<lastBuildDate>Sat, 06 Jan 2024 20:05:05 -0500</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml" />
