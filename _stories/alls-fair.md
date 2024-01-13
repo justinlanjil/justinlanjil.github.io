@@ -1,7 +1,7 @@
 ---
 layout: short_story
 title: All's Fair
-categories: [stories]
+category: [prose, short story, patron saints]
 header_img: assets/img/covers/stories/allsfair_cover.jpg
 excerpt: |
     Ned and his companion encounter an old enemy of the spirit.

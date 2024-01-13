@@ -1,9 +1,8 @@
 ---
 layout: short_story
 title: Lost Lenore
-category: stories
+category: [prose, short story, standalone]
 header_img: assets/img/covers/stories/lostlenore_cover.jpg
-permalink: /standalone/lost-lenore
 excerpt: |
     The shadow of Lord Sterling's late wife looms large over the lively atmosphere at Hartley House. But Hartley House is shaken up when one of its master's numerous guests starts asking unwelcome questions.
 order: 1

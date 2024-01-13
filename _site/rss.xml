@@ -7,8 +7,8 @@
 		<description>Collected works and creative blog.</description>
 		<language>en-US</language>
 		<copyright>(c) 2024, Justin</copyright>	
-		<pubDate>Sat, 13 Jan 2024 12:14:16 -0500</pubDate>
-		<lastBuildDate>Sat, 13 Jan 2024 12:14:16 -0500</lastBuildDate>
+		<pubDate>Sat, 13 Jan 2024 13:53:56 -0500</pubDate>
+		<lastBuildDate>Sat, 13 Jan 2024 13:53:56 -0500</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml" />
@@ -35,21 +35,73 @@
       <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">http://localhost:4000/20190101_imahegf/</guid>
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
 		</item><item>
-			<title>Blog 2 Post</title>
+			<title>The Acueduct of Segovia</title>
 			<description>
 				<![CDATA[	
- 				
+ 				<h3><p>20 centuries ago</p>
+</h3>
     		<p>1 min.</p>
-				<div><p>This is a sample post for the general blog!</p>
-
-<p><img src="/assets/img/placeholder/placeholder_image159to1.jpg" alt="Placeholder image" /></p>
+				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
 </div>
 				]]>
 			</description>
-			<link>http://localhost:4000/20150104_first-post/</link>
+			<link>http://localhost:4000/20190101_imahegf-copy/</link>
 			<category>posts</category>
-		    <category>exciting-stuff</category><category>random</category><guid isPermaLink="true">http://localhost:4000/20150104_first-post/</guid>
-      <pubDate>Sun, 04 Jan 2015 00:00:00 -0500</pubDate>
+		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Acueduct of Segovia ]]></media:title>
+      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" medium="image"/>
+      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">http://localhost:4000/20190101_imahegf-copy/</guid>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+		</item><item>
+			<title>The Acueduct of Segovia</title>
+			<description>
+				<![CDATA[	
+ 				<h3><p>20 centuries ago</p>
+</h3>
+    		<p>1 min.</p>
+				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
+</div>
+				]]>
+			</description>
+			<link>http://localhost:4000/20190101_imahegf-copy-4/</link>
+			<category>posts</category>
+		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Acueduct of Segovia ]]></media:title>
+      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" medium="image"/>
+      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">http://localhost:4000/20190101_imahegf-copy-4/</guid>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+		</item><item>
+			<title>The Acueduct of Segovia</title>
+			<description>
+				<![CDATA[	
+ 				<h3><p>20 centuries ago</p>
+</h3>
+    		<p>1 min.</p>
+				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
+</div>
+				]]>
+			</description>
+			<link>http://localhost:4000/20190101_imahegf-copy-3/</link>
+			<category>posts</category>
+		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Acueduct of Segovia ]]></media:title>
+      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" medium="image"/>
+      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">http://localhost:4000/20190101_imahegf-copy-3/</guid>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+		</item><item>
+			<title>The Acueduct of Segovia</title>
+			<description>
+				<![CDATA[	
+ 				<h3><p>20 centuries ago</p>
+</h3>
+    		<p>1 min.</p>
+				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
+</div>
+				]]>
+			</description>
+			<link>http://localhost:4000/20190101_imahegf-copy-2/</link>
+			<category>posts</category>
+		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Acueduct of Segovia ]]></media:title>
+      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" medium="image"/>
+      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">http://localhost:4000/20190101_imahegf-copy-2/</guid>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
 		</item><item>
 			<title>Blog 1 Post</title>
 			<description>

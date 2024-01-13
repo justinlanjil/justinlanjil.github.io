@@ -1,7 +1,7 @@
 ---
 layout: short_story
 title: Battlecrier
-category: stories
+category: [prose, short story, patron saints]
 story_collection: patron_saints
 header_img: assets/img/covers/stories/battlecrier_cover.jpg
 excerpt: |

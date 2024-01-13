@@ -99,17 +99,17 @@ navbar:
     img     :  "./assets/img/brand_img/brand_logo_social_60x60.png"
   nav:
   - title   : Blog
-    url     : /blogs/blog/
-  - title   : Blog 2
-    url     : blogs/blog2/
+    url     : /blog/
+  - title: Games	
+    child   :
+    - title : Interactive fiction
+      url   : /games/interactive-fiction
   - title: Stories	
     child   :
-    - title : All
-      url   : /stories
     - title : Standalone
-      url   : /stories/standalone
+      url   : /short-stories/standalone
     - title : Patron Saints
-      url   : /stories/patronsaints
+      url   : /short-stories/patron-saints
 
 
   - title : Current skin # keep this but add it to the git_ignore
@@ -210,6 +210,13 @@ collections:
   pages:
     output: true
     permalink: /:path
+  collected_works:
+    output: false
+  stories:
+    output: true
+  games:
+    output: true
+    permalink: /games/:name
 collections_dir     : 
 permalink           : /:year:month:day_:title/
 
@@ -248,9 +255,20 @@ defaults:
   -
     scope:
       path: ""
+      type: "stories"
     values:
       layout: "short_story"
       header_type: "image"
+      include_on_search   : true
+      show_comments       : true
+      show_tags           : true
+  -
+    scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "default"
+      header_type: "hero"
       include_on_search   : true
       show_comments       : true
       show_tags           : true

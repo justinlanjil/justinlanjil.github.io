@@ -1,7 +1,7 @@
 ---
 layout: short_story
 title: Spilt Blood
-category: stories
+category: [prose, short story, patron saints]
 header_img: assets/img/covers/stories/bloodspilt_cover.jpg
 excerpt: |
     Ned Metzger picks up a small stone statue lying on the road and with it an unexpected companion surprisingly well suited to his work. <p>Follow up to <a href="battlecrier">Battlecrier</a>.</p> 
@@ -9,7 +9,7 @@ wordcount: 5000
 warnings: violence, sexual content 
 order: 1
 ---
-His mare had injured her foot stepping on a nasty thorn so it was slow going down the quiet tree lined road. Had he been mounted he may not have noticed the small details: dark patches of old dried blood, a glint caught by the sun in the shadow of the underbrush which proved to be an army issue saber, scars in the trees. A battle then, or an ambush.
+Ned's mare had injured her foot stepping on a nasty thorn so it was slow going down the quiet tree lined road. Had he been mounted he may not have noticed the small details: dark patches of old dried blood, a glint caught by the sun in the shadow of the underbrush which proved to be an army issue saber, scars in the trees. A battle then, or an ambush.
 
 But not a recent one. Months ago the army had swept through, stamping out the pretender king’s forces. Peace had settled over the land, and while it was still fragile it was good enough for a sellsword like himself.
 
