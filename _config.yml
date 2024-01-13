@@ -99,7 +99,9 @@ navbar:
     img     :  "./assets/img/brand_img/brand_logo_social_60x60.png"
   nav:
   - title   : Blog
-    url     : /blog/
+    url     : /blogs/blog/
+  - title   : Blog 2
+    url     : blogs/blog2/
   - title: Stories	
     child   :
     - title : All
@@ -107,7 +109,7 @@ navbar:
     - title : Standalone
       url   : /stories/standalone
     - title : Patron Saints
-      url   : /stories/patron_saints
+      url   : /stories/patronsaints
 
 
   - title : Current skin # keep this but add it to the git_ignore

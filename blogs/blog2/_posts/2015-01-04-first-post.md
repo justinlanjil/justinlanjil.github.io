@@ -1,7 +1,7 @@
 ---
-title: First post!
+title: Blog 2 Post
 tags: [random, exciting-stuff]
-category: blog
+category: blog2
 header_type: hero
 excerpt: "testing"
 ---

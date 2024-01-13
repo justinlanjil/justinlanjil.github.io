@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-	<updated>2024-01-07T13:58:07-05:00</updated>
+	<updated>2024-01-13T12:14:16-05:00</updated>
 	<id>http://localhost:4000/atom.xml</id>
 	<title>Justin Lanjil | Artist & Storyteller</title>
 	<subtitle>Artist & Storyteller</subtitle>
@@ -39,8 +39,29 @@
 		<category term="posts"/>
 		<category term="downtown"/><category term="image"/><category term="landscape"/><category term="project-links"/><category term="trips"/><category term="wikipedia"/>
 	</entry><entry>
-		<title>First post!</title>
-		<link href="http://localhost:4000/20150104_first-post/" rel="alternate" type="text/html" title="First post!"/>
+		<title>Blog 2 Post</title>
+		<link href="http://localhost:4000/20150104_first-post/" rel="alternate" type="text/html" title="Blog 2 Post"/>
+		<published>2015-01-04T00:00:00-05:00</published>
+		<updated>2015-01-04T00:00:00-05:00</updated>
+		<id>http://localhost:4000/20150104_first-post/</id>
+		<content type="html" xml:base="http://localhost:4000/20150104_first-post/">
+		
+  		
+	&lt;p&gt;1 min.&lt;/p&gt;
+			&lt;p&gt;This is a sample post for the general blog!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/placeholder/placeholder_image159to1.jpg&quot; alt=&quot;Placeholder image&quot; /&gt;&lt;/p&gt;
+
+		</content>
+		
+		<author>
+			<name>Justin</name></author>
+		<summary type="html">testing</summary>
+		<category term="posts"/>
+		<category term="exciting-stuff"/><category term="random"/>
+	</entry><entry>
+		<title>Blog 1 Post</title>
+		<link href="http://localhost:4000/20150104_first-post/" rel="alternate" type="text/html" title="Blog 1 Post"/>
 		<published>2015-01-04T00:00:00-05:00</published>
 		<updated>2015-01-04T00:00:00-05:00</updated>
 		<id>http://localhost:4000/20150104_first-post/</id>

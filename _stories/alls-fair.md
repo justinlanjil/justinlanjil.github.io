@@ -1,7 +1,6 @@
 ---
 layout: short_story
 title: All's Fair
-tags: [patron saints]
 categories: [stories]
 header_img: assets/img/covers/stories/allsfair_cover.jpg
 excerpt: |

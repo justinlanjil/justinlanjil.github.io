@@ -1,7 +1,6 @@
 ---
 layout: short_story
 title: Spilt Blood
-tags: [patron saints]
 category: stories
 header_img: assets/img/covers/stories/bloodspilt_cover.jpg
 excerpt: |

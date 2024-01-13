@@ -1,0 +1,17 @@
+---
+layout: minimal
+title: Pages test
+subtitle: Testing pages
+excerpt: Latest news
+og_image: /assets/img/site/banner-blog.png
+---
+
+This works too!!! 
+
+{% for page in site.pages %}
+
+<!-- this is a good testing format as well tbh -->
+[{{ page.title }}]({{ page.url }})
+
+ 
+{% endfor %}

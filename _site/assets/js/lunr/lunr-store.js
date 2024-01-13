@@ -9,7 +9,7 @@ var store = [{
         "excerpt":
             "    44     Page not found         Search        ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/404.html",
         "img": null
@@ -19,7 +19,7 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/archive",
         "img": null
@@ -29,7 +29,7 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/categories",
         "img": null
@@ -39,7 +39,7 @@ var store = [{
         "excerpt":
             "If it is first time using markdown and jekyll, you may find this pages useful.  ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/cheatsheets",
         "img": null
@@ -47,21 +47,11 @@ var store = [{
         "title": "Current skin",
         "subtitle": "Showing all the different Bootstrap components available",
         "excerpt":
-            "This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration. Previous Cheatsheets Cheatsheets | Interactive fi... Interactive fiction...",
+            "This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration. Previous Cheatsheets Cheatsheets | Portfolio Portfolio Next skins...",
         "categories": ["skins"],
         "date": "2015-03-03",
         "tags": ["skin","bootstrap","current-theme","header-hero","image"],
         "url": "http://localhost:4000/current-skin",
-        "img": null
-      },{
-        "title": "Interactive fiction",
-        "subtitle": "Games index page",
-        "excerpt":
-            "Mary's Hare Mary's Hare is short interactive horror story about a woman and a rabbit, based on the story of Mary Toft. Neighbour &amp; Way You are living in a...",
-        "categories": [],
-        "date": "2024-01-07",
-        "tags": [],
-        "url": "http://localhost:4000/games",
         "img": null
       },{
         "title": "Portfolio",
@@ -79,7 +69,7 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/search.html",
         "img": null
@@ -89,16 +79,26 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/tags",
         "img": null
       },{
-        "title": "First post!",
+        "title": "Blog 1 Post",
         "subtitle": null,
         "excerpt":
             "This is a sample post for the general blog!     ",
-        "categories": ["blog"],
+        "categories": ["blogs","blog"],
+        "date": "2015-01-04",
+        "tags": ["random","exciting-stuff"],
+        "url": "http://localhost:4000/20150104_first-post/",
+        "img": null
+      },{
+        "title": "Blog 2 Post",
+        "subtitle": null,
+        "excerpt":
+            "This is a sample post for the general blog!     ",
+        "categories": ["blogs","blog2"],
         "date": "2015-01-04",
         "tags": ["random","exciting-stuff"],
         "url": "http://localhost:4000/20150104_first-post/",
@@ -108,7 +108,7 @@ var store = [{
         "subtitle": "20 centuries ago",
         "excerpt":
             "The Aqueduct of Segovia (Spanish: Acueducto de Segovia; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and...",
-        "categories": ["picture"],
+        "categories": ["blogs","blog","picture"],
         "date": "2019-01-01",
         "tags": ["landscape","trips","downtown","project-links","wikipedia","image"],
         "url": "http://localhost:4000/20190101_imahegf/",
@@ -119,7 +119,7 @@ var store = [{
         "excerpt":
             "What’s Markdown? Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one...",
         "categories": ["tutorial"],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": ["starter","syntax","markdown"],
         "url": "http://localhost:4000/cheatsheets/01-markdown-cheat-sheet",
         "img": null
@@ -129,7 +129,7 @@ var store = [{
         "excerpt":
             "What’s kramdown? kramdown supercharges Markdown with some interesting features. kramdown is the default Jekyll Markdown processor. When creating your site with Jekyll, you can use the standard Markdown syntax plus...",
         "categories": ["tutorial"],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": ["starter","syntax","kramdown"],
         "url": "http://localhost:4000/cheatsheets/02-kramdown-cheat-sheet",
         "img": null
@@ -139,7 +139,7 @@ var store = [{
         "excerpt":
             "    44     Page not found         Search        ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/404.html",
         "img": null
@@ -149,7 +149,7 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/archive",
         "img": null
@@ -159,7 +159,7 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/categories",
         "img": null
@@ -169,7 +169,7 @@ var store = [{
         "excerpt":
             "If it is first time using markdown and jekyll, you may find this pages useful.  ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/cheatsheets",
         "img": null
@@ -177,21 +177,11 @@ var store = [{
         "title": "Current skin",
         "subtitle": "Showing all the different Bootstrap components available",
         "excerpt":
-            "This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration. Previous Cheatsheets Cheatsheets | Interactive fi... Interactive fiction...",
+            "This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration. Previous Cheatsheets Cheatsheets | Portfolio Portfolio Next skins...",
         "categories": ["skins"],
         "date": "2015-03-03",
         "tags": ["skin","bootstrap","current-theme","header-hero","image"],
         "url": "http://localhost:4000/current-skin",
-        "img": null
-      },{
-        "title": "Interactive fiction",
-        "subtitle": "Games index page",
-        "excerpt":
-            "Mary's Hare Mary's Hare is short interactive horror story about a woman and a rabbit, based on the story of Mary Toft. Neighbour &amp; Way You are living in a...",
-        "categories": [],
-        "date": "2024-01-07",
-        "tags": [],
-        "url": "http://localhost:4000/games",
         "img": null
       },{
         "title": "Portfolio",
@@ -209,7 +199,7 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/search.html",
         "img": null
@@ -219,18 +209,8 @@ var store = [{
         "excerpt":
             " ",
         "categories": [],
-        "date": "2024-01-07",
+        "date": "2024-01-13",
         "tags": [],
         "url": "http://localhost:4000/tags",
-        "img": null
-      },{
-        "title": null,
-        "subtitle": null,
-        "excerpt":
-            "",
-        "categories": null,
-        "date": null,
-        "tags": null,
-        "url": null,
         "img": null
       }]
