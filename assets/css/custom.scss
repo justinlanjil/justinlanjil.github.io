@@ -1,18 +1,6 @@
 ---
 ---
 @charset "utf-8";
-// Your custom css /scss here
-// double check the docs to see if I have to do an @import "theme name";
-// just try adding something I guess?
-
-// maybe the sass doesn't work? idk
-
-// TO ADD
-// image dropshadow
-// adjust navbar text DONE
-// primary text color to dark DONE
-// add secondary button outline
-
 ////////////
 
 // Lux 4.5.0
@@ -46,15 +34,15 @@ $accent-dark-gold: #996600;
 //Bootstrap overrides
 // Greys
 $white: #fff;
-$gray-100: $primary-light !default;
-$gray-200: #f4f4f1 !default;
-$gray-300: #ddddd5 !default;
-$gray-400: $primary-mid !default;
-$gray-500: #70705C !default;
-$gray-600: $secondary-dark !default;
-$gray-700: #444422 !default;
-$gray-800: #2A2A22 !default;
-$gray-900: $primary-dark !default;
+$gray-100: #f6f6ee;
+$gray-200: #f4f4f1;
+$gray-300: #ddddd5;
+$gray-400: #babaab;
+$gray-500: #70705C;
+$gray-600: #4d4d39;
+$gray-700: #444422;
+$gray-800: #2A2A22;
+$gray-900: #111109;
 $black: #000;
 
 $primary: $primary-mid;
@@ -217,10 +205,6 @@ $breadcrumb-active-color: $secondary;
     margin: 100px;
     margin-bottom: 200px;
     background: transparent;
-}
-
-.hr-primary {
-    background-color: $primary;
 }
 
 .jumbotron {

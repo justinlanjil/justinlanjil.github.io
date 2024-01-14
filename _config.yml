@@ -98,8 +98,6 @@ navbar:
     url     :  # default["url/baseurl"]
     img     :  "./assets/img/brand_img/brand_logo_social_60x60.png"
   nav:
-  - title   : Blog
-    url     : /blog/
   - title: Games	
     child   :
     - title : Interactive fiction
@@ -110,8 +108,8 @@ navbar:
       url   : /stories/standalone
     - title : Patron Saints
       url   : /stories/patron-saints
-  - title : Current skin # keep this but add it to the git_ignore
-    url   : /current-skin
+  - title   : Blog
+    url     : /blog/
 #Social links to be placed on your site footer
 footer:
   links:
@@ -161,6 +159,7 @@ chulapa-skin:
     footer-chulapa-icon-color : "#111109"
     footer-chulapa-icon-hover-color : "#000"
     # to more easily change all of the white elements
+    black: "#111109"
     white: "#f6f6ee"
     gray-100 : "#f6f6ee"
     gray-200 : "#f4f4f1"

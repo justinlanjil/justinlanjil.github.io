@@ -201,11 +201,9 @@
 							<span class="d-md-none p-0 pr-1">{{- site.search.label | default: 'Search' -}}</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">{{- site.search.label | default: 'Search' -}}</span>
 						</a>
 					</li>
-					<!-- light and dark mode toggle -->
 					<li class="nav-item" aria-label="Dark mode toggle">
 						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa fa-moon"></i>
-							<span id="dark-text" aria-hidden="true"></span>
+							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
 						  </a>						  
 					</li>
 			{%- endif -%}
@@ -218,9 +216,10 @@
 
 <!-- darkmode toggle -->
 <script>
-	document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
+document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
     darkmode()
 }
+
 function darkmode() {
   let enabled = localStorage.getItem('dark-mode')
 
@@ -248,4 +247,5 @@ function disable() {
   DarkReader.disable();
   localStorage.setItem('dark-mode', 'false');
 }
+
 </script>
