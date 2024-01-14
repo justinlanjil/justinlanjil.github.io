@@ -107,11 +107,9 @@ navbar:
   - title: Stories	
     child   :
     - title : Standalone
-      url   : /short-stories/standalone
+      url   : /stories/standalone
     - title : Patron Saints
-      url   : /short-stories/patron-saints
-
-
+      url   : /stories/patron-saints
   - title : Current skin # keep this but add it to the git_ignore
     url   : /current-skin
 #Social links to be placed on your site footer
@@ -216,7 +214,6 @@ collections:
     output: true
   games:
     output: true
-    permalink: /games/:name
 collections_dir     : 
 permalink           : /:year:month:day_:title/
 
@@ -261,7 +258,8 @@ defaults:
       header_type: "image"
       include_on_search   : true
       show_comments       : true
-      show_tags           : true
+      show_tags           : false
+      show_categories     : false
   -
     scope:
       path: ""
@@ -271,7 +269,9 @@ defaults:
       header_type: "hero"
       include_on_search   : true
       show_comments       : true
-      show_tags           : true
+      show_tags           : false
+      show_categories     : false
+      play_url_text       : "play on itch.io "
   -
     scope:
       path: ""
