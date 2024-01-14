@@ -1,18 +1,6 @@
 ---
 ---
 @charset "utf-8";
-// Your custom css /scss here
-// double check the docs to see if I have to do an @import "theme name";
-// just try adding something I guess?
-
-// maybe the sass doesn't work? idk
-
-// TO ADD
-// image dropshadow
-// adjust navbar text DONE
-// primary text color to dark DONE
-// add secondary button outline
-
 ////////////
 
 // Lux 4.5.0
@@ -43,20 +31,19 @@ $accent-dark-gold: #996600;
 
 // end brand colors
 
-// additional brand colors assignment
-// not working...these are from bootstrap
+//Bootstrap overrides
+// Greys
 $white: #fff;
-$gray-100: $primary-light;
+$gray-100: #f6f6ee;
 $gray-200: #f4f4f1;
 $gray-300: #ddddd5;
-$gray-400: $primary-mid;
+$gray-400: #babaab;
 $gray-500: #70705C;
-$gray-600: $secondary-dark;
+$gray-600: #4d4d39;
 $gray-700: #444422;
 $gray-800: #2A2A22;
-$gray-900: $primary-dark;
+$gray-900: #111109;
 $black: #000;
-
 
 $primary: $primary-mid;
 $secondary: $secondary-dark;
@@ -113,10 +100,31 @@ $breadcrumb-active-color: $secondary;
 }
 
 // primary light text
-// this is applying to the background color for some reason? What?
+// need to apply it to active, hover & disabled as well
 
 .bg-primary, .btn-primary, .badge-primary {
     color: $dark;
+    &:hover {
+        color: $dark;
+    }
+    &.disabled {
+        color: $dark; 
+    }
+    &:disabled {
+        color: $dark;
+    }
+    &:not(:disabled):not(.disabled) {
+        &:active,
+        &.active {
+            color: $dark;
+        }
+    }
+}
+
+.card.text-white.bg-primary.mb-3 {
+    .card-header, .card-body {
+        color: $dark;
+    }
 }
 
 // outline-button with border
@@ -145,4 +153,79 @@ $breadcrumb-active-color: $secondary;
     &.active {
         color: $breadcrumb-active-color;
     }
+}
+
+// round carousel indicators
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.chulapa-border-card-index {
+    border: none;
+}
+
+.hero-chulapa h1,
+.splash-chulapa h1 {
+  color: $dark !important;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-landing-banner {
+    margin-bottom: 2em;
+    max-height: 80vh;
+}
+
+.chulapa-footer-brand {
+    opacity: 0.4
+}
+
+.text-standout {
+    font-family:Montserrat,sans-serif;
+    font-weight:600;
+    line-height:1.2;
+    text-transform: uppercase;
+}
+
+.montserrat {
+    font-family:Montserrat,sans-serif;
+    font-weight:600;
+}
+
+.short-story-info-card {
+    margin-bottom: 40vh;
+}
+
+.story-spacer {
+    margin: 100px;
+    margin-bottom: 200px;
+    background: transparent;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.chulapa-gradient {
+background-color: rgba($primary, 1);
+background: linear-gradient(
+    180deg,
+    rgba($primary,1) 0%,
+    rgba($primary,0.5) 35%,
+    rgba($primary,0) 100%
+    ); 
+}
+
+// stops weird spacing for dropdown menu
+.nav-item.dropdown {
+    margin-right: 0px !important;
+  }
+
+.chulapa-subtitle {
+    text-transform: none;
 }

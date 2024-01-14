@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Current skin
 subtitle: Showing all the different Bootstrap components available
 permalink: /current-skin
@@ -7,15 +8,16 @@ last_modified_at: 2018-02-07
 header_type: splash
 tags: [skin, bootstrap, current-theme, header-hero, image]
 categories: [skins]
-show_date         : true
+show_date         : false
 show_bottomnavs   : true
-show_sociallinks  : true
-show_comments     : true
-show_tags         : true
-show_categories   : true
+show_sociallinks  : false
+show_comments     : false
+show_tags         : false
+show_categories   : false
 show_author       : true
-show_breadcrumb   : true
-show_toc          : true
+show_breadcrumb   : false
+show_toc          : false
+show_sidetoc      : true
 ---
 
 This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.

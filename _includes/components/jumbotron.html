@@ -1,0 +1,6 @@
+<div class="jumbotron jumbotron-fluid">
+        {%- if include.jumbotron_heading -%}<h1 class="display-4">{{ include.jumbotron_heading }}</h1>{%- endif -%}
+        {%- if include.jumbotron_lead -%}<p class="lead">{{ include.jumbotron_lead }}</p>{%- endif -%}
+        <hr class="my-4 hr-primary">
+        {{ include.jumbotron_body }}
+</div>
