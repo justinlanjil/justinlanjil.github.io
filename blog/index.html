@@ -6,12 +6,6 @@ excerpt: Latest news
 og_image: /assets/img/site/banner-blog.png
 ---
 {%- include components/headers.html headertype= page.header_type imghero=page.header_img -%}
-<!-- OK THIS WORKS WTF -->
-{% for post in site.posts %}
-  {% if post.categories contains 'blog' %}
-  [{{ post.title }}]({{ post.url }})
-  {% endif %}
-{% endfor %}
 
 <main class="container-lg pb-3 flex-fill">
   <div class="row pt-2 mt-3">
@@ -67,5 +61,4 @@ og_image: /assets/img/site/banner-blog.png
   </div>
 </main>
 
-<!-- moved paginatio to a snippet -->
 {%- include snippets/pagination.html -%}

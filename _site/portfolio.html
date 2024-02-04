@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-14 14:36:10 -0500 -->
+    <!-- Page build 2024-02-04 10:59:13 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -128,8 +128,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="https://justinlanjil.art/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- end custom head snippets -->
-</head>
+<!-- end custom head snippets --></head>
 <body class="d-flex flex-column h-entry" id="body">
 	<a class="u-url d-none" href="http://localhost:4000/portfolio">Invisible link to canonical for Microformats</a>
 	<!-- This is the one that appears on desktop -->
@@ -151,41 +150,12 @@
 						</a>
 					</li>
 					<li class="nav-item" aria-label="Dark mode toggle">
-						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
-						  </a>						  
+						<a class="nav-link DarkReader_Button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+						  </a>		  
 					</li></ul>
 			</div></div>
-</nav><!-- darkmode toggle -->
-<script>
-document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
-    darkmode()
-}
-function darkmode() {
-  let enabled = localStorage.getItem('dark-mode')
-  if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
-  } else if (enabled === 'true') {
-    enable()
-  }
-  if (localStorage.getItem('dark-mode') === 'false') {
-      enable();
-  } else {
-      disable();
-  }
-}
-function enable()  {
-  DarkReader.setFetchMethod(window.fetch)
-  DarkReader.enable();
-  localStorage.setItem('dark-mode', 'true');
-}
-function disable() {
-  DarkReader.disable();
-  localStorage.setItem('dark-mode', 'false');
-}
-</script>	<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
+</nav>	<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
    <h1 class="p-name">Portfolio</h1><hr class="my-3">
    <p class="chulapa-subtitle p-summary">Showing all the different Bootstrap components available</p>
  </div>
@@ -198,22 +168,9 @@ function disable() {
 <p>This works but is just pointing to “gallery”, so how do I add a sub-gallery? It doesn’t seem to work if I put the front matter in here?? I should be able to override the front matter here. Might have just been a syntax issue.</p>
 <p>Oh I think I just set up multiple instances in the config.yml</p>
 <p>YEP! That’s easy enough, then I just call what I want here!</p>
-<div id="Carousel3087" class="carousel slide" data-ride="carousel" data-interval="2000">
- <ol class="carousel-indicators">
-	 <li data-target="#Carousel3087" data-slide-to="0" class="active"></li>
-	 <li data-target="#Carousel3087" data-slide-to="1"></li>
-	 <li data-target="#Carousel3087" data-slide-to="2"></li>
-	 </ol>	
- <div class="carousel-inner">
-       <div class="carousel-item active" itemscope="" itemtype="https://schema.org/ImageObject">
-	<img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/gallery/placeholder_image1to1.jpg" alt="Carousel Item #1" itemprop="contentUrl" />
-	</div>
-       <div class="carousel-item" itemscope="" itemtype="https://schema.org/ImageObject">
-	<img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/gallery/placeholder_image1to1%20copy.jpg" alt="Carousel Item #2" itemprop="contentUrl" />
-	</div>
-       <div class="carousel-item" itemscope="" itemtype="https://schema.org/ImageObject">
-	<img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/gallery/placeholder_image1to1%20copy%202.jpg" alt="Carousel Item #3" itemprop="contentUrl" />
-	</div></div>
+<div id="Carousel0" class="carousel slide" data-ride="carousel" data-interval="2000">
+ <ol class="carousel-indicators"></ol>	
+ <div class="carousel-inner"></div>
  </div>
 <h2 id="image-caption-example">Image caption example</h2>
 <p><img src="/assets/img/placeholder/placeholder_image159to1.jpg" alt="example image" /></p>
@@ -264,37 +221,13 @@ function disable() {
        </div>
        <div class="modal-body">
              <!-- Carousel code-->
-           <div id="Carousel147" class="carousel slide" data-ride="carousel" data-interval="5000">
-             <div class="carousel-inner">
-                   <div class="carousel-item active" itemscope="" itemtype="https://schema.org/ImageObject">
-              <!-- how do I add a caption here? -->
-              <img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/gallery/placeholder_image1to1.jpg" alt="Carousel Item #1" itemprop="contentUrl" />
-             <div class="carousel-caption d-none d-md-block">
-               <h5>Caption label</h5>
-               <p>Caption text</p>
-             </div> 
-             </div>
-                   <div class="carousel-item" itemscope="" itemtype="https://schema.org/ImageObject">
-              <!-- how do I add a caption here? -->
-              <img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/gallery/placeholder_image1to1%20copy.jpg" alt="Carousel Item #2" itemprop="contentUrl" />
-             <div class="carousel-caption d-none d-md-block">
-               <h5>Caption label</h5>
-               <p>Caption text</p>
-             </div> 
-             </div>
-                   <div class="carousel-item" itemscope="" itemtype="https://schema.org/ImageObject">
-              <!-- how do I add a caption here? -->
-              <img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/gallery/placeholder_image1to1%20copy%202.jpg" alt="Carousel Item #3" itemprop="contentUrl" />
-             <div class="carousel-caption d-none d-md-block">
-               <h5>Caption label</h5>
-               <p>Caption text</p>
-             </div> 
-             </div></div>
-              <a class="carousel-control-prev" href="#Carousel147" role="button" data-slide="prev">
+           <div id="Carousel0" class="carousel slide" data-ride="carousel" data-interval="5000">
+             <div class="carousel-inner"></div>
+              <a class="carousel-control-prev" href="#Carousel0" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#Carousel147" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#Carousel0" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -378,8 +311,38 @@ function disable() {
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
-<!-- darkreader.js for light and dark toggle -->
-<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script type='text/javascript' src="http://localhost:4000/assets/js/darkreader.js"></script>
+<script>
+    document.getElementsByClassName('DarkReader_Button')[0].onclick = function() {
+        darkmode()
+    }
+    let enabled = localStorage.getItem('dark-mode')
+    if (enabled === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          enable();
+      }
+    } else if (enabled === 'true') {
+      enable()
+    }
+    function enable()  {
+      DarkReader.setFetchMethod(window.fetch)
+      DarkReader.enable();
+      localStorage.setItem('dark-mode', 'true');
+      document.getElementById('icon-dark').className = "fa fa-sun";
+    }
+    function disable() {
+      DarkReader.disable();
+      localStorage.setItem('dark-mode', 'false');
+      document.getElementById('icon-dark').className = "fa fa-moon";
+    }
+    function darkmode() {
+      if (localStorage.getItem('dark-mode') === 'false') {
+          enable();
+      } else {
+          disable();
+      }
+    }
+    </script>
 <!-- end custom bottom scripts -->
 	</body>
 </html>

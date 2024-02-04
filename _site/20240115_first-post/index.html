@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-14 14:36:10 -0500 -->
+    <!-- Page build 2024-02-04 10:59:13 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -13,12 +13,12 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/20150104_first-post/"
+        "@id": "http://localhost:4000/20240115_first-post/"
       },
       "headline": "Blog 1 Post",
       "image": "https://github.com/justinlanjil.png",
-      "datePublished": "2015-01-04T00:00:00-05:00",
-      "dateModified": "2015-01-04T00:00:00-05:00",
+      "datePublished": "2024-01-15T00:00:00-05:00",
+      "dateModified": "2024-01-15T00:00:00-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -74,7 +74,7 @@
 }
 </script>
    <title>Blog 1 Post | Justin Lanjil</title>
-  <link rel="canonical" href="http://localhost:4000/20150104_first-post/">
+  <link rel="canonical" href="http://localhost:4000/20240115_first-post/">
     <!-- Atom feed -->
   <link href="http://localhost:4000/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed Justin Lanjil" >
     <!-- RSS 2.0 feed -->
@@ -91,7 +91,7 @@
     <!-- OpenGraph -->
    <meta property="og:title" content="Blog 1 Post | Justin Lanjil" >
    <meta property="og:site_name" content="Justin Lanjil | Artist & Storyteller" >
-   <meta property="og:url" content="http://localhost:4000/20150104_first-post/" >
+   <meta property="og:url" content="http://localhost:4000/20240115_first-post/" >
    <meta property="og:type" content="website" >
    <meta property="og:description" content="testing" >
    <meta property="og:locale" content="en-US" >
@@ -127,10 +127,9 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="https://justinlanjil.art/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- end custom head snippets -->
-</head>
+<!-- end custom head snippets --></head>
 <body class="d-flex flex-column h-entry" id="body">
-	<a class="u-url d-none" href="http://localhost:4000/20150104_first-post/">Invisible link to canonical for Microformats</a>
+	<a class="u-url d-none" href="http://localhost:4000/20240115_first-post/">Invisible link to canonical for Microformats</a>
 	<!-- This is the one that appears on desktop -->
 <nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
 	<div class="container-fluid mx-md-2">
@@ -150,41 +149,12 @@
 						</a>
 					</li>
 					<li class="nav-item" aria-label="Dark mode toggle">
-						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
-						  </a>						  
+						<a class="nav-link DarkReader_Button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+						  </a>		  
 					</li></ul>
 			</div></div>
-</nav><!-- darkmode toggle -->
-<script>
-document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
-    darkmode()
-}
-function darkmode() {
-  let enabled = localStorage.getItem('dark-mode')
-  if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
-  } else if (enabled === 'true') {
-    enable()
-  }
-  if (localStorage.getItem('dark-mode') === 'false') {
-      enable();
-  } else {
-      disable();
-  }
-}
-function enable()  {
-  DarkReader.setFetchMethod(window.fetch)
-  DarkReader.enable();
-  localStorage.setItem('dark-mode', 'true');
-}
-function disable() {
-  DarkReader.disable();
-  localStorage.setItem('dark-mode', 'false');
-}
-</script>	<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
+</nav>	<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
    <h1 class="p-name">Blog 1 Post</h1>
  </div>
 </header>
@@ -192,13 +162,12 @@ function disable() {
 <div class="row my-1">
 <div class="col-lg-8 offset-lg-2 col small">
  <div class="chulapaDateSocial">
-            <time datetime="2015-01-04T00:00:00-05:00" class="dt-published" >04 jan 2015</time>
+            <time datetime="2024-01-15T00:00:00-05:00" class="dt-published" >15 jan 2024</time>
         </div></div></div>
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			<p>This is a sample post for the general blog!</p>
-<p><img src="/assets/img/placeholder/placeholder_image159to1.jpg" alt="Placeholder image" /></p>
+			 <!-- turn this into a proper first post...New year reflection type thing? Art v Artist? -->
 			</article>
 		</div>
 	</main><nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
@@ -281,8 +250,38 @@ function disable() {
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
-<!-- darkreader.js for light and dark toggle -->
-<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script type='text/javascript' src="http://localhost:4000/assets/js/darkreader.js"></script>
+<script>
+    document.getElementsByClassName('DarkReader_Button')[0].onclick = function() {
+        darkmode()
+    }
+    let enabled = localStorage.getItem('dark-mode')
+    if (enabled === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          enable();
+      }
+    } else if (enabled === 'true') {
+      enable()
+    }
+    function enable()  {
+      DarkReader.setFetchMethod(window.fetch)
+      DarkReader.enable();
+      localStorage.setItem('dark-mode', 'true');
+      document.getElementById('icon-dark').className = "fa fa-sun";
+    }
+    function disable() {
+      DarkReader.disable();
+      localStorage.setItem('dark-mode', 'false');
+      document.getElementById('icon-dark').className = "fa fa-moon";
+    }
+    function darkmode() {
+      if (localStorage.getItem('dark-mode') === 'false') {
+          enable();
+      } else {
+          disable();
+      }
+    }
+    </script>
 <!-- end custom bottom scripts -->
 	</body>
 </html>

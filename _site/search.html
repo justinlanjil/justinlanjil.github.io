@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-14 14:36:10 -0500 -->
+    <!-- Page build 2024-02-04 10:59:13 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -19,8 +19,8 @@
       },
       "headline": "Search",
       "image": "https://github.com/justinlanjil.png",
-      "datePublished": "2024-01-14T14:36:10-05:00",
-      "dateModified": "2024-01-14T14:36:10-05:00",
+      "datePublished": "2024-02-04T10:59:13-05:00",
+      "dateModified": "2024-02-04T10:59:13-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -110,7 +110,6 @@
     <meta property="og:image" content="https://github.com/justinlanjil.png" >
     <!-- Twitter/X Cards -->
     <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
-
 <!-- this script is inserted before the css stylesheet -->
 <!-- end custom head snippets -->
 <!-- CSS -->
@@ -142,8 +141,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="https://justinlanjil.art/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- end custom head snippets -->
-</head>
+<!-- end custom head snippets --> </head>
 <body class="d-flex flex-column"><style>
   @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
@@ -173,46 +171,12 @@
 						</a>
 					</li>
 					<li class="nav-item" aria-label="Dark mode toggle">
-						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
-						  </a>						  
+						<a class="nav-link DarkReader_Button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+						  </a>		  
 					</li></ul>
 			</div></div>
-</nav><!-- darkmode toggle -->
-<script>
-document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
-    darkmode()
-}
-
-function darkmode() {
-  let enabled = localStorage.getItem('dark-mode')
-
-  if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
-  } else if (enabled === 'true') {
-    enable()
-  }
-
-  if (localStorage.getItem('dark-mode') === 'false') {
-      enable();
-  } else {
-      disable();
-  }
-}
-function enable()  {
-  DarkReader.setFetchMethod(window.fetch)
-  DarkReader.enable();
-  localStorage.setItem('dark-mode', 'true');
-}
-
-function disable() {
-  DarkReader.disable();
-  localStorage.setItem('dark-mode', 'false');
-}
-
-</script>
+</nav>
 <header class="text-center header-chulapa">
   <div class="container-lg pt-4">
     <div class="row">
@@ -270,8 +234,42 @@ function disable() {
 <script src="http://localhost:4000/assets/js/lunr/lunr-search.js"></script>
 
 <!-- start custom scripts to be placed at the bottom of the page -->
-<!-- darkreader.js for light and dark toggle -->
-<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script type='text/javascript' src="http://localhost:4000/assets/js/darkreader.js"></script>
+<script>
+    document.getElementsByClassName('DarkReader_Button')[0].onclick = function() {
+        darkmode()
+    }
+    
+    let enabled = localStorage.getItem('dark-mode')
+    
+    if (enabled === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          enable();
+      }
+    } else if (enabled === 'true') {
+      enable()
+    }
+    
+    function enable()  {
+      DarkReader.setFetchMethod(window.fetch)
+      DarkReader.enable();
+      localStorage.setItem('dark-mode', 'true');
+      document.getElementById('icon-dark').className = "fa fa-sun";
+    
+    }
+    function disable() {
+      DarkReader.disable();
+      localStorage.setItem('dark-mode', 'false');
+      document.getElementById('icon-dark').className = "fa fa-moon";
+    }
+    function darkmode() {
+      if (localStorage.getItem('dark-mode') === 'false') {
+          enable();
+      } else {
+          disable();
+      }
+    }
+    </script>
 <!-- end custom bottom scripts -->
 </body>
 </html>

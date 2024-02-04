@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-14 14:36:10 -0500 -->
+    <!-- Page build 2024-02-04 10:59:13 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Cheatsheets",
       "image": "https://github.com/justinlanjil.png",
-      "datePublished": "2024-01-14T14:36:10-05:00",
-      "dateModified": "2024-01-14T14:36:10-05:00",
+      "datePublished": "2024-02-04T10:59:13-05:00",
+      "dateModified": "2024-02-04T10:59:13-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -128,8 +128,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="https://justinlanjil.art/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- end custom head snippets -->
-</head>
+<!-- end custom head snippets --></head>
 <body class="d-flex flex-column h-entry" id="body">
 	<a class="u-url d-none" href="http://localhost:4000/cheatsheets">Invisible link to canonical for Microformats</a>
 	<!-- This is the one that appears on desktop -->
@@ -151,41 +150,12 @@
 						</a>
 					</li>
 					<li class="nav-item" aria-label="Dark mode toggle">
-						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
-						  </a>						  
+						<a class="nav-link DarkReader_Button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+						  </a>		  
 					</li></ul>
 			</div></div>
-</nav><!-- darkmode toggle -->
-<script>
-document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
-    darkmode()
-}
-function darkmode() {
-  let enabled = localStorage.getItem('dark-mode')
-  if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
-  } else if (enabled === 'true') {
-    enable()
-  }
-  if (localStorage.getItem('dark-mode') === 'false') {
-      enable();
-  } else {
-      disable();
-  }
-}
-function enable()  {
-  DarkReader.setFetchMethod(window.fetch)
-  DarkReader.enable();
-  localStorage.setItem('dark-mode', 'true');
-}
-function disable() {
-  DarkReader.disable();
-  localStorage.setItem('dark-mode', 'false');
-}
-</script>	<header class="text-center header-chulapa"><div class="container-lg mt-2">
+</nav>	<header class="text-center header-chulapa"><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
            <h1 class="p-name">Cheatsheets</h1>
@@ -227,7 +197,7 @@ function disable() {
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
 				<p class="small text-right font-italic mb-1">
-<time datetime="2024-01-14T14:36:10-05:00">14/01/2024</time></p><a href="http://localhost:4000/categories#tutorial" class="badge chulapa-pill-bg-secondary mx-1">tutorial</a><a href="http://localhost:4000/tags#starter" class="badge chulapa-pill-bg-primary mx-1">starter</a><a href="http://localhost:4000/tags#syntax" class="badge chulapa-pill-bg-primary mx-1">syntax</a><a href="http://localhost:4000/tags#kramdown" class="badge chulapa-pill-bg-primary mx-1">kramdown</a></div>
+<time datetime="2024-02-04T10:59:13-05:00">04/02/2024</time></p><a href="http://localhost:4000/categories#tutorial" class="badge chulapa-pill-bg-secondary mx-1">tutorial</a><a href="http://localhost:4000/tags#starter" class="badge chulapa-pill-bg-primary mx-1">starter</a><a href="http://localhost:4000/tags#syntax" class="badge chulapa-pill-bg-primary mx-1">syntax</a><a href="http://localhost:4000/tags#kramdown" class="badge chulapa-pill-bg-primary mx-1">kramdown</a></div>
 		</div>
 	</div>
 </div>
@@ -245,7 +215,7 @@ function disable() {
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
 				<p class="small text-right font-italic mb-1">
-<time datetime="2024-01-14T14:36:10-05:00">14/01/2024</time></p><a href="http://localhost:4000/categories#tutorial" class="badge chulapa-pill-bg-secondary mx-1">tutorial</a><a href="http://localhost:4000/tags#starter" class="badge chulapa-pill-bg-primary mx-1">starter</a><a href="http://localhost:4000/tags#syntax" class="badge chulapa-pill-bg-primary mx-1">syntax</a><a href="http://localhost:4000/tags#markdown" class="badge chulapa-pill-bg-primary mx-1">markdown</a></div>
+<time datetime="2024-02-04T10:59:13-05:00">04/02/2024</time></p><a href="http://localhost:4000/categories#tutorial" class="badge chulapa-pill-bg-secondary mx-1">tutorial</a><a href="http://localhost:4000/tags#starter" class="badge chulapa-pill-bg-primary mx-1">starter</a><a href="http://localhost:4000/tags#syntax" class="badge chulapa-pill-bg-primary mx-1">syntax</a><a href="http://localhost:4000/tags#markdown" class="badge chulapa-pill-bg-primary mx-1">markdown</a></div>
 		</div>
 	</div>
 </div>
@@ -287,8 +257,38 @@ function disable() {
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
-<!-- darkreader.js for light and dark toggle -->
-<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script type='text/javascript' src="http://localhost:4000/assets/js/darkreader.js"></script>
+<script>
+    document.getElementsByClassName('DarkReader_Button')[0].onclick = function() {
+        darkmode()
+    }
+    let enabled = localStorage.getItem('dark-mode')
+    if (enabled === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          enable();
+      }
+    } else if (enabled === 'true') {
+      enable()
+    }
+    function enable()  {
+      DarkReader.setFetchMethod(window.fetch)
+      DarkReader.enable();
+      localStorage.setItem('dark-mode', 'true');
+      document.getElementById('icon-dark').className = "fa fa-sun";
+    }
+    function disable() {
+      DarkReader.disable();
+      localStorage.setItem('dark-mode', 'false');
+      document.getElementById('icon-dark').className = "fa fa-moon";
+    }
+    function darkmode() {
+      if (localStorage.getItem('dark-mode') === 'false') {
+          enable();
+      } else {
+          disable();
+      }
+    }
+    </script>
 <!-- end custom bottom scripts -->
 	</body>
 </html>

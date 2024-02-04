@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-	<updated>2024-01-14T14:36:10-05:00</updated>
+	<updated>2024-02-04T10:59:13-05:00</updated>
 	<id>http://localhost:4000/atom.xml</id>
 	<title>Justin Lanjil | Artist & Storyteller</title>
 	<subtitle>Artist & Storyteller</subtitle>
@@ -15,17 +15,15 @@
 	<icon>http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png</icon>
 	<logo>https://github.com/justinlanjil.png</logo><entry>
 		<title>Blog 1 Post</title>
-		<link href="http://localhost:4000/20150104_first-post/" rel="alternate" type="text/html" title="Blog 1 Post"/>
-		<published>2015-01-04T00:00:00-05:00</published>
-		<updated>2015-01-04T00:00:00-05:00</updated>
-		<id>http://localhost:4000/20150104_first-post/</id>
-		<content type="html" xml:base="http://localhost:4000/20150104_first-post/">
+		<link href="http://localhost:4000/20240115_first-post/" rel="alternate" type="text/html" title="Blog 1 Post"/>
+		<published>2024-01-15T00:00:00-05:00</published>
+		<updated>2024-01-15T00:00:00-05:00</updated>
+		<id>http://localhost:4000/20240115_first-post/</id>
+		<content type="html" xml:base="http://localhost:4000/20240115_first-post/">
 		
   		
 	&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;p&gt;This is a sample post for the general blog!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/placeholder/placeholder_image159to1.jpg&quot; alt=&quot;Placeholder image&quot; /&gt;&lt;/p&gt;
+			&lt;!-- turn this into a proper first post...New year reflection type thing? Art v Artist? --&gt;
 
 		</content>
 		

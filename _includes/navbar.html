@@ -10,7 +10,6 @@
 {%- assign disp = colnav -%}
 {%- endif -%}
 
-
 {%- if site.navbar.style == "fab" -%}
 	<div class="navbar-chulapa-fab">
 		<input type="checkbox" class="navbar-chulapa-fab-button d-none" id="navi-toggle">
@@ -202,9 +201,9 @@
 						</a>
 					</li>
 					<li class="nav-item" aria-label="Dark mode toggle">
-						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
-						  </a>						  
+						<a class="nav-link DarkReader_Button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+						  </a>		  
 					</li>
 			{%- endif -%}
 			</ul>
@@ -213,39 +212,3 @@
 	</div>
 </nav>
 {%- endif -%}
-
-<!-- darkmode toggle -->
-<script>
-document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
-    darkmode()
-}
-
-function darkmode() {
-  let enabled = localStorage.getItem('dark-mode')
-
-  if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
-  } else if (enabled === 'true') {
-    enable()
-  }
-
-  if (localStorage.getItem('dark-mode') === 'false') {
-      enable();
-  } else {
-      disable();
-  }
-}
-function enable()  {
-  DarkReader.setFetchMethod(window.fetch)
-  DarkReader.enable();
-  localStorage.setItem('dark-mode', 'true');
-}
-
-function disable() {
-  DarkReader.disable();
-  localStorage.setItem('dark-mode', 'false');
-}
-
-</script>
