@@ -7,8 +7,8 @@
 		<description>Collected works and creative blog.</description>
 		<language>en-US</language>
 		<copyright>(c) 2024, Justin</copyright>	
-		<pubDate>Sun, 14 Jan 2024 14:36:10 -0500</pubDate>
-		<lastBuildDate>Sun, 14 Jan 2024 14:36:10 -0500</lastBuildDate>
+		<pubDate>Sun, 04 Feb 2024 11:06:21 -0500</pubDate>
+		<lastBuildDate>Sun, 04 Feb 2024 11:06:21 -0500</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml" />
@@ -23,15 +23,13 @@
 				<![CDATA[	
  				
     		<p>1 min.</p>
-				<div><p>This is a sample post for the general blog!</p>
-
-<p><img src="/assets/img/placeholder/placeholder_image159to1.jpg" alt="Placeholder image" /></p>
+				<div><!-- turn this into a proper first post...New year reflection type thing? Art v Artist? -->
 </div>
 				]]>
 			</description>
-			<link>http://localhost:4000/20150104_first-post/</link>
+			<link>http://localhost:4000/20240115_first-post/</link>
 			<category>posts</category>
-		    <category>exciting-stuff</category><category>random</category><guid isPermaLink="true">http://localhost:4000/20150104_first-post/</guid>
-      <pubDate>Sun, 04 Jan 2015 00:00:00 -0500</pubDate>
+		    <category>exciting-stuff</category><category>random</category><guid isPermaLink="true">http://localhost:4000/20240115_first-post/</guid>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 -0500</pubDate>
 		</item></channel>
 </rss>

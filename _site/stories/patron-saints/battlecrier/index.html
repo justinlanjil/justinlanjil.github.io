@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-01-14 14:36:10 -0500 -->
+    <!-- Page build 2024-02-04 11:06:21 -0500 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Battlecrier",
       "image": "http://localhost:4000/assets/img/covers/stories/ps_battlecrier_159.jpg",
-      "datePublished": "2024-01-14T14:36:10-05:00",
-      "dateModified": "2024-01-14T14:36:10-05:00",
+      "datePublished": "2024-02-04T11:06:21-05:00",
+      "dateModified": "2024-02-04T11:06:21-05:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -127,8 +127,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="https://justinlanjil.art/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- end custom head snippets -->
-</head>
+<!-- end custom head snippets --></head>
 <body class="d-flex flex-column h-entry" id="body">
 	<a class="u-url d-none" href="http://localhost:4000/stories/patron-saints/battlecrier/">Invisible link to canonical for Microformats</a>
 	<!-- This is the one that appears on desktop -->
@@ -150,41 +149,12 @@
 						</a>
 					</li>
 					<li class="nav-item" aria-label="Dark mode toggle">
-						<a class="nav-link dark-mode-button">
-							<i id="icon-dark" class="fa-solid fa-circle-half-stroke"></i>
-						  </a>						  
+						<a class="nav-link DarkReader_Button">
+							<i id="icon-dark" class="fa fa-moon"></i>
+						  </a>		  
 					</li></ul>
 			</div></div>
-</nav><!-- darkmode toggle -->
-<script>
-document.getElementsByClassName('dark-mode-button')[0].onclick = function() {
-    darkmode()
-}
-function darkmode() {
-  let enabled = localStorage.getItem('dark-mode')
-  if (enabled === null) {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        enable();
-    }
-  } else if (enabled === 'true') {
-    enable()
-  }
-  if (localStorage.getItem('dark-mode') === 'false') {
-      enable();
-  } else {
-      disable();
-  }
-}
-function enable()  {
-  DarkReader.setFetchMethod(window.fetch)
-  DarkReader.enable();
-  localStorage.setItem('dark-mode', 'true');
-}
-function disable() {
-  DarkReader.disable();
-  localStorage.setItem('dark-mode', 'false');
-}
-</script>	<header class="text-center header-chulapa"><div class="container-fluid">
+</nav>	<header class="text-center header-chulapa"><div class="container-fluid">
         <img src="http://localhost:4000/assets/img/covers/stories/ps_battlecrier_159.jpg" alt="banner Battlecrier" class="chulapa-header-image mw-75 h-auto">
      </div><div class="container-lg mt-2">
        <div class="row">
@@ -314,8 +284,38 @@ function disable() {
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
-<!-- darkreader.js for light and dark toggle -->
-<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script type='text/javascript' src="http://localhost:4000/assets/js/darkreader.js"></script>
+<script>
+    document.getElementsByClassName('DarkReader_Button')[0].onclick = function() {
+        darkmode()
+    }
+    let enabled = localStorage.getItem('dark-mode')
+    if (enabled === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          enable();
+      }
+    } else if (enabled === 'true') {
+      enable()
+    }
+    function enable()  {
+      DarkReader.setFetchMethod(window.fetch)
+      DarkReader.enable();
+      localStorage.setItem('dark-mode', 'true');
+      document.getElementById('icon-dark').className = "fa fa-sun";
+    }
+    function disable() {
+      DarkReader.disable();
+      localStorage.setItem('dark-mode', 'false');
+      document.getElementById('icon-dark').className = "fa fa-moon";
+    }
+    function darkmode() {
+      if (localStorage.getItem('dark-mode') === 'false') {
+          enable();
+      } else {
+          disable();
+      }
+    }
+    </script>
 <!-- end custom bottom scripts -->
 	</body>
 </html>
