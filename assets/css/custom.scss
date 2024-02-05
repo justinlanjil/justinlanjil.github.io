@@ -62,6 +62,8 @@ $body-color: $primary-light;
 // Overwriting boostrap variables
 
 $blue: $accent-light-gold;
+$gray: #4d4d39;
+$gray-dark: #111109;
 
 $pagination-hover-color: $link-hover-color;
 $pagination-hover-border-color: $link-hover-color;
@@ -228,4 +230,24 @@ background: linear-gradient(
 
 .chulapa-subtitle {
     text-transform: none;
+}
+
+h5, .h5 {
+    margin-bottom: 1rem;
+}
+
+.text-end {
+    text-align: end;
+}
+
+p + p {
+    text-indent: 2%;
+}
+
+// darkmode hr fix
+
+.header-chulapa {
+    hr {
+        background-color: $secondary-dark;
+    }
 }

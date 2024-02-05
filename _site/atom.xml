@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-	<updated>2024-02-04T11:06:21-05:00</updated>
+	<updated>2024-02-04T21:24:22-05:00</updated>
 	<id>http://localhost:4000/atom.xml</id>
 	<title>Justin Lanjil | Artist & Storyteller</title>
 	<subtitle>Artist & Storyteller</subtitle>
@@ -14,22 +14,90 @@
 	<rights>(c) 2024, Justin</rights>
 	<icon>http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png</icon>
 	<logo>https://github.com/justinlanjil.png</logo><entry>
-		<title>Blog 1 Post</title>
-		<link href="http://localhost:4000/20240115_first-post/" rel="alternate" type="text/html" title="Blog 1 Post"/>
-		<published>2024-01-15T00:00:00-05:00</published>
-		<updated>2024-01-15T00:00:00-05:00</updated>
-		<id>http://localhost:4000/20240115_first-post/</id>
-		<content type="html" xml:base="http://localhost:4000/20240115_first-post/">
+		<title>Story time</title>
+		<link href="http://localhost:4000/20240204_there-are-two-artistic-wolves-inside-me/" rel="alternate" type="text/html" title="Story time"/>
+		<published>2024-02-04T00:00:00-05:00</published>
+		<updated>2024-02-04T00:00:00-05:00</updated>
+		<id>http://localhost:4000/20240204_there-are-two-artistic-wolves-inside-me/</id>
+		<content type="html" xml:base="http://localhost:4000/20240204_there-are-two-artistic-wolves-inside-me/">
 		
   		
 	&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;!-- turn this into a proper first post...New year reflection type thing? Art v Artist? --&gt;
+			&lt;p&gt;I’m not much of a tradition or holiday person in general, but I &lt;em&gt;do&lt;/em&gt; like to start the new year by setting out goals for myself. And this year feels like an especially important one to make a fresh start. 2024 is the year of the dragon (my sign), and the impending end of a long time in the 12th house passing at last into the 1st.&lt;/p&gt;
+
+&lt;p&gt;The past few years most of my output has been digitial illustration, but the illustrator box I’ve been stuck in has felt increasingly suffocating. I’ve always loved drawing, but it’s never been my only love. Not even my first.&lt;/p&gt;
+
+&lt;p&gt;Way, way back when I started in Grade 1, the teacher had a few different activities that the kids could do. I don’t remember most of the activities because I only ever did one. The teacher had these little notebooks in fun shapes. The top two-thirds were blank paper and the bottom third had a few lines to write on. I pretty quickly monopolized those notebooks, to the point where it was addressed in some kind of parent teacher interview situation, with the teacher begging me to do something else, anything else. (I didn’t).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Storytelling&lt;/strong&gt; has always been my true love. The more I’ve neglected to nurture the storyteller in me, the worse I’ve felt overall.&lt;/p&gt;
+
+&lt;p&gt;So! This year I’m going to nurture the storyteller. My main creative focuses are going to be:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Prose&lt;/strong&gt;: I’ve done &lt;a href=&quot;/stories/patron-saints&quot;&gt;a bit&lt;/a&gt; of &lt;a href=&quot;/stories/standalone/&quot;&gt;writing&lt;/a&gt; this past year but need to work those creative muscles more consistently. I have a lot of works in progress and outlines that I want to dedicate the time to finishing this year.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Game development&lt;/strong&gt;: I started out learning &lt;a href=&quot;https://godotengine.org/&quot;&gt;Godot&lt;/a&gt; on the recommendation of a developer friend because I had some really bad vibes about Unity. (And sure am glad I did). I love Twine and interactive fiction, but I also want to dive into making adventure games.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sculpting and modeling&lt;/strong&gt;: I got back into &lt;a href=&quot;https://www.blender.org/&quot;&gt;Blender&lt;/a&gt; again and am having a lot of fun with it. 3D modelling really highlighted how much I missed sculpting with my hands, so I’ve been getting back into that as well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s the overall roadmap for now. I’ll keep drawing, but I’m sticking to drawing as part of what I do, and plan to work as an illustrator for my &lt;em&gt;own&lt;/em&gt; stories.&lt;/p&gt;
+
+&lt;p class=&quot;text-end&quot;&gt;- Justin&lt;/p&gt;
 
 		</content>
 		
 		<author>
 			<name>Justin</name></author>
-		<summary type="html">testing</summary>
+		<summary type="html">There are two artistic wolves inside of me and one of them is done being ignored.</summary>
 		<category term="posts"/>
-		<category term="exciting-stuff"/><category term="random"/>
+		<category term="reflections"/>
+	</entry><entry>
+		<title>New Year, first post</title>
+		<link href="http://localhost:4000/20240204_first-post/" rel="alternate" type="text/html" title="New Year, first post"/>
+		<published>2024-02-04T00:00:00-05:00</published>
+		<updated>2024-02-04T00:00:00-05:00</updated>
+		<id>http://localhost:4000/20240204_first-post/</id>
+		<content type="html" xml:base="http://localhost:4000/20240204_first-post/">
+		
+  		
+			&lt;img src=&#39;http://localhost:4000/assets/img/header-layout-thinnest.png&#39; &gt;
+			
+	&lt;p&gt;2 min.&lt;/p&gt;
+			&lt;p&gt;At the end of the year last year, I planned on taking a step back to regroup, and figure out how to navigate my relationship with art and how to be present in online spaces. I didn’t expect that reflection time to take all of 2023 and then some, but then life kept Happening.&lt;/p&gt;
+
+&lt;p&gt;I very much felt like Humpty Dumpty teetering atop a swiss cheese-ass lookin’ Jenga tower while some unseen malevolent force pulled out piece after piece until it all toppled down. (Yes that metaphor is a mess, but so was my life.) The silver lining was that lying broken on the floor doesn’t give you to do &lt;em&gt;except&lt;/em&gt; reflect. And I’m feeling pretty good about where I’ve landed.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;the-horrors-of-content&quot;&gt;The horrors of Content&lt;/h5&gt;
+
+&lt;p&gt;I spent a lot of time figuring out how to pursue joy in my creative works in this new landscape where the costs of sharing work online have become so high, and where the principles of business have become not only the template and expectation for how an artist creates and curates an online precense. One isn’t an artist, but a “content creator”. One doesn’t make art, one “produces content”. Content is a product; manufactured, consumed, and discarded. The whole thing is frankly loathsome to me.&lt;/p&gt;
+
+&lt;p&gt;I’ve already &lt;a href=&quot;https://wickedliltongue.tumblr.com/post/704357808625401857/art-versus-artist-2022-i-dont-usually-do-these&quot;&gt;ranted&lt;/a&gt; about how bad online spaces have been over the past couple of years, so I won’t spend too much time going over it all again. Suffice to say, it’s been hard to find any joy in making art and sharing it knowing that it’s just going to become fuel for the horrors of the Content Machine.&lt;/p&gt;
+
+&lt;p&gt;The desire to make art doesn’t come from a desire to make money; money is a necessary evil to survive. My boyfriend likes to poke fun at me for being “allergic to making money off my art” but he’s not entirely wrong. The moment that making money becomes the motivation is the moment that I lose interest. For me, making art is like breathing. It’s necessary. It’s a core part of who I am. And how can I possibly tie that down to a price tag? What’s the monetary value of each inhale and exhale?&lt;/p&gt;
+
+&lt;p&gt;Walking away completely would be easier, and honestly probably preferable. But I can’t give up on making art any more than I can give up on breathing.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;my-brand-is-being-chaotic&quot;&gt;My “brand” is being chaotic&lt;/h5&gt;
+
+&lt;p&gt;I’ve always struggled with having a consistent online presence and fitting into a specific niche or artistic discipline. I may barely sleep for a week doing a deep dive into say, making a &lt;a href=&quot;/games/interactive-fiction&quot;&gt;little interactive game&lt;/a&gt;, then not touch Twine for another 3 years because I’ve picked up 10 other hobbies. Committing to a single kind of art and forcing it on a timeline just doesn’t work. (Hello ADHD, sure was eye opening learning &lt;em&gt;that&lt;/em&gt; about myself). So I’m not going to! I’m just going to commit to following my interests, at my own pace, and seeing where it leads me.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope to use this site as something of a journal and archive of my work, free of the expectations of conformity to the all-powerful Brand. A space to just share myself, my work, my interests, and resources and tools I’ve discovered in my own scatterbrained and excitable way.&lt;/p&gt;
+
+&lt;p class=&quot;text-end&quot;&gt;- Justin&lt;/p&gt;
+
+		</content>
+		
+		<author>
+			<name>Justin</name></author>
+		<summary type="html">Starting off the new year (at bit late) with the results of a year of reflection on making and sharing art.</summary>
+		<category term="posts"/>
+		<category term="reflections"/>
 	</entry></feed>

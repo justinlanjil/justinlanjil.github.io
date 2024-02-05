@@ -14,14 +14,24 @@ var store = [{
         "url": "http://localhost:4000/archive",
         "img": null
       },{
-        "title": "Blog 1 Post",
+        "title": "New Year, first post",
         "subtitle": null,
         "excerpt":
-            " ",
+            "At the end of the year last year, I planned on taking a step back to regroup, and figure out how to navigate my relationship with art and how to...",
         "categories": ["blog"],
-        "date": "2024-01-15",
-        "tags": ["random","exciting-stuff"],
-        "url": "http://localhost:4000/20240115_first-post/",
+        "date": "2024-02-04",
+        "tags": ["reflections"],
+        "url": "http://localhost:4000/20240204_first-post/",
+        "img": "http://localhost:4000/assets/img/header-layout-thinnest.png"
+      },{
+        "title": "Story time",
+        "subtitle": null,
+        "excerpt":
+            "I’m not much of a tradition or holiday person in general, but I do like to start the new year by setting out goals for myself. And this year feels...",
+        "categories": ["blog"],
+        "date": "2024-02-04",
+        "tags": ["reflections"],
+        "url": "http://localhost:4000/20240204_there-are-two-artistic-wolves-inside-me/",
         "img": null
       },{
         "title": "Markdown cheatsheet",
