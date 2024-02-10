@@ -22,8 +22,7 @@ og_image                :     #default[author.avatar (see below)] or [github-ava
 twitter_site            :     #Avoid @
 author:
   name                  :  Justin   # Name Surname Company
-  avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png #should I use the skull here? I think so but do a new one!
-  location              :  "Madrid, Spain"   # New York, USA 
+  avatar                :  /assets/img/brand_img/brand_logo_social_60x60.png
 #  links:                
 #    - url:  #A link or email: https://twitter.com/jack, mail@example.com
 #      icon: # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/
@@ -144,14 +143,14 @@ chulapa-skin:
     headings-font-weight : "600" #Semibold
     font-family-base : "Libre Baskerville, serif"
     # nav bar custom colors
-    navbar-chulapa-bg-color : "#f6f6ee"
+    navbar-chulapa-bg-color : "#f5f5f0"
     navbar-chulapa-text-color : "#111109"
-    navbar-chulapa-active-color: "#4d4d39"
+    navbar-chulapa-active-color: "#4d4d33"
     navbar-chulapa-hover-color : "#000"
-    navbar-chulapa-disabled-color: "#babaab"
+    navbar-chulapa-disabled-color: "#ccccb3"
     # hamburger custom colors
     navbar-chulapa-toggler-color: "#111109"
-    navbar-chulapa-toggler-color-bg: "#f6f6ee"
+    navbar-chulapa-toggler-color-bg: "#f5f5f0"
     # foot custom colors
     footer-chulapa-bg-color : "transparent"
     footer-chulapa-text-color : "#111109"
@@ -160,24 +159,26 @@ chulapa-skin:
     footer-chulapa-icon-hover-color : "#000"
     # to more easily change all of the white elements
     black: "#111109"
-    white: "#f6f6ee"
-    gray-100 : "#f6f6ee"
+    white: "#f5f5f0"
+    gray: "#4d4d33"
+    gray-dark: "#2A2A22"
+    gray-100 : "#f5f5f0"
     gray-200 : "#f4f4f1"
     gray-300 : "#ddddd5"
-    gray-400 : "#babaab"
+    gray-400 : "#c2c2a2"
     gray-500 : "#70705C"
-    gray-600 : "#4d4d39"
+    gray-600 : "#4d4d33"
     gray-700 : "#444422"
     gray-800 : "#2A2A22"
     gray-900 : "#111109"
     blue : "#cc8800" # this doesn't work on the radio buttons? There's something weird there though.
-    primary : "#babaab"
-    secondary : "#4d4d39"
-    success : "#888844"
-    info : "#8c8c73"
+    primary : "#c2c2a2"
+    secondary : "#4d4d33"
+    success : "#cccc00"
+    info : "#8a8a5c"
     warning : "#cc8800"
     danger : "#99003d"
-    light : "#f6f6ee"
+    light : "#f5f5f0"
     dark : "#111109"
     link-color : "#cc8800"
     # adjustments for primary color contrast (dark text)
@@ -188,7 +189,7 @@ chulapa-skin:
     carousel-control-color: "#111109"
     carousel-indicator-active-bg: "#111109"
     # icon hover
-    footer-chulapa-icon-hover-color: "#babaab"
+    footer-chulapa-icon-hover-color: "#c2c2a2"
 
 
     
@@ -242,7 +243,7 @@ defaults:
       show_sociallinks  : false
       show_comments     : true
       show_tags         : true
-      show_categories   : true
+      show_categories   : false
       show_author       : false
       show_breadcrumb   : false
       breadcrumb_list   :
