@@ -28,9 +28,9 @@
                 </div>
               </article>             
               <div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
-                <h6 class="mb-4"><a class="btn btn-warning" href="{{ post.play_url }}" role="button">{{ post.play_url_text }}<i class="fa-solid fa-arrow-right"></i></a></h6>
+                <h5 class="mb-4 text-end"><a href="{{ post.play_url }}" role="button">{{ post.play_url_text }}<i class="fa-solid fa-arrow-right"></i></a></h5>
                 <hr class="hr-primary">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column flex-sm-row justify-content-between">
                     <p class="small font-italic mb-1"><strong>Genre:</strong>&nbsp; {{- post.genres -}}&nbsp;words</p>
                     <p class="small font-italic mb-1"><strong>Warnings for:</strong>&nbsp; {{- post.warnings -}}</p>
                 </div>

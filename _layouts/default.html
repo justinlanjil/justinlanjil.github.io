@@ -31,6 +31,9 @@ layout: minimal
 			<div class="mb-2 mt-5 text-center"><applause-button id="applause" class="mx-auto" style="width: 40px; height: 40px;" url="{{ page.url | absolute_url }}"></applause-button></div>
 			{% endif %}
 			<!-- add signature here if blog post-->
+			{% if page.categories contains "blog" %}
+			{%- include snippets/blog_signature.html -%}
+			{% endif %}
 			</article>
 		</div>
 	</main>

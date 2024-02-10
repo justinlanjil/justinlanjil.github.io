@@ -1,69 +1,17 @@
 ---
 ---
 @charset "utf-8";
+@import "bootstrap/mixins/_breakpoints";
+@import "bootstrap/_functions";
+@import "bootstrap/_variables";
 ////////////
 
 // Lux 4.5.0
 // Bootswatch
 
-//
-// Color system
-//
-
-// brand colors
-
-$primary-light: #f6f6ee;
-$primary-mid: #babaab;
-$primary-dark: #111109;
-
-$secondary-light: #d4d4aa;
-$secondary-mid: #8c8c73;
-$secondary-dark: #4d4d39;
-
-$tertiary-light: #888844;
-$tertiary-mid: #666633;
-$tertiary-dark: #4d3300;
-
-$accent-light-pink: #ff0066;
-$accent-dark-pink: #99003d;
-$accent-light-gold: #cc8800;
-$accent-dark-gold: #996600;
-
-// end brand colors
-
-//Bootstrap overrides
-// Greys
-$white: #fff;
-$gray-100: #f6f6ee;
-$gray-200: #f4f4f1;
-$gray-300: #ddddd5;
-$gray-400: #babaab;
-$gray-500: #70705C;
-$gray-600: #4d4d39;
-$gray-700: #444422;
-$gray-800: #2A2A22;
-$gray-900: #111109;
-$black: #000;
-
-$primary: $primary-mid;
-$secondary: $secondary-dark;
-$success: $tertiary-light;
-$info: $secondary-mid;
-$warning: $accent-light-gold; 
-$danger: $accent-dark-pink;
-$light: $primary-light;
-$dark: $primary-dark;
-
-$link-color: $accent-light-gold;
-$link-hover-color: darken($link-color, 15%);
-
-$body-color: $primary-light;
+$body-darken: darken($body-color, 5%);
 
 // Overwriting boostrap variables
-
-$blue: $accent-light-gold;
-$gray: #4d4d39;
-$gray-dark: #111109;
 
 $pagination-hover-color: $link-hover-color;
 $pagination-hover-border-color: $link-hover-color;
@@ -250,4 +198,106 @@ p + p {
     hr {
         background-color: $secondary-dark;
     }
+}
+
+.blog-overlay-blank {
+    background-color: $secondary-mid;
+}
+
+// blog speech bubble
+
+.blog-bubble {
+    background-color: $body-darken;
+}
+
+// speech bubble triangle
+
+// make this med-up only
+// left arrow
+
+
+@media (min-width: 576px) { 
+    .blog-bubble:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid $body-darken;
+        border-top: 10px solid $body-darken;
+        border-bottom: 10px solid transparent;
+        left: -19px;
+        top: 42px; //increase this number to move it down
+    }
+}
+
+// top arrow
+
+@media (max-width: 575px) { 
+    .blog-bubble:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 8px solid $body-darken;
+        border-right: 8px solid transparent;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid $body-darken;
+        left: 5%;
+        top: -15px;
+    }
+}
+
+.skull-icon {
+    width: 35px;
+    height: auto; 
+    margin-top: 5px;
+    margin-right: 10px;
+    display: block;
+
+
+    @media (max-width: 575px) { 
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 25px;
+        
+    }
+}
+.skull-icon path {
+    fill: $secondary-dark !important;
+}
+
+.blog-signature  {
+    img {
+        width: 30px;
+        margin-right: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// .fa-solid.fa-skull {
+//     font-size: 26px;
+//     padding-top: 10px;
+
+//     @include media-breakpoint-down(sm) { 
+//         padding-left: 5%;
+//     }
+
+//     &:hover {
+//         transform: none
+//     }
+// }
+
+
+// dark mode custom attempt
+
+@media (prefers-color-scheme: dark) {
+    $primary: darken($body-color, 5%);
+}
+
+// Remove indent on categories/etc
+.small.font-italic.mb-1 {
+    text-indent: 0;
 }
