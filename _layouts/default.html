@@ -36,10 +36,8 @@ layout: minimal
 			{% endif %}
 			</article>
 		</div>
+		<hr>
 	</main>
-	{%- if page.show_bottomnavs -%}
-	  {%- include components/navbeforeafter.html -%}
-	{%- endif -%}
 	{%- if page.show_categories -%}
 		{% assign size = page.categories | size %}
 		{% if size > 0 %}
@@ -55,3 +53,6 @@ layout: minimal
 	{%- if page.show_related -%}
 	  {%- include components/related.html -%}
 	{%- endif -%}
+	{%- if page.show_bottomnavs -%}
+	{%- include components/navbeforeafter.html -%}
+  	{%- endif -%}

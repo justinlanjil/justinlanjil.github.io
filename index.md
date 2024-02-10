@@ -8,22 +8,22 @@ header_type: none
 {% capture landing_body %} 
 I fancy myself something of a renaissance man, in the sense that I have a lot of creative passion paired with a short attention span.
 
-This site is a space for me to collect and chronicle my various creative works. Expect to find a hodgepodge of subjects, including:   
+This site is a place for me to collect and chronicle my various creative works. Expect to find a hodgepodge of subjects, including:   
 <br>
 <br>
 <ul>
-<li>visual art</li>
-<li>prose</li>
-<li>sculpting</li>
-<li>textile work</li>
-<li>game development</li>
-<br>
-<li style="list-style: none;">…along with any other artistic pursuit that captures the attention of my magpie brain.</li>
+    <li>visual art</li>
+    <li>prose</li>
+    <li>sculpting</li>
+    <li>textile work</li>
+    <li>game development</li>
+    <br>
+    <li style="list-style: none;">…along with any other artistic pursuit that captures the attention of my magpie brain.</li>
 </ul>
 {% endcapture %}
 
 {% include components/jumbotron.html
-jumbotron_lead="I’m Justin, a queer artist and storyteller with a fascination for the spooky, fantastical, romantic, and macabre." 
+jumbotron_lead="I’m Justin, a queer storyteller, artist, and lover of all things spooky, fantastical, romantic, and macabre." 
 jumbotron_body=landing_body %}
 
 <br>

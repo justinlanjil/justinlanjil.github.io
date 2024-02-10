@@ -27,7 +27,7 @@ var store = [{
         "title": "Story(teller) time",
         "subtitle": null,
         "excerpt":
-            "I’m not much of a tradition or holiday person in general, but I do like to start the new year by setting out goals for myself. This year feels like...",
+            "I’m not much of a tradition or holiday person in general, but I do like to start the new year by setting out goals for myself. 2024 is the year...",
         "categories": ["blog"],
         "date": "2024-02-04",
         "tags": ["reflections"],
