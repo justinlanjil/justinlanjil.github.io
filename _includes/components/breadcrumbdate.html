@@ -1,0 +1,56 @@
+{%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url | uri_escape -%}
+<div class="col-lg-8 offset-lg-2">
+  <div class="row mt-1 mb-5 d-flex flex-row justify-content-between">
+      {% if page.show_breadcrumb %}
+      <div class="small">
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb my-1 py-0 chulapa-bg-transparent" itemscope itemtype="https://schema.org/BreadcrumbList">
+          {% if page.breadcrumb_list %}
+            {% for item in page.breadcrumb_list %}
+                  <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem"><a href="{{ item.url | absolute_url }}" itemprop="item"><span itemprop="name">{{ item.label }}</span></a>
+                <meta itemprop="position" content="{{ forloop.index }}" ></li>
+                {% if forloop.last %}
+                {% assign loopplus1 = forloop.index | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+            <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <span itemprop="name">{{ page.title }}</span>
+              <meta itemprop="position" content="{{ loopplus1 }}" >
+            </li>
+            {% else %}
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem"><a href="{{ "/" | absolute_url }}" itemprop="item"><span itemprop="name">{{ site.navbar.brand.title | default: site.title | default: site.github.repository_name }}</span></a>
+                <meta itemprop="position" content="1" ></li>
+          <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <span itemprop="name">{{ page.title }}</span>
+              <meta itemprop="position" content="2" >
+            </li>
+            {% endif %}
+        </ol>
+        </nav>
+    </div>
+    {% endif %}
+      {%- if page.date and page.show_date -%}
+      <div>
+        <div class="text-right small font-italic chulapaDateSocial blog-padding-alignment">
+          {% if page.last_modified_at %}
+            {%- assign dateformat1 = page.last_modified_at | date_to_string -%}
+            {%- assign dateformat2 = page.date | date_to_string -%}
+            <time class="dt-updated" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% include_cached snippets/datetranslate.html  date=dateformat1 %}</time> 
+            <i class="fa fa-redo fa-xs" aria-hidden="true"></i>
+            <br>
+            <span class="font-weight-light chulapa-text-line-through">{% include_cached snippets/datetranslate.html  date=dateformat2 %}</span>
+          {% else %}
+            {%- assign dateformat = page.date | date_to_string -%}
+            <time datetime="{{ page.date | date_to_xmlschema }}" class="dt-published" >{% include_cached snippets/datetranslate.html  date=dateformat %}</time>
+          {% endif %}
+        </div>
+    </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+

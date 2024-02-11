@@ -3,6 +3,7 @@ layout: minimal
 title: Blog
 subtitle: 'News and updates'
 excerpt: Latest news
+show_categories: false
 og_image: /assets/img/site/banner-blog.png
 ---
 {%- include components/headers.html headertype= page.header_type imghero=page.header_img -%}
@@ -33,25 +34,29 @@ og_image: /assets/img/site/banner-blog.png
                         escape_once -}}
                   </div>
                 </article>
-                {% if post.date or post.show_tags or post.show_categories %}
+                {% if post.date or post.show_tags %}
                 <div class="card-footer border-0 chulapa-bg-transparent">
-                {% if post.date -%}<p class="small text-right font-italic mb-1">
-                {% if post.last_modified_at %}
-                  <i class="fa fa-redo fa-xs" aria-hidden="true"></i> {% endif %}
-                  <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%d/%m/%Y"  -}}</time></p>{%- endif %}
-                  {%- for category in post.categories -%}
-                  <a href="{{- category | replace: " ", "-" | prepend: "#" |
-                      prepend: post.cloudcategory_url |
-                      absolute_url | uri_escape -}}" class="badge chulapa-pill-bg-secondary mx-1">{{- category -}}
-                  </a>
-                  {%- endfor -%}
-                  {%- for tag in post.tags -%}
-                  <a href="{{- tag | replace: " ", "-" | prepend: "#" |
-                      prepend: post.cloudtag_url |
-                      absolute_url | uri_escape -}}" class="badge chulapa-pill-bg-primary mx-1">{{- tag -}}
-                  </a>
-                  {%- endfor -%}
-                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-between">
+                    {%- for tag in post.tags -%}
+                    <div class="row align-items-center mb-1">
+                      <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
+                      <a href="{{- tag | replace: " ", "-" | prepend: "#" |
+                          prepend: post.cloudtag_url |
+                          absolute_url | uri_escape -}}" class="badge chulapa-pill-bg-primary mx-1">{{- tag -}}
+                      </a>
+                    </div>
+                    {%- endfor -%}
+                    {% if post.date -%}
+                    <div class="row align-items-center">
+                      <p class="align-items-center small text-right font-italic mb-1">
+                        {% if post.last_modified_at %}
+                          <i class="fa fa-redo fa-xs" aria-hidden="true"></i>
+                        {% endif %}
+                          <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%d/%m/%Y"  -}}</time></p>
+                        {%- endif %}
+                      </div>
+                    </div>
+                </div>
                 {% endif %}
               </div>
             </div>

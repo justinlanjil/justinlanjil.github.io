@@ -94,6 +94,7 @@ Milner gently put the jacket away while his master pulled at his cufflinks with 
 “You can’t know how vexing it is to have that ghastly man trample all over her memory. What was Travers thinking, inviting such a wretch. He completely spoiled the mood of the entire evening.”
 
 Milner schooled his expression, taking the shirt and studs in hand. It was not often that such a sour mood came on Lord Sterling and he never referred to his guests with such harsh words. Hospitality was sacred to his master, he followed its edicts with more reverence than those of the Bible. Milner felt his own irritation scratching at him like an unreachable itch. Whatever game that blasted man was up to, he would put a stop to it. It wouldn’t do to drive him out, his master would never abide it, but he would find a way. He was after all, a very good valet.
+
 \***
 {: .text-center}
 

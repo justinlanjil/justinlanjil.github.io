@@ -18,6 +18,8 @@ $pagination-hover-border-color: $link-hover-color;
 
 $breadcrumb-active-color: $secondary;
 
+// Overwriting Chulapa variables
+
 .hero-chulapa-image {
     h1 {
         color: $primary-light;
@@ -184,10 +186,6 @@ h5, .h5 {
     margin-bottom: 1rem;
 }
 
-.text-end {
-    text-align: end;
-}
-
 p + p {
     text-indent: 2%;
 }
@@ -210,11 +208,7 @@ p + p {
     background-color: $body-darken;
 }
 
-// speech bubble triangle
-
-// make this med-up only
 // left arrow
-
 
 @media (min-width: 576px) { 
     .blog-bubble:before {
@@ -227,7 +221,7 @@ p + p {
         border-top: 10px solid $body-darken;
         border-bottom: 10px solid transparent;
         left: -19px;
-        top: 42px; //increase this number to move it down
+        top: 42px;
     }
 }
 
@@ -302,6 +296,24 @@ p + p {
     text-indent: 0;
 }
 
+.story-data p {
+    text-indent: 0;
+}
+
 em {
     color: $info;
+}
+
+.breadcrumb {
+    font-family:Montserrat,sans-serif;
+    font-weight:600;
+}
+
+.blog-padding-alignment {
+    padding: 0 $breadcrumb-padding-x;
+}
+
+.footer-chulapa {
+    border-top: 0;
+    background: $body-darken;
 }
