@@ -7,8 +7,8 @@
 		<description>Collected works and creative blog.</description>
 		<language>en-US</language>
 		<copyright>(c) 2024, Justin</copyright>	
-		<pubDate>Sun, 11 Feb 2024 22:41:13 -0500</pubDate>
-		<lastBuildDate>Sun, 11 Feb 2024 22:41:13 -0500</lastBuildDate>
+		<pubDate>Tue, 02 Apr 2024 21:16:53 -0400</pubDate>
+		<lastBuildDate>Tue, 02 Apr 2024 21:16:53 -0400</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,106 @@
 			<link>http://localhost:4000/</link>
 			<description>Collected works and creative blog.</description>
 		</image><item>
+			<title>Sculpting rough maquettes</title>
+			<description>
+				<![CDATA[	
+ 				
+    		<p>3 min.</p>
+				<div><p>I really wanted to make a Frank Frazetta style sculpture of a couple of my characters Yra and Urd. I’m aiming for 1:7 scale and did the armatures but ran into a couple of snags trying to work from my sketch.</p>
+
+<p>The first issue is that when doing mock up sketches, I always find it hard to work out how the composition will look from different angles (<em>part of the fun of having <a href="https://aphantasia.com/what-is-aphantasia/">aphantasia</a></em>).</p>
+
+<p>The second but related issue was the base. I didn’t want to use pure clay for the base (<em>I only have a couple of lbs of Monster Clay</em>) but needed a better sense of what shape the base actually needed to be to fit the figures, especially since I need to be able to pierce into it with wire.</p>
+
+<p>So I thought it would be easier to give myself a reference to work from and whip up a couple of 1:11 scale maquettes.</p>
+
+<h3 id="making-the-bodies">Making the bodies</h3>
+
+<p>I started by printing my turnaround ref at the right scale (<em>Urd’s 1:11 is much bigger than Yra’s</em>), and built simple armatures with 16 gague aluminium wire. Then I added a rough rib and pelvis shape with apoxy and a thin coating around the arms, legs, and shoulders to limit the articulation.</p>
+
+<p>After the apoxy dried (<em>24 hours is a long wait</em>), I used some Super Sculpey to built up the shapes a bit. I ended up making a bit of a mistake around the legs by not accounting for them having to bend, so after I baked them I carved out the grooves needed to get the legs to bend enough.</p>
+
+<h3 id="making-the-faces-by-working-smarter-not-harder">Making the faces by working smarter not harder</h3>
+
+<p>I’m still working out how to sculpt faces in that kind of flat style, and doing it at 1:11 scale was kind of not worth it for a quick mockup.</p>
+
+<p>So, since I had some (<em>accidentally</em>) knock-off <a href="https://myfigurecollection.net/?_tb=item&amp;title=Body-kun">Body-kun and Body-chan</a> figures that I never really used because of the limited articulation. I tore them apart and made some quick face molds with Easy Mold.</p>
+
+<p>I baked the initial mold then added the ears and flattened the nose bridge, baked them again, then added the head and stuck it on the wire. I had to add some apoxy afterwards because they didn’t want to stick.</p>
+
+<p><img src="/assets/img/posts/2024-04-02-sculpting-rough-maquettes/head_mold.jpg" alt="Face mold" /></p>
+
+<p class="caption">The adapted Body-chan face mold.</p>
+
+<h3 id="sword">Sword</h3>
+
+<p>For the sword, we had some flat wooden sticks lying around that would work pretty well for the sword shape I needed. I tried cutting out the handle but it ended up snapping since the wood was so thin, so instead I filed a groove out and used armature wire and apoxy to form a rudimentary handle and pommel.</p>
+
+<h3 id="the-results">The results</h3>
+
+<p>Pretty happy with how they turned out, though I definitely learned some lessons:</p>
+
+<ul>
+  <li>The first and biggest one is that aluminum wire is no good for something that needs to bend over and over again. Which I should have known but alas.</li>
+  <li>They each had a leg snap at the knee when I was re-carving. If I do a second set, I’ll use steel wire instead.</li>
+  <li>The sculpey and apoxy also cracked a lot around where it met the wire, and didn’t adhere very well to the wire.</li>
+  <li>The scale of the heads is too big, I’ll need to actually make a custom sculpt in the future.</li>
+</ul>
+
+<p><img src="/assets/img/posts/2024-04-02-sculpting-rough-maquettes/maquettes_flat.jpg" alt="Maquettes flatlay" /></p>
+
+<p class="caption">They live! I didn’t spend too much time making them pretty but they’ll do the trick.</p>
+
+<h3 id="putting-the-maquettes-to-use">Putting the maquettes to use</h3>
+
+<p>Honestly I was able to match my rough sketches pretty closely which is exciting! I took some pictures to sketch on top of for some of the additional details and where I wanted to make adjustments. I just used plasticine for the base to get a sense of the shape and scale, which was <em>very</em> different than what I was picturing.</p>
+
+<p><img src="/assets/img/posts/2024-04-02-sculpting-rough-maquettes/turn_around_sketch.jpg" alt="Sculpture turnaround sketch" /></p>
+
+<p class="caption">My initial sketches compared to the overlay sketches from photo reference. Honestly wasn’t expecting to be able to match them that closely.</p>
+
+<p><br /></p>
+
+<div id="Carousel4053" class="carousel slide" data-ride="carousel" data-interval="2000">
+  
+  <ol class="carousel-indicators">
+	  <li data-target="#Carousel4053" data-slide-to="0" class="active"></li>
+	  
+	  <li data-target="#Carousel4053" data-slide-to="1"></li>
+	  </ol>	
+ 
+  <div class="carousel-inner">
+        <div class="carousel-item active" itemscope="" itemtype="https://schema.org/ImageObject">
+    
+	<img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/posts/2024-04-02-sculpting-rough-maquettes/11_scale_mockup/sculpture_mockup_side.jpg" alt="Carousel Item #1" itemprop="contentUrl" />
+	</div>
+        <div class="carousel-item" itemscope="" itemtype="https://schema.org/ImageObject">
+    
+	<img class="d-block mw-100 chulapa-carousel" src="http://localhost:4000/assets/img/posts/2024-04-02-sculpting-rough-maquettes/11_scale_mockup/sculpture_mockup_front.jpg" alt="Carousel Item #2" itemprop="contentUrl" />
+	</div></div>
+  
+  <a class="carousel-control-prev" href="#Carousel4053" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#Carousel4053" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a></div>
+
+<p class="caption">It’s all coming together!</p>
+
+<p><br /></p>
+
+<p>Now onto the next step, building it all again in 1:7 scale.</p>
+</div>
+				]]>
+			</description>
+			<link>http://localhost:4000/20240402_sculpting-rough-maquettes/</link>
+			<category>posts</category>
+		    <category>sculpting</category><guid isPermaLink="true">http://localhost:4000/20240402_sculpting-rough-maquettes/</guid>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 -0400</pubDate>
+		</item><item>
 			<title>Story(teller) time</title>
 			<description>
 				<![CDATA[	

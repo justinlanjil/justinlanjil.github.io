@@ -260,6 +260,7 @@ defaults:
       show_bottomnavs   : false # would like to add this in but gotta adjust the loop
       show_tags           : false
       show_categories     : false
+      sitemap: false #remove from sitemap and crawlers
   -
     scope:
       path: ""
@@ -272,6 +273,7 @@ defaults:
       show_tags           : false
       show_categories     : false
       play_url_text       : "play on itch.io "
+      sitemap: false #remove from sitemap and crawlers
   -
     scope:
       path: "assets/img/gallery"
@@ -282,6 +284,11 @@ defaults:
       path: "assets/img/placeholder"
     values:
       image_col         : placeholder
+  -
+    scope:
+      path: "assets/img/posts/2024-04-02-sculpting-rough-maquettes/11_scale_mockup"
+    values:
+      image_col         : 11_scale_mockup
 
 
 # XX. Other settings - no need to modify
