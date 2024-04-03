@@ -171,14 +171,14 @@ chulapa-skin:
     gray-800 : "#2A2A22"
     gray-900 : "#111109"
     blue : "#cc8800" # this doesn't work on the radio buttons? There's something weird there though.
-    primary : "#c2c2a2"
-    secondary : "#4d4d33"
-    success : "#cccc00"
-    info : "#8a8a5c"
-    warning : "#cc8800"
-    danger : "#99003d"
-    light : "#f5f5f0"
-    dark : "#111109"
+    primary : "#CCCC99"
+    secondary : "#999966"
+    success : "#999933"
+    info : "#CC9900"
+    warning : "#FFFF00"
+    danger : "#FF0066"
+    light : "#FFFFCC"
+    dark : "#333300"
     link-color : "#cc8800"
     # adjustments for primary color contrast (dark text)
     nav-pills-link-active-color: "#111109"
@@ -260,6 +260,7 @@ defaults:
       show_bottomnavs   : false # would like to add this in but gotta adjust the loop
       show_tags           : false
       show_categories     : false
+      sitemap: false #remove from sitemap and crawlers
   -
     scope:
       path: ""
@@ -272,6 +273,7 @@ defaults:
       show_tags           : false
       show_categories     : false
       play_url_text       : "play on itch.io "
+      sitemap: false #remove from sitemap and crawlers
   -
     scope:
       path: "assets/img/gallery"
@@ -282,6 +284,11 @@ defaults:
       path: "assets/img/placeholder"
     values:
       image_col         : placeholder
+  -
+    scope:
+      path: "assets/img/posts/2024-04-02-sculpting-rough-maquettes/11_scale_mockup"
+    values:
+      image_col         : 11_scale_mockup
 
 
 # XX. Other settings - no need to modify
