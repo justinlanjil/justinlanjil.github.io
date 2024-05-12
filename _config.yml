@@ -101,8 +101,8 @@ navbar:
     child   :
     - title : Interactive fiction
       url   : /games/interactive-fiction
-    - title : 20 games challenge
-      url   : /games/20-games-challenge
+    # - title : 20 games challenge
+    #  url   : /games/20-games-challenge
   - title: Stories	
     child   :
     - title : Standalone
@@ -209,15 +209,17 @@ collections:
   pages:
     output: true
     permalink: /:path
-  collected_works:
-    output: false
   stories:
     output: true
+    permalink: /stories
   games:
     output: true
   20_games_challenge:
     output: true
     permalink: /games/20-games-challenge/:name
+  interactive_fiction:
+    output: true
+    permalink: /games/interactive-fiction/:name
 collections_dir     : collections
 permalink           : /:year:month:day_:title/
 
