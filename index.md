@@ -17,9 +17,8 @@ This site is a place for me to collect and chronicle my various creative works. 
     <li>sculpting</li>
     <li>textile work</li>
     <li>game development</li>
-    <br>
-    <li style="list-style: none;">…along with any other artistic pursuit that captures the attention of my magpie brain.</li>
 </ul>
+…along with any other artistic pursuit that captures the attention of my magpie brain.
 {% endcapture %}
 
 {% include components/jumbotron.html

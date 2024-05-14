@@ -2,8 +2,10 @@
 layout: default
 ---
 
+<!-- this is the page content -->
 {{- content -}}
 
+<!-- this is the default index page, so just the top stuff which I don't need to delete -->
 {%- if page.include_collection -%}
   {%- assign cols = page.include_collection | split: "," -%}
   {%- for col  in cols -%}
@@ -33,4 +35,11 @@ layout: default
   
   {% assign end = page.index_items | default: 10   %}
   
+ <!-- add index_card_type frontmatter to the page (.md not html)-->
+<!-- {% if page.index_card_type == "game" %}
+  {%- include components/index_games.html -%}
+{% elsif include_collection == "stories" %}
+  {%- include components/index_short_stories.html -%}   
+{% endif %} -->
+
 {% include_cached components/indexcards.html cacheddocs=alldocs cachedlimit=end %}

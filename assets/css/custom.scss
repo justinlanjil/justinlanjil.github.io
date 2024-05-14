@@ -148,6 +148,7 @@ $breadcrumb-active-color: $secondary;
 .montserrat {
     font-family:Montserrat,sans-serif;
     font-weight:600;
+    text-transform: uppercase;
 }
 
 .short-story-info-card {
@@ -317,4 +318,10 @@ em {
 .footer-chulapa {
     border-top: 0;
     background: $body-darken;
+}
+
+// index card bg custom
+
+.index-card-bg {
+    background-color: $body-darken;
 }

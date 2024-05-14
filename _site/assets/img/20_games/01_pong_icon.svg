@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1155,-874)">
+        <g id="Icon" transform="matrix(1.05,0,0,1.05,-54.6,869.8)">
+            <rect x="1152" y="4" width="80" height="80" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="1152" y="4" width="80" height="80"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1.50943,0,0,1.50943,1133.89,-6.56604)">
+                    <rect x="12" y="7" width="53" height="53"/>
+                    <path d="M65,7L65,60L12,60L12,7L65,7ZM63.107,8.893C63.107,8.893 13.893,8.893 13.893,8.893C13.893,8.893 13.893,58.107 13.893,58.107C13.893,58.107 63.107,58.107 63.107,58.107L63.107,8.893Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.07937,0,0,1.07937,1146.67,-1.33333)">
+                    <rect x="12" y="12" width="12" height="60" style="fill:rgb(0,255,0);"/>
+                </g>
+                <g transform="matrix(1.07937,0,0,0.215873,1162.86,9.02857)">
+                    <rect x="12" y="12" width="12" height="60" style="fill:white;"/>
+                </g>
+                <g transform="matrix(-1.07937,0,0,1.07937,1237.33,-1.33333)">
+                    <rect x="12" y="12" width="12" height="60" style="fill:rgb(0,0,255);"/>
+                </g>
+                <g transform="matrix(-1.07937,0,0,0.215873,1211.43,34.9333)">
+                    <rect x="12" y="12" width="12" height="60" style="fill:rgb(255,0,0);"/>
+                </g>
+                <g transform="matrix(-1.07937,0,0,0.215873,1221.14,60.8381)">
+                    <rect x="12" y="12" width="12" height="60" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
