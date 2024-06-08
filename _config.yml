@@ -81,7 +81,10 @@ comments:
   provider:         #Enable comments via Disqus, giscus or Cactus.chat
   disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
   cactus_shortname: #Your site id as registered with Cactus.chat
-  
+
+# add .htaccess file for more scraping control
+include: ['.htaccess']
+
 # B. Navigation
 # Configure your navbar and the footer of your site
 
@@ -101,8 +104,8 @@ navbar:
     child   :
     - title : Interactive fiction
       url   : /games/interactive-fiction
-    # - title : 20 games challenge
-    #  url   : /games/20-games-challenge
+    - title : 20 games challenge
+      url   : /games/20-games-challenge
   - title: Stories	
     child   :
     - title : Standalone

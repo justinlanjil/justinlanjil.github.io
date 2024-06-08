@@ -1,0 +1,15 @@
+<div class="bs-component">
+    <ul class="nav nav-tabs">
+        <!-- move this into a snippet and include it with a for loop I think? -->
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#{{ page.tab_tile | downcase | replace " ", "-" }}">{{ page.tab_title }}</a>
+        </li>
+    </ul>
+            <!-- move this into a snippet and include it with a for loop I think? -->
+    <div id="myTabContent" class="tab-content">
+        {{ include _includes/snippets/tab_content.html }}
+        <div class="tab-pane fade show active" id="{{ page.tab_id }}">
+            {{ page.tab_content }}
+        </div>
+    </div>
+</div>
