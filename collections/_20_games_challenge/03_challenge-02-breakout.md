@@ -1,13 +1,13 @@
 ---
 layout: default
 title: |
-    Challenge 2: Breakout
+    Challenge 2: Breakout (in progress)
 categories: [game, 20-games-challenge]
 genres: classic arcade
 tags: [20 game challenge, game making, godot]
-og_image: assets/img/20_games/01-B_flappy_bird_icon_r.svg
+og_image: assets/img/20_games/02_breakout_icon.svg
 warnings: none
-excerpt: "First challenge (part 2)"
+excerpt: "Second challenge."
 built_in: Godot v4.1
 start_date: 10-28-23
 completed_date: IN PROGRESS
@@ -18,10 +18,10 @@ order: 3
 
 <div class="card border-primary mb-3">
     <div>
-     [Add in a screenshot or gif here for now]
+        <img src="/assets/img/20_games/03_challenge-breakout_mockup_initial_sketch.jpg" width="1080px" style="margin-top: 10px;">
     </div>
     <div class="card-body">
-        <p class="card-text">Do a blurb about the game here</p>
+        <p class="card-text">Breakout initial mockup sketch.</p>
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong class="montserrat">Built in:</strong> {{ page.built_in }}</li>

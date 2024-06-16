@@ -21,7 +21,7 @@ order: 2
      [Add in a screenshot or gif here for now]
     </div>
     <div class="card-body">
-        <p class="card-text">Do a blurb about the game here</p>
+        <p class="card-text">Flappy bat, a bat themed version of Flappy bird.</p>
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong class="montserrat">Built in:</strong> {{ page.built_in }}</li>
