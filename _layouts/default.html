@@ -32,10 +32,12 @@ layout: minimal
 			{% if page.show_applause %} 
 			<div class="mb-2 mt-5 text-center"><applause-button id="applause" class="mx-auto" style="width: 40px; height: 40px;" url="{{ page.url | absolute_url }}"></applause-button></div>
 			{% endif %}
-			{% if page.categories contains "blog" %}
+			{% if page.categories contains "blog" or page.categories contains "20-games-challenge" %}
 				{%- include snippets/blog_signature.html -%}
 			{% endif %}
+			{%- if page.show_bottomnavs -%}
 			<hr class="primary">
+			{%- endif -%}
 			</article>
 		</div>
 	</main>

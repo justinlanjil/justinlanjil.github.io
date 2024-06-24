@@ -81,7 +81,10 @@ comments:
   provider:         #Enable comments via Disqus, giscus or Cactus.chat
   disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
   cactus_shortname: #Your site id as registered with Cactus.chat
-  
+
+# add .htaccess file for more scraping control
+include: ['.htaccess']
+
 # B. Navigation
 # Configure your navbar and the footer of your site
 
@@ -101,8 +104,8 @@ navbar:
     child   :
     - title : Interactive fiction
       url   : /games/interactive-fiction
-    # - title : 20 games challenge
-    #  url   : /games/20-games-challenge
+    - title : 20 games challenge
+      url   : /games/20-games-challenge
   - title: Stories	
     child   :
     - title : Standalone
@@ -211,7 +214,7 @@ collections:
     permalink: /:path
   stories:
     output: true
-    permalink: /stories
+    permalink: /stories/:name
   games:
     output: true
   20_games_challenge:
@@ -264,7 +267,7 @@ defaults:
       header_type: "image"
       include_on_search   : true
       show_comments       : true
-      show_bottomnavs   : false # would like to add this in but gotta adjust the loop
+      show_bottomnavs     : false # would like to add this in but gotta adjust the loop
       show_tags           : false
       show_categories     : false
       sitemap: false #remove from sitemap and crawlers
@@ -277,6 +280,7 @@ defaults:
       header_type: "hero"
       include_on_search   : true
       show_comments       : true
+      show_bottomnavs     : true
       show_tags           : false
       show_categories     : false
       play_url_text       : "play on itch.io "

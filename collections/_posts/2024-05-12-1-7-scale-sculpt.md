@@ -38,7 +38,7 @@ Went a bit ham with the foam cutter. I collected up the scraps in a bad for futu
 
 The armature stuck in pretty easily.
 
-![](/assets/img/posts/2024-05-12-1-7-scale-sculpt/foam_base-02.jpg)
+![Rough foam base with wire armature inserted](/assets/img/posts/2024-05-12-1-7-scale-sculpt/foam_base-02.jpg)
 
 Setting up the armature on the foam base.
 {: .caption}

@@ -3,7 +3,7 @@ layout: landingpage
 header_type: none
 ---
 
-<img src="assets/img/covers/site_banner_new.jpg" class="img-landing-banner img-circle">
+<img src="assets/img/covers/site_banner.jpg" class="img-landing-banner img-circle">
 
 {% capture landing_body %} 
 I fancy myself something of a renaissance man, in the sense that I have a lot of creative passion paired with a short attention span.

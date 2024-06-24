@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Aipbot|AIBOT D|
+Omgilibot|omgili|CCBot|ccbot|CCBot/2.0|ClaudeBot/1.0|Claude bot|Claude 2.0|Claude 2.1|Claude-Web/1.0|ClaudeBot|Claudebot|Claude-Web|anthropic-ai|
+Diffbot|ImagesiftBot|ChatGPT|GPTBot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|GPT|GPT-3.5|GPT-4o|Agent GPT|ChatGPT-User|WebChatGPT
+OpenAI|openai.com|Openbot|OpenAI GPT|Meta AI| The Knowledge AI|cohere-ai|PerplexityBot|AgentRunner.ai|Accoona-AI-Agent|Accoona-AI-Agent/1.1.2|Accoona-AI-Agent/1.1.1)[NC]
+
+RewriteCond%{HTTP_USER_AGENT}(AnyPicker|crewAI|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping|CCBot|ccbot|CCBot/2.0|Diffbot|ImagesiftBot|OpenAI|GPT|proximic|Kali|cohere-ai)[NC]
+
+RewriteRule ^ – [F]

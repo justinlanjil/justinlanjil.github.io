@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-05-12 10:39:08 -0400 -->
+    <!-- Page build 2024-06-24 10:58:49 -0400 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -18,8 +18,8 @@
       "headline": "Challenge 01: Pong
 ",
       "image": "http://localhost:4000/assets/img/20_games/01_pong_icon_r.svg",
-      "datePublished": "2024-05-12T10:39:08-04:00",
-      "dateModified": "2024-05-12T10:39:08-04:00",
+      "datePublished": "2024-06-24T10:58:49-04:00",
+      "dateModified": "2024-06-24T10:58:49-04:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -138,7 +138,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarToggler">
 				<ul class="navbar-nav ml-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Games" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Games"><a class="dropdown-item " href="http://localhost:4000/games/interactive-fiction">Interactive fiction</a></div>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Games"><a class="dropdown-item " href="http://localhost:4000/games/interactive-fiction">Interactive fiction</a><a class="dropdown-item " href="http://localhost:4000/games/20-games-challenge">20 games challenge</a></div>
 					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Stories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Stories"><a class="dropdown-item " href="http://localhost:4000/stories/standalone">Standalone</a><a class="dropdown-item " href="http://localhost:4000/stories/patron-saints">Patron Saints</a></div>
 					</li><li class="rnav-item">
@@ -170,31 +170,65 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			 <!-- card with game info -->
-<!-- whoops the card formatting is hecked when u change backgrounds -->
+			<div class="col-lg-12">
+   <div class="bs-component">
+       <ul class="nav nav-tabs montserrat">
+           <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pic">Gameplay Screenshot</a>
+           </li>
+           <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#vid">Gameplay Video</a>
+           </li>
+       </ul>
+       <div id="myTabContent" class="tab-content">
+           <div class="tab-pane fade show active" id="pic">
+                <img src="/assets/img/20_games/01_pong_gameplay.png" style="max-height: 393.75px" />
+           </div>
+           <div class="tab-pane fade" id="vid">
+               <div class="embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" itemscope="" itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+                <video src="/assets/img/20_games/01_pong_game_play_trimmed.mp4#t=0.1" class="embed-responsive-item u-video" controls="" itemprop="contentUrl">
+                Your browser does not support the video tag.
+                </video>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<p><br /></p>
+<h5 id="pong">Pong</h5>
+<p>In Pong, you act as goalkeeper. A ball bounces around the screen against the top and bottom barriers, but can pass through the left and right sides. Move your paddle up and down to connect with the ball and bounce it away from your side of the game area. Score a point by getting the ball to pass out of bounds on the opposing paddle’s side. Whoever scores 10 points first wins the game.</p>
+<p>Pong has the following features:</p>
+<ul>
+ <li><strong>Menu</strong>: A menu that you can click to navigate, or scroll with the arrow keys on a keyboard. From the main menu, you can select a game mode, or quit.</li>
+ <li><strong>Game modes</strong>: You can play pong as a one player or two player game.</li>
+ <li><strong>Game over screen</strong>: After a winner is declared, you can play again, quit, or return to the main menu.</li>
+ <li><strong>Effects</strong>: A sound plays when a point is scored, when the ball collides with an obstacle, and when a player wins. A small animation plays whenever the ball collides with an obstacle.</li>
+</ul>
+<p><br /></p>
 <div class="card border-primary mb-3">
-   <div>
-    <!-- Godot 4 HTML web export doesn't work on mac right now rip lol -->
-     <iframe src="/assets/games/20games/20games_pong/index.html" width="100%" height="500" title="Play Pong"></iframe> 
-   </div>
+   <div class="card-header bg-primary">Game development stats</div>
    <div class="card-body">
-       <p class="card-text">Do a blurb about the game here</p>
-   </div>
-   <div class="card-body">
-       <h5 class="mb-4 text-right"><a href="" role="button">Play Pong<i class="fa-solid fa-arrow-right"></i></a></h5>
-   </div>
    <ul class="list-group list-group-flush">
        <li class="list-group-item"><strong class="montserrat">Built in:</strong> Godot v4.1</li>
-       <li class="list-group-item"><strong class="montserrat">Started:</strong> 01-01-23</li>
-       <li class="list-group-item"><strong class="montserrat">Completed:</strong> 01-01-23</li>
+       <li class="list-group-item"><strong class="montserrat">Started:</strong> 07-22-23</li>
+       <li class="list-group-item"><strong class="montserrat">Completed:</strong> 10-11-23</li>
    </ul>
+   </div>
 </div>
+<p><br /></p>
 <h2 id="challenge-outline-checklist">Challenge outline checklist</h2>
 <p><a href="https://20_games_challenge.gitlab.io/games/pong/#goals">Challenge outline</a> at the <strong>20 Games Challenge site</strong>.</p>
+<h3 id="goals"><a href="https://20_games_challenge.gitlab.io/games/pong/#goals">Goals</a></h3>
+<ul class="task-list">
+ <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Create an arena with two walls and a divider.</li>
+ <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add a paddle on either end of the play field. Use player inputs to move the paddles up and down.</li>
+ <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add a ball that moves around the playfield and bounces off of the paddles and walls.</li>
+ <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Detect when the ball leaves the playfield. Assign a point to the player who scored.</li>
+ <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Track and display the score for each player.</li>
+</ul>
 <h2 id="stretch-goals"><a href="https://20_games_challenge.gitlab.io/games/pong/#stretch-goals">Stretch Goals</a></h2>
 <ul class="task-list">
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Write an AI script that can follow the ball so you can play with only one player.</li>
- <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Hint: Following the ball with a paddle is easy, but it makes the opponent impossible to beat. You might want to make the AI less than perfect somehow.</li>
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add a menu and allow the player to reset the game.</li>
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add some basic sounds. Play a sound every time the ball collides with something, and every time a player scores.</li>
 </ul>
@@ -202,18 +236,30 @@
 <ul class="task-list">
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add a two player mode</li>
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Let the player choose between game modes from the main menu</li>
+ <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Let the player return to the main menu from the pause and game over menus to change modes</li>
 </ul>
 <hr />
 <h2 id="notes">Notes</h2>
+<p>I made things much more difficult for myself than was really necessary by adding in a two player mode, with the option for the player to switch between modes. I also used <code class="language-plaintext highlighter-rouge">Area2D</code> nodes instead of physics bodies, which required more manual work for things like collision and ball movement.</p>
+<p>Part of the challenge is to not look at tutorials. At least at the beginning, following the spirit of the rule is more important than the letter. The rule is there to keep you from just following a tutorial or recipe, and instead to actually learn how the engine you’re using works. But this was my first game and everything was overwhelming and confusing. I looked at a bunch of different tutorials to get a sense of how things <em>could</em> be done. It was especially valuable to do this when I got really, really stuck.</p>
+<p>For each element that introduced a new concept, I spent extra time doing a deep dive and learning about the concept before moving on. This obviously slowed down progress but I did learn a lot beyond the surface level.</p>
+<p>If I decide to revisit Pong when I’ve learned more, my main fixes would be:</p>
 <ul>
- <li>I made a few adjustments, making things much more difficult for myself.</li>
- <li>I’m not sure I agree with this as an easy first challenge, at least with the stretch goals.</li>
+ <li>Make the paddles smaller. Making them one-third of the screen height makes it too easy to score a point, and negates the disadvantage of the enemy paddle’s weakness.</li>
+ <li>Cleaner code my goodness. The final game is a mess, but I’m too scared to make any more changes in case I break everything again</li>
 </ul>
-<hr />
 <h2 id="retrospective">Retrospective</h2>
-<p>Pong ended up being a huge challenge, this th</p>
-			<hr class="primary">
-			</article>
+<p>Pong ended up being a huge challenge. It’s more than a little embarassing that it took 4 months to make Pong of all things. But I did get there, so that’s something. In my defense, I really took my time to learn as much as I could. Like, I have a 60 page document of detailed progress logs and notes about Godot concepts as I learned (<em>which I am not going to add on the site haha</em>).</p>
+<p>As for the challenge itself; following the challenge as a new developer, I’m not sure I entirely agree with this choice for an easy first challenge. At least with the stretch goals. Later challenges introduce most of the stretch goal concepts, and I think it would have been better to keep Pong simpler. It was such a slog to get to that final stretch goal that I didn’t really feel much joy when I finally got it done. And there were so many points where I did have a working game, then started on the next stretch goal and immediately broke everything again.</p>
+<p>My biggest pain point is the same one that has always stopped me short in my attempts to learn programming languages beyond html and css: how to create communication between elements. Godot has a great philosophy <!-- not system, philosophy? --> of <a href="#">Call Down, Signal Up</a>. It’s easy to grasp the theory, but I got stuck on how to get my scenes to communicate pretty much constantly. I still didn’t really have a handle on it by the end of the game, but I got <em>something</em> done, and there will plenty of opportunity moving forward to get a better understanding of how to build better design and structure.</p>
+			<div class="container">
+   <div class="row align-items-end">
+       <div class="col align-self-end blog-signature">
+           <p class="text-right montserrat">- Justin</p>
+            <img src="/assets/img/brand_img/brand_logo_social_60x60.png" width="30px">
+       </div>
+   </div>
+</div></article>
 		</div>
 	</main><!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">

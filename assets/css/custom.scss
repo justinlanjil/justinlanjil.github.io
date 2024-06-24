@@ -184,6 +184,18 @@ background: linear-gradient(
     text-transform: none;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+    margin-top: 3rem;
+}
+
+
 h5, .h5 {
     margin-bottom: 1rem;
 }
@@ -324,4 +336,8 @@ em {
 
 .index-card-bg {
     background-color: $body-darken;
+}
+
+.tab-content {
+    padding-top: 10px;
 }
