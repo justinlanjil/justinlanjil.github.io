@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-06-12 16:45:44 -0400 -->
+    <!-- Page build 2024-06-24 10:58:49 -0400 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -18,8 +18,8 @@
       "headline": "Challenge 01-B: Flappy Bird
 ",
       "image": "http://localhost:4000/assets/img/20_games/01-B_flappy_bird_icon_r.svg",
-      "datePublished": "2024-06-12T16:45:44-04:00",
-      "dateModified": "2024-06-12T16:45:44-04:00",
+      "datePublished": "2024-06-24T10:58:49-04:00",
+      "dateModified": "2024-06-24T10:58:49-04:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -170,18 +170,51 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			<div class="card border-primary mb-3">
-   <div>
-     [Add in a screenshot or gif here for now]
+			<div class="col-lg-12">
+   <div class="bs-component">
+       <ul class="nav nav-tabs montserrat">
+           <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pic">Gameplay Screenshot</a>
+           </li>
+           <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#vid">Gameplay Video</a>
+           </li>
+       </ul>
+       <div id="myTabContent" class="tab-content">
+           <div class="tab-pane fade show active" id="pic">
+                <img src="/assets/img/20_games/01-B_flappy_bat_game.png" style="max-height: 393.75px" />
+           </div>
+           <div class="tab-pane fade" id="vid">
+               <div class="embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" itemscope="" itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+                <video src="/assets/img/20_games/01-B_flappy_bat_gameplay_trimmed.mp4#t=0.1" class="embed-responsive-item u-video" controls="" itemprop="contentUrl">
+                Your browser does not support the video tag.
+                </video>
+               </div>
+           </div>
+       </div>
    </div>
+</div>
+<p><br /></p>
+<h5 id="flappy-bird">Flappy bird</h5>
+<p>Flappy bat, a bat themed version of Flappy bird.</p>
+<p>The game is made for a mobile layout with simple controls. You play the game by hitting the space bar to keep the bat in air. You have to pass through the gaps between stalactites and stalagmites without touching them to score a point. Touching a stalactite, stalagmite, or the ground results in a game over. There’s no ending to the game, you can play as long as you want, or challenge yourself by beating your last high score.</p>
+<p>Flappy bat has the following features:</p>
+<ul>
+ <li><strong>Game start</strong>: Press any key to start.</li>
+ <li><strong>Score tracking</strong>: The game tracks the player score for each round, as well as the high score. The high score is preserved between game sessions.</li>
+ <li><strong>Game over screen</strong>: After a winner is declared, you can play again.</li>
+ <li><strong>Effects</strong>: A sound plays when a point is scored, or when the</li>
+</ul>
+<p><br /></p>
+<div class="card border-primary mb-3">
+   <div class="card-header bg-primary">Game development stats</div>
    <div class="card-body">
-       <p class="card-text">Flappy bat, a bat themed version of Flappy bird.</p>
-   </div>
    <ul class="list-group list-group-flush">
        <li class="list-group-item"><strong class="montserrat">Built in:</strong> Godot v4.1</li>
        <li class="list-group-item"><strong class="montserrat">Started:</strong> 10-11-23</li>
        <li class="list-group-item"><strong class="montserrat">Completed:</strong> 10-27-23</li>
    </ul>
+   </div>
 </div>
 <h2 id="challenge-outline-checklist">Challenge outline checklist</h2>
 <p><a href="https://20_games_challenge.gitlab.io/games/flappy/#goals">Challenge outline</a> at the <strong>20 Games Challenge site</strong>.</p>
@@ -214,16 +247,15 @@
 <h2 id="retrospective">Retrospective</h2>
 <p>I went with Pong as the first challenge because of familiarity. I knew about Flappy Bird but I’d never played it. When I found a version online to play around with, I then discovered that I’m really, really bad at it.</p>
 <p>Nevertheless, I wonder how it would have gone if I’d started with Flappy Bird instead of <a href="games/20-games-challenge/01-challenge-01-pong">Pong</a>. This was a much, much simpler game to start with, even with the stretch goals. The bulk of the time I spent in development was just making the assets for it. The actual game came together incredibly quickly.</p>
-<p>I thought I’d have a little fun and make it a bat instead of a bird, and have the pillars be stalactites and stalagmites to make the aesthetic a bit more coherent than the original game.&lt;div class="container"&gt;
-    &lt;div class="row align-items-end"&gt;
-        &lt;div class="col align-self-end blog-signature"&gt;
-            &lt;p class="text-right montserrat"&gt;- Justin &lt;/p&gt;
-            <img src="/assets/img/brand_img/brand_logo_social_60x60.png" width="30px" />
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</p>
-			<hr class="primary">
-			</article>
+<p>I thought I’d have a little fun and make it a bat instead of a bird, and have the pillars be stalactites and stalagmites to make the aesthetic a bit more coherent than the original game.</p>
+			<div class="container">
+   <div class="row align-items-end">
+       <div class="col align-self-end blog-signature">
+           <p class="text-right montserrat">- Justin</p>
+            <img src="/assets/img/brand_img/brand_logo_social_60x60.png" width="30px">
+       </div>
+   </div>
+</div></article>
 		</div>
 	</main><!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">

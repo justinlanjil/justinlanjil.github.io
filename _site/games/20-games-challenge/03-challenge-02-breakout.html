@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-06-12 16:45:44 -0400 -->
+    <!-- Page build 2024-06-24 10:58:49 -0400 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -15,11 +15,11 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/games/20-games-challenge/03-challenge-02-breakout"
       },
-      "headline": "Challenge 2: Breakout (in progress)
+      "headline": "Challenge 2: Breakout(in progress)
 ",
       "image": "http://localhost:4000/assets/img/20_games/02_breakout_icon.svg",
-      "datePublished": "2024-06-12T16:45:44-04:00",
-      "dateModified": "2024-06-12T16:45:44-04:00",
+      "datePublished": "2024-06-24T10:58:49-04:00",
+      "dateModified": "2024-06-24T10:58:49-04:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -47,7 +47,7 @@
       },{
         "@type": "ListItem",
         "position": 2,
-        "name": "Challenge 2: Breakout (in progress)
+        "name": "Challenge 2: Breakout(in progress)
 "
       }]
     }
@@ -56,7 +56,7 @@
 {
     "@context": "http://schema.org",
     "@type": "WebPage",
-    "name": "Challenge 2: Breakout (in progress)
+    "name": "Challenge 2: Breakout(in progress)
 ",
     "description": "Second challenge."
     }
@@ -71,7 +71,7 @@
   "url" : "http://localhost:4000/"
 }
 </script>
-   <title>Challenge 2: Breakout (in progress)
+   <title>Challenge 2: Breakout(in progress)
  | Justin Lanjil</title>
   <link rel="canonical" href="http://localhost:4000/games/20-games-challenge/03-challenge-02-breakout">
     <!-- Atom feed -->
@@ -88,7 +88,7 @@
     <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#CCCC99">
     <!-- OpenGraph -->
-   <meta property="og:title" content="Challenge 2: Breakout (in progress)
+   <meta property="og:title" content="Challenge 2: Breakout(in progress)
  | Justin Lanjil" >
    <meta property="og:site_name" content="Justin Lanjil | Artist & Storyteller" >
    <meta property="og:url" content="http://localhost:4000/games/20-games-challenge/03-challenge-02-breakout" >
@@ -157,7 +157,7 @@
 </nav>	<header class="text-center header-chulapa"><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
-           <h1 class="p-name">Challenge 2: Breakout (in progress)
+           <h1 class="p-name">Challenge 2: Breakout(in progress)
 </h1>
            <hr class="mb-0">
 			</div>
@@ -170,18 +170,44 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			<div class="card border-primary mb-3">
-   <div>
-        <img src="/assets/img/20_games/03_challenge-breakout_mockup_initial_sketch.jpg" width="1080px" style="margin-top: 10px;" />
+			<div class="col-lg-12">
+   <div class="bs-component">
+       <ul class="nav nav-tabs montserrat">
+           <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pic">Gameplay Screenshot</a>
+           </li>
+           <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#">Gameplay Video (WIP)</a>
+           </li>
+       </ul>
+       <div id="myTabContent" class="tab-content">
+           <div class="tab-pane fade show active" id="pic">
+                <img src="/assets/img/20_games/03_challenge-breakout_mockup_initial_sketch.jpg" style="max-height: 393.75px;" />
+               <p> Breakout initial mockup sketch.</p>
+           </div>
+           <div class="tab-pane fade" id="vid">
+               <div class="embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" itemscope="" itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+                <video src="/assets/img/20_games/01_pong_game_play_trimmed.mp4#t=0.1" class="embed-responsive-item u-video" controls="" itemprop="contentUrl">
+                Your browser does not support the video tag.
+                </video>
+               </div>
+           </div>
+       </div>
    </div>
+</div>
+<p><br /></p>
+<h5 id="breakout">Breakout</h5>
+<p>Breakout is in development.</p>
+<p><br /></p>
+<div class="card border-primary mb-3">
+   <div class="card-header bg-primary">Game development stats</div>
    <div class="card-body">
-       <p class="card-text">Breakout initial mockup sketch.</p>
-   </div>
    <ul class="list-group list-group-flush">
        <li class="list-group-item"><strong class="montserrat">Built in:</strong> Godot v4.1</li>
        <li class="list-group-item"><strong class="montserrat">Started:</strong> 10-28-23</li>
        <li class="list-group-item"><strong class="montserrat">Completed:</strong> IN PROGRESS</li>
    </ul>
+   </div>
 </div>
 <h2 id="challenge-outline-checklist">Challenge outline checklist</h2>
 <p><a href="https://20_games_challenge.gitlab.io/games/breakout">Challenge outline</a> at the <strong>20 Games Challenge site</strong>.</p>
@@ -223,8 +249,8 @@
  <li>As part of the above, if I plan to use a <code class="language-plaintext highlighter-rouge">Tilemap</code> at any point, then design from the start with the tile grid in mind.</li>
 </ul>
 <p>In the end I gave up on the <code class="language-plaintext highlighter-rouge">TileMap</code> idea and instead made the bricks with a bunch of instanced <code class="language-plaintext highlighter-rouge">Area2D</code> nodes. I opted for creating functions to generate the bricks from the script instead of manually placing them with the visual editor. I had to look up a few tutorials for this part, but once again I modified the code I found to suit my needs. Forloops always trip me up, no matter what the programming language is. I wrote a lot of code that ended up being useless or redundant, but it was a great learning experience for how to access and get information, so it wasn’t a waste of time. Or so I keep telling myself.</p>
-<h2 id="retrospective">Retrospective</h2>
-<!-- 
+<!-- still in progress
+## Retrospective
 I almost skipped this one but then I decided it would be funny to do a [Cask of Amontillado](https://poemuseum.org/the-cask-of-amontillado/) theme, with a reveal at the end. I'm glad I did<div class="container">
    <div class="row align-items-end">
        <div class="col align-self-end blog-signature">
@@ -233,8 +259,14 @@ I almost skipped this one but then I decided it would be funny to do a [Cask of 
        </div>
    </div>
 </div>-->
-			<hr class="primary">
-			</article>
+			<div class="container">
+   <div class="row align-items-end">
+       <div class="col align-self-end blog-signature">
+           <p class="text-right montserrat">- Justin</p>
+            <img src="/assets/img/brand_img/brand_logo_social_60x60.png" width="30px">
+       </div>
+   </div>
+</div></article>
 		</div>
 	</main><!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">

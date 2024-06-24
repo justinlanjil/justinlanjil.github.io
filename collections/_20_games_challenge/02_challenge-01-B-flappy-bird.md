@@ -16,18 +16,57 @@ play_url:
 order: 2
 ---
 
+ <div class="col-lg-12">
+    <div class="bs-component">
+        <ul class="nav nav-tabs montserrat">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pic">Gameplay Screenshot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#vid">Gameplay Video</a>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="pic">
+                <img src="/assets/img/20_games/01-B_flappy_bat_game.png" style="max-height: 393.75px">
+            </div>
+            <div class="tab-pane fade" id="vid">
+                <div class="embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" itemscope itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+                <video src="/assets/img/20_games/01-B_flappy_bat_gameplay_trimmed.mp4#t=0.1" class="embed-responsive-item u-video" controls itemprop="contentUrl" >
+                Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+##### Flappy bird
+
+Flappy bat, a bat themed version of Flappy bird.  
+
+The game is made for a mobile layout with simple controls. You play the game by hitting the space bar to keep the bat in air. You have to pass through the gaps between stalactites and stalagmites without touching them to score a point. Touching a stalactite, stalagmite, or the ground results in a game over. There's no ending to the game, you can play as long as you want, or challenge yourself by beating your last high score.  
+
+Flappy bat has the following features:
+
+- **Game start**: Press any key to start.
+- **Score tracking**: The game tracks the player score for each round, as well as the high score. The high score is preserved between game sessions.
+- **Game over screen**: After a winner is declared, you can play again.
+- **Effects**: A sound plays when a point is scored, or when the 
+
+<br>
+
 <div class="card border-primary mb-3">
-    <div>
-     [Add in a screenshot or gif here for now]
-    </div>
+    <div class="card-header bg-primary">Game development stats</div>
     <div class="card-body">
-        <p class="card-text">Flappy bat, a bat themed version of Flappy bird.</p>
-    </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong class="montserrat">Built in:</strong> {{ page.built_in }}</li>
         <li class="list-group-item"><strong class="montserrat">Started:</strong> {{ page.start_date }}</li>
         <li class="list-group-item"><strong class="montserrat">Completed:</strong> {{ page.completed_date }}</li>
     </ul>
+    </div>
 </div>
 
 ## Challenge outline checklist
@@ -69,4 +108,21 @@ Nevertheless, I wonder how it would have gone if I'd started with Flappy Bird in
 
 I thought I'd have a little fun and make it a bat instead of a bird, and have the pillars be stalactites and stalagmites to make the aesthetic a bit more coherent than the original game.
 
-{%- include snippets/blog_signature.html -%}
+	{%- if page.show_bottomnavs -%}
+	  {%- include components/navbeforeafter.html -%}
+	{%- endif -%}
+	{%- if page.show_categories -%}
+		{% assign size = page.categories | size %}
+		{% if size > 0 %}
+  	{%- include components/categories.html-%}
+  	{% endif %}
+	{%- endif -%}
+	{%- if page.show_tags -%}
+		{% assign size = page.tags | size %}
+		{% if size > 0 %}
+	  {%- include components/tags.html-%}
+	  {% endif %}
+	{%- endif -%}
+	{%- if page.show_related -%}
+	  {%- include components/related.html -%}
+	{%- endif -%}

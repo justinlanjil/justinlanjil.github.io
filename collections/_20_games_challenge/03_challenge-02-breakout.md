@@ -1,7 +1,7 @@
 ---
 layout: default
 title: |
-    Challenge 2: Breakout (in progress)
+    Challenge 2: Breakout(in progress)
 categories: [game, 20-games-challenge]
 genres: classic arcade
 tags: [20 game challenge, game making, godot]
@@ -16,18 +16,50 @@ play_url:
 order: 3
 ---
 
+
+ <div class="col-lg-12">
+    <div class="bs-component">
+        <ul class="nav nav-tabs montserrat">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pic">Gameplay Screenshot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#">Gameplay Video (WIP)</a>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="pic">
+                <img src="/assets/img/20_games/03_challenge-breakout_mockup_initial_sketch.jpg" style="max-height: 393.75px;">
+                <p> Breakout initial mockup sketch.</p>
+            </div>
+            <div class="tab-pane fade" id="vid">
+                <div class="embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" itemscope itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+                <video src="/assets/img/20_games/01_pong_game_play_trimmed.mp4#t=0.1" class="embed-responsive-item u-video" controls itemprop="contentUrl" >
+                Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+##### Breakout
+
+Breakout is in development.
+
+<br>
+
 <div class="card border-primary mb-3">
-    <div>
-        <img src="/assets/img/20_games/03_challenge-breakout_mockup_initial_sketch.jpg" width="1080px" style="margin-top: 10px;">
-    </div>
+    <div class="card-header bg-primary">Game development stats</div>
     <div class="card-body">
-        <p class="card-text">Breakout initial mockup sketch.</p>
-    </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong class="montserrat">Built in:</strong> {{ page.built_in }}</li>
         <li class="list-group-item"><strong class="montserrat">Started:</strong> {{ page.start_date }}</li>
         <li class="list-group-item"><strong class="montserrat">Completed:</strong> {{ page.completed_date }}</li>
     </ul>
+    </div>
 </div>
 
 ## Challenge outline checklist
@@ -75,9 +107,9 @@ Set up went really smooth until the bricks. Those heckin' bricks. I made a `Tile
 
 In the end I gave up on the `TileMap` idea and instead made the bricks with a bunch of instanced `Area2D` nodes. I opted for creating functions to generate the bricks from the script instead of manually placing them with the visual editor. I had to look up a few tutorials for this part, but once again I modified the code I found to suit my needs. Forloops always trip me up, no matter what the programming language is. I wrote a lot of code that ended up being useless or redundant, but it was a great learning experience for how to access and get information, so it wasn't a waste of time. Or so I keep telling myself.  
 
+<!-- still in progress
 ## Retrospective
 
-<!-- 
 I almost skipped this one but then I decided it would be funny to do a [Cask of Amontillado](https://poemuseum.org/the-cask-of-amontillado/) theme, with a reveal at the end. I'm glad I did
 
 {%- include snippets/blog_signature.html -%}

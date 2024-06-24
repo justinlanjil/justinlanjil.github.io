@@ -214,7 +214,7 @@ collections:
     permalink: /:path
   stories:
     output: true
-    permalink: /stories
+    permalink: /stories/:name
   games:
     output: true
   20_games_challenge:
@@ -267,7 +267,7 @@ defaults:
       header_type: "image"
       include_on_search   : true
       show_comments       : true
-      show_bottomnavs   : false # would like to add this in but gotta adjust the loop
+      show_bottomnavs     : false # would like to add this in but gotta adjust the loop
       show_tags           : false
       show_categories     : false
       sitemap: false #remove from sitemap and crawlers
@@ -280,6 +280,7 @@ defaults:
       header_type: "hero"
       include_on_search   : true
       show_comments       : true
+      show_bottomnavs     : true
       show_tags           : false
       show_categories     : false
       play_url_text       : "play on itch.io "

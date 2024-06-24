@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-06-12 16:45:44 -0400 -->
+    <!-- Page build 2024-06-24 10:58:49 -0400 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -18,8 +18,8 @@
       "headline": "Challenge 01: Pong
 ",
       "image": "http://localhost:4000/assets/img/20_games/01_pong_icon_r.svg",
-      "datePublished": "2024-06-12T16:45:44-04:00",
-      "dateModified": "2024-06-12T16:45:44-04:00",
+      "datePublished": "2024-06-24T10:58:49-04:00",
+      "dateModified": "2024-06-24T10:58:49-04:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -170,28 +170,52 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			<div class="card border-primary mb-3">
-   <div>
-    <!-- Godot 4 HTML web export doesn't work on mac right now rip lol -->
-     <!-- 
-     <iframe src="/assets/games/20games/20games_pong/index.html" width="100%" height="500" title="Play Pong"></iframe> 
-     -->
-     [Add in a screenshot or gif here for now]
+			<div class="col-lg-12">
+   <div class="bs-component">
+       <ul class="nav nav-tabs montserrat">
+           <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pic">Gameplay Screenshot</a>
+           </li>
+           <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#vid">Gameplay Video</a>
+           </li>
+       </ul>
+       <div id="myTabContent" class="tab-content">
+           <div class="tab-pane fade show active" id="pic">
+                <img src="/assets/img/20_games/01_pong_gameplay.png" style="max-height: 393.75px" />
+           </div>
+           <div class="tab-pane fade" id="vid">
+               <div class="embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" itemscope="" itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
+                <video src="/assets/img/20_games/01_pong_game_play_trimmed.mp4#t=0.1" class="embed-responsive-item u-video" controls="" itemprop="contentUrl">
+                Your browser does not support the video tag.
+                </video>
+               </div>
+           </div>
+       </div>
    </div>
+</div>
+<p><br /></p>
+<h5 id="pong">Pong</h5>
+<p>In Pong, you act as goalkeeper. A ball bounces around the screen against the top and bottom barriers, but can pass through the left and right sides. Move your paddle up and down to connect with the ball and bounce it away from your side of the game area. Score a point by getting the ball to pass out of bounds on the opposing paddle’s side. Whoever scores 10 points first wins the game.</p>
+<p>Pong has the following features:</p>
+<ul>
+ <li><strong>Menu</strong>: A menu that you can click to navigate, or scroll with the arrow keys on a keyboard. From the main menu, you can select a game mode, or quit.</li>
+ <li><strong>Game modes</strong>: You can play pong as a one player or two player game.</li>
+ <li><strong>Game over screen</strong>: After a winner is declared, you can play again, quit, or return to the main menu.</li>
+ <li><strong>Effects</strong>: A sound plays when a point is scored, when the ball collides with an obstacle, and when a player wins. A small animation plays whenever the ball collides with an obstacle.</li>
+</ul>
+<p><br /></p>
+<div class="card border-primary mb-3">
+   <div class="card-header bg-primary">Game development stats</div>
    <div class="card-body">
-       <p class="card-text">Do a blurb about the game here</p>
-   </div>
-    <!-- Add button in when web export is fixed
-   <div class="card-body">
-       <h5 class="mb-4 text-right"><a href="" role="button">Play Pong<i class="fa-solid fa-arrow-right"></i></a></h5>
-   </div>
-    -->
    <ul class="list-group list-group-flush">
        <li class="list-group-item"><strong class="montserrat">Built in:</strong> Godot v4.1</li>
        <li class="list-group-item"><strong class="montserrat">Started:</strong> 07-22-23</li>
        <li class="list-group-item"><strong class="montserrat">Completed:</strong> 10-11-23</li>
    </ul>
+   </div>
 </div>
+<p><br /></p>
 <h2 id="challenge-outline-checklist">Challenge outline checklist</h2>
 <p><a href="https://20_games_challenge.gitlab.io/games/pong/#goals">Challenge outline</a> at the <strong>20 Games Challenge site</strong>.</p>
 <h3 id="goals"><a href="https://20_games_challenge.gitlab.io/games/pong/#goals">Goals</a></h3>
@@ -227,16 +251,15 @@
 <h2 id="retrospective">Retrospective</h2>
 <p>Pong ended up being a huge challenge. It’s more than a little embarassing that it took 4 months to make Pong of all things. But I did get there, so that’s something. In my defense, I really took my time to learn as much as I could. Like, I have a 60 page document of detailed progress logs and notes about Godot concepts as I learned (<em>which I am not going to add on the site haha</em>).</p>
 <p>As for the challenge itself; following the challenge as a new developer, I’m not sure I entirely agree with this choice for an easy first challenge. At least with the stretch goals. Later challenges introduce most of the stretch goal concepts, and I think it would have been better to keep Pong simpler. It was such a slog to get to that final stretch goal that I didn’t really feel much joy when I finally got it done. And there were so many points where I did have a working game, then started on the next stretch goal and immediately broke everything again.</p>
-<p>My biggest pain point is the same one that has always stopped me short in my attempts to learn programming languages beyond html and css: how to create communication between elements. Godot has a great philosophy <!-- not system, philosophy? --> of <a href="#">Call Down, Signal Up</a>. It’s easy to grasp the theory, but I got stuck on how to get my scenes to communicate pretty much constantly. I still didn’t really have a handle on it by the end of the game, but I got <em>something</em> done, and there will plenty of opportunity moving forward to get a better understanding of how to build better design and structure.&lt;div class="container"&gt;
-    &lt;div class="row align-items-end"&gt;
-        &lt;div class="col align-self-end blog-signature"&gt;
-            &lt;p class="text-right montserrat"&gt;- Justin &lt;/p&gt;
-            <img src="/assets/img/brand_img/brand_logo_social_60x60.png" width="30px" />
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</p>
-			<hr class="primary">
-			</article>
+<p>My biggest pain point is the same one that has always stopped me short in my attempts to learn programming languages beyond html and css: how to create communication between elements. Godot has a great philosophy <!-- not system, philosophy? --> of <a href="#">Call Down, Signal Up</a>. It’s easy to grasp the theory, but I got stuck on how to get my scenes to communicate pretty much constantly. I still didn’t really have a handle on it by the end of the game, but I got <em>something</em> done, and there will plenty of opportunity moving forward to get a better understanding of how to build better design and structure.</p>
+			<div class="container">
+   <div class="row align-items-end">
+       <div class="col align-self-end blog-signature">
+           <p class="text-right montserrat">- Justin</p>
+            <img src="/assets/img/brand_img/brand_logo_social_60x60.png" width="30px">
+       </div>
+   </div>
+</div></article>
 		</div>
 	</main><!-- Footer -->
  <footer class="footer-chulapa text-center mt-0 pt-3">
