@@ -82,7 +82,7 @@ Breakout is in development.
 
 - [x] Save the high score between play sessions and display it alongside the player score.
 - [x] Add different colors to the bricks in the rows. (The original game was black-and-white, but had a colored film on the screen, simulating colored rows of bricks)
-- [ ] ~The paddle should get narrower once the ball reaches the ceiling.~ SKIPPING THIS ONE
+- [ ] ~~The paddle should get narrower once the ball reaches the ceiling.~~ SKIPPING THIS ONE
 
 ### Custom stretch goals
 

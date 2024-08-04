@@ -114,6 +114,8 @@ navbar:
       url   : /stories/patron-saints
   - title   : Blog
     url     : /blog/
+  - title: Godot 4.3 Export test
+    url     : /games/godot-4-3-web-test
 #Social links to be placed on your site footer
 footer:
   links:
