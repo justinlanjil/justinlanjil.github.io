@@ -56,6 +56,13 @@ Flappy bat has the following features:
 - **Game over screen**: After a winner is declared, you can play again.
 - **Effects**: A sound plays when a point is scored, or when the 
 
+<!-- This jumbotron looks bad -->
+<div class="jumbotron">
+<p class="h1">Play Flappy Bat</p>
+<hr class="my-4 hr-primary">
+<a class="btn btn-info" href="/02-challenge-01-b-flappy-bird/play-flappy-bat" role="button">Play Flappy Bat</a>
+</div>
+
 <br>
 
 <div class="card border-primary mb-3">

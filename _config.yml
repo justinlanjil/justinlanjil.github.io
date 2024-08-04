@@ -114,8 +114,6 @@ navbar:
       url   : /stories/patron-saints
   - title   : Blog
     url     : /blog/
-  - title: Godot 4.3 Export test
-    url     : /games/godot-4-3-web-test
 #Social links to be placed on your site footer
 footer:
   links:
@@ -221,10 +219,10 @@ collections:
     output: true
   20_games_challenge:
     output: true
-    permalink: /games/20-games-challenge/:name
+    permalink: /20-games-challenge/:name
   interactive_fiction:
     output: true
-    permalink: /games/interactive-fiction/:name
+    permalink: /interactive-fiction/:name
 collections_dir     : collections
 permalink           : /:year:month:day_:title/
 

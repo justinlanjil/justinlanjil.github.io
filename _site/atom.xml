@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
-	<updated>2024-08-02T12:10:37-04:00</updated>
+	<updated>2024-08-04T12:14:09-04:00</updated>
 	<id>http://localhost:4000/atom.xml</id>
 	<title>Justin Lanjil | Artist & Storyteller</title>
 	<subtitle>Artist & Storyteller</subtitle>
@@ -14,26 +14,28 @@
 	<rights>(c) 2024, Justin</rights>
 	<icon>http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png</icon>
 	<logo>http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png</logo><entry>
-		<title>Setting up 1:7 scale figure sculpt
+		<title>Godot 4.3 fixes web export, yay!
 </title>
-		<link href="http://localhost:4000/20240625_mid-year-update/" rel="alternate" type="text/html" title="Setting up 1:7 scale figure sculpt
+		<link href="http://localhost:4000/20240804_godot-web-export/" rel="alternate" type="text/html" title="Godot 4.3 fixes web export, yay!
 "/>
-		<published>2024-06-25T00:00:00-04:00</published>
-		<updated>2024-06-25T00:00:00-04:00</updated>
-		<id>http://localhost:4000/20240625_mid-year-update/</id>
-		<content type="html" xml:base="http://localhost:4000/20240625_mid-year-update/">
+		<published>2024-08-04T00:00:00-04:00</published>
+		<updated>2024-08-04T00:00:00-04:00</updated>
+		<id>http://localhost:4000/20240804_godot-web-export/</id>
+		<content type="html" xml:base="http://localhost:4000/20240804_godot-web-export/">
 		
   		
 	&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;p&gt;Holy shit I can’t believe it’s almost July already!&lt;/p&gt;
+			&lt;p&gt;I downloaded &lt;a href=&quot;https://godotengine.org/article/release-candidate-godot-4-3-rc-2/&quot;&gt;Godot 4.3 Release Candidate 2&lt;/a&gt; to see if Web Export is fixed and…it is! Going to import my &lt;a href=&quot;/games/20-games-challenge&quot;&gt;20 games challenge games&lt;/a&gt; into 4.3, fix them up, and add them to their respective pages. Flappy Bat is up, Pong needs a bit of work from design bugginess.&lt;/p&gt;
+
+&lt;p&gt;I’m mostly motivated to post it because of Breakout tbh. I might end up being a little half-assed with a few of the upcoming challenges and not upload them, but we’ll see how it goes.&lt;/p&gt;
 
 		</content>
 		
 		<author>
 			<name>Justin</name></author>
-		<summary type="html"></summary>
+		<summary type="html">Godot 4.3 finally fixed web export, so now I can actually post my games from the 20 game challenge.</summary>
 		<category term="posts"/>
-		<category term="reflections"/>
+		<category term="game makin"/>
 	</entry><entry>
 		<title>Setting up 1:7 scale figure sculpt
 </title>
