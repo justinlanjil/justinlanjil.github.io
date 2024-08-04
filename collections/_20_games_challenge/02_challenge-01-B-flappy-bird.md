@@ -25,6 +25,9 @@ order: 2
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#vid">Gameplay Video</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link bg-info text-white" data-toggle="tab" target="_blank" href="/02-challenge-01-b-flappy-bird/play-flappy-bat">Play Flappy Bat</a>
+            </li>
         </ul>
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade show active" id="pic">
@@ -54,14 +57,7 @@ Flappy bat has the following features:
 - **Game start**: Press any key to start.
 - **Score tracking**: The game tracks the player score for each round, as well as the high score. The high score is preserved between game sessions.
 - **Game over screen**: After a winner is declared, you can play again.
-- **Effects**: A sound plays when a point is scored, or when the 
-
-<!-- This jumbotron looks bad -->
-<div class="jumbotron">
-<p class="h1">Play Flappy Bat</p>
-<hr class="my-4 hr-primary">
-<a class="btn btn-info" href="/02-challenge-01-b-flappy-bird/play-flappy-bat" role="button">Play Flappy Bat</a>
-</div>
+- **Effects**: A sound plays when a point is scored, or when the player collides.
 
 <br>
 
