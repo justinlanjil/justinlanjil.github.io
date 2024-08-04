@@ -26,7 +26,7 @@ order: 2
                 <a class="nav-link" data-toggle="tab" href="#vid">Gameplay Video</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link bg-info text-white" data-toggle="tab" target="_blank" href="/02-challenge-01-b-flappy-bird/play-flappy-bat">Play Flappy Bat</a>
+                <a class="nav-link bg-info text-white" href="/02-challenge-01-b-flappy-bird/play-flappy-bat">Play Flappy Bat</a>
             </li>
         </ul>
         <div id="myTabContent" class="tab-content">
