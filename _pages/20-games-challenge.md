@@ -42,6 +42,12 @@ Progress tracker for each challenge.
             <td class="montserrat">Breakout</td>
             <td class="text-center"><i class="fa-solid fa-spinner"></i></td>
         </tr>
+        <tr class="table-secondary">
+            <th scope="row" class="montserrat">03</th>
+            <td >Space Invaders, Frogger, River Raid</td>
+            <td class="montserrat">River Raid</td>
+            <td class="text-center"><i class="fa-solid fa-spinner"></i></td>
+        </tr>
     </tbody>
 </table>
 </div>
