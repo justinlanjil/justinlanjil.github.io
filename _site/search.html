@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en-US"><head>
     <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme -  -->
+    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2024-08-04 14:29:43 -0400 -->
+    <!-- Page build 2025-07-12 -->
+     <!-- Jekyll Version 3.10.0 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -19,8 +20,8 @@
       },
       "headline": "Search",
       "image": "http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png",
-      "datePublished": "2024-08-04T14:29:43-04:00",
-      "dateModified": "2024-08-04T14:29:43-04:00",
+      "datePublished": "2025-07-12T11:36:18-04:00",
+      "dateModified": "2025-07-12T11:36:18-04:00",
       "author": {
         "@type": "Person",
         "name": "Justin"
@@ -110,13 +111,14 @@
   
     <!-- Preconnect with Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Fontawesome-->
     <!-- v6 -->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js" as="script" >
+    
+      <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js" as="script" >
     <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" as="font" type="font/otf" crossorigin>
     <!-- Theme css (Bootstrap included) -->
     <link rel="stylesheet" id="maincss" href="http://localhost:4000/assets/css/main.css" >
@@ -136,20 +138,11 @@
 <meta name="msapplication-config" content="https://justinlanjil.art/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 <!-- end custom head snippets --> </head>
-<body class="d-flex flex-column"><style>
-  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
-
-  .lunr{
-  font-family: 'Heebo', sans-serif;
-  background-color: black;
-  color: white;
-  }
-  </style>
-  
+<body class="d-flex flex-column">
 	<!-- This is the one that appears on desktop -->
 <nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
 	<div class="container-fluid mx-md-2">
-			<a class="navbar-brand font-weight-bold" href="http://localhost:4000/"><img src="http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png" width="40" height="40" class="d-inline-block rounded-lg mr-1" alt="NavbarLogo"> Justin Lanjil</a>Artist & Storyteller<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand font-weight-bold" href="https://justinlanjil.art/"><img src="http://localhost:4000/assets/img/brand_img/brand_logo_social_60x60.png" width="40" height="40" class="d-inline-block rounded-lg mr-1" alt="NavbarLogo"> Justin Lanjil</a>Artist & Storyteller<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarToggler">
@@ -182,13 +175,29 @@
 </header>
 <main class="container-lg pt-2 pb-5 flex-fill">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2 my-auto text-center">           <form class="input-group">
-               <label class="sr-only" for="search"> Search </label>
-               <input type="search" id="search" class="form-control rounded-right" placeholder="Search...">
-           </form>
-           <p class="text-right small mt-1"> Powered by <a href="https://lunrjs.com/" class="lunr px-2">L U N R</a></p>
-           <div id="resultscount"></div>
-           <div id="results" class="mt-3 text-left"></div>
+        <div class="col-lg-8 offset-lg-2 my-auto text-center">
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+  
+    .lunr{
+    font-family: 'Heebo', sans-serif;
+    background-color: black;
+    color: white;
+    }
+    </style>
+
+
+<form class="input-group">
+    <label class="sr-only" for="search"> Search </label>
+    <input type="search" id="search" class="form-control rounded-right" placeholder="Search...">
+</form>
+
+    <p class="text-right small mt-1"> Powered by <a href="https://lunrjs.com/" class="lunr px-2">L U N R</a></p>
+
+<div id="resultscount"></div>
+<div id="results" class="mt-3 text-left"></div>
 </div>
     </div>
 </main><!-- Footer -->
@@ -212,7 +221,7 @@
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
               </span><span class="sr-only">Twitter</span>
-            </a></div><p class="mt-2 mb-3 chulapa-footer-brand">© <year> Justin Lanjil 2024</p>
+            </a></div><p class="mt-2 mb-3 chulapa-footer-brand">© <year> Justin Lanjil 2025</p>
           <!-- Do not remove this in order to give  attributions -->
           <p class="chulapa-footer-brand">Powered by <a href="https://dieghernan.github.io/chulapa"> <span class="chulapa">Chulapa</span> Jekyll Theme</a><br><b>Lux</b> skin by <a href="https://bootswatch.com/">Bootswatch</a></p>
           <!-- End  attributions -->
@@ -225,7 +234,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script><script src="https://unpkg.com/lunr/lunr.min.js"></script>
 <script src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
-<script src="http://localhost:4000/assets/js/lunr/lunr-search.js"></script>
+<script src="http://localhost:4000/assets/js/lunr/lunr-search.min.js"></script>
 
 <!-- start custom scripts to be placed at the bottom of the page -->
 <script type='text/javascript' src="http://localhost:4000/assets/js/darkreader.js"></script>
