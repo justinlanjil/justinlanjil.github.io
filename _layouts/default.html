@@ -38,6 +38,10 @@ layout: minimal
 			{%- if page.show_bottomnavs -%}
 			<hr class="primary">
 			{%- endif -%}
+			{% if page.categories contains "blog" or page.categories contains "20-games-challenge" or page.categories contains "prose" %}
+				{% include welcomments/comments.html website_id = "gximO2v6pxzRkrBuJhqjevOEC" %}
+			{% endif %}
+			
 			</article>
 		</div>
 	</main>

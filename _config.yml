@@ -97,7 +97,7 @@ navbar:
   brand:
     title   :  " Justin Lanjil"
     subtitle: "Artist & Storyteller"
-    url     :  # default["url/baseurl"]
+    url     :  https://justinlanjil.art/
     img     :  "./assets/img/brand_img/brand_logo_social_60x60.png"
   nav:
   - title: Games	
