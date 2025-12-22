@@ -1,0 +1,224 @@
+<!-- this is a basic carousel -->
+<!-- After I get this working, make the gallery one with the frames. 
+ 
+And with captions: https://getbootstrap.com/docs/5.0/components/carousel/#with-captions
+Oh also intervals
+
+hmm, that means that a carousel item can have:
+
+- an image link
+- an interval (optional)
+- a caption (optional)
+- So really I need an array of objects?
+- How do I do that lol
+
+Like carousel_images = [image_1: "url, interval, caption_title, caption_body", image_2: ...]
+
+In JSON:
+
+Can I use JSON???
+
+I _can_ create a data.json file and add it there...
+
+But that seems irritating
+
+{
+  "carousel_image": [
+    {
+    "url": "",
+    "interval": "",
+    "caption": {
+        "title": "",
+        "body": ""
+        }
+    }
+  ]
+}
+
+Hmmm...running into the limitations of liquid here tbh
+
+Oh I can make a plug-in to add a custom liquid tag) 
+
+so it'd be like:
+
+{% carousel [params] %}
+
+instead of including a component
+
+neat!
+
+resources:
+
+https://jekyllrb.com/docs/plugins/tags/
+https://github.com/planetjekyll/awesome-jekyll-plugins?tab=readme-ov-file
+
+https://moldstud.com/articles/p-essential-liquid-templating-tips-every-jekyll-developer-should-know
+https://blog.sverrirs.com/2016/04/custom-jekyll-tags.html 
+https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/plugins/custom.html
+
+More of a step by step guide, should help breakdown what I need to do:
+
+https://moldstud.com/articles/p-the-ultimate-beginners-guide-to-creating-jekyll-plugins-step-by-step-tutorial
+^ okay well not really lol it dooesn't explain how to actually make the plug in lmao
+
+This tutorial maybe?
+https://zinovyev.net/blog/creating-a-jekyll-plugin
+
+So move all the carousel stuff in there instead of a component!
+
+Example of something similar: https://github.com/paulrobertlloyd/jekyll-figure
+
+Making a Ruby class:
+
+https://www.rubyguides.com/2019/02/ruby-class/
+
+Liquid dictionary workaround:
+
+https://stackoverflow.com/questions/67691445/how-to-create-or-define-a-dictionary-in-liquid-templates
+
+% Source - https://stackoverflow.com/a
+% Posted by Preetham
+% Retrieved 2025-12-21, License - CC BY-SA 4.0
+
+Declaring:
+{% assign rgbColors = "red:#FF0000,green:#00FF00,blue:#0000FF" | split: "," %}
+
+{% assign value = "green" %}
+
+Acessing:
+{% for color in rgbColors %}
+    {% assign colorKeyVal = color | split ":" %}
+    {% assign colorKey = colorKeyVal[0] %}
+    {% assign colorValue = colorKeyVal[1] %}
+    {% if colorKey == value %}
+        <div style="background: {{ colorValue }}"></div>
+    {% endif %}
+{% endfor %}
+
+
+So:
+
+{
+  "carousel_image": [
+    {
+    "url": "",
+    "interval": "",
+    "caption": {
+        "title": "",
+        "body": ""
+        }
+    }
+  ]
+}
+
+{% assign image "url:url,interval:interval,caption_title:title,caption_body:body" | split "," %}
+output: 
+    url:url
+    interval:interval
+    caption_title:title
+    caption_body:body
+
+I think that I can use map?
+
+{% assign carousel_images = "" | split: "," %}
+{% assign carousel_images = carousel_images | push: image %}
+
+{% for image in carousel_images %}
+    {% assign imagesValue = image | split ":" %}
+    output:
+    url
+    url
+    interval
+    interval
+    {% assign imageKey = imagesValue[0] %}
+    {% assign imageValue = imagesValue[1] %}
+    ^ can use that one loop method that goes by grouping to do a one-two?
+    idk idk this is so janky lol
+{% endfor %}
+
+LiquidJs has a hash class?
+
+https://liquidjs.com/api/classes/Hash.html
+
+Liquid source code:
+https://github.com/Shopify/liquid
+
+Has info about the differences:
+
+https://shopify.github.io/liquid/basics/variations/
+
+https://stackoverflow.com/questions/27731021/construct-hash-in-jekyll-liquid
+
+
+I think that I have to switch to Astro after all lol
+
+no dictionaries/hashes is really a huge limitation. Heck.
+
+-->
+
+{%- if include.id -%}
+    {% assign carousel_id = include.id %}
+{%- endif -%}
+
+{%- if include.carousel_images -%}
+  {%- assign bricks = include.carousel_images | strip_newlines | replace: " " , "" |split: ","  -%}
+{%- endif -%}
+
+<!-- create and assign variables for controls etc that I can pass in -->
+{%- assign interval =  include.interval | default: 5000   -%}
+{%- assign end =   include.index_items | default: 100   -%}
+
+<div id="{{ carousel_id }}" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- change this into a loop of images from an assigned array. Assign "active" class to the active carousel item -->
+  {%- for image in images limit: end -%}
+    {% if forloop.first == true %}
+        <div class="carousel-item active" {% if include.image.interval %}data-bs-interval="{{ image.interval | default: 10000}}"{% endif %}> <!-- interval should be optional -->
+    {% else %}
+        <div class="carousel-item" itemscope itemtype="https://schema.org/ImageObject">
+    {% endif %}
+    <!-- I don't need this to be the url, it should just be the path since that's what I'm passing-->
+	<img class="d-block w-100" src="{{ image | absolute_url }}" alt="Carousel Item #{{- forloop.index -}}" itemprop="contentUrl" >
+	</div>  
+  {%- endfor -%}
+  </div>
+  {% if include.controls %}
+  <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  {% endif %}
+</div>
+
+
+
+<!-- this needs to be a variable passed in and then split -->
+{% assign carousel_images = "John, Paul, George, Ringo" | split: ", " %}
+
+{% for image in images %}
+  {{ image }}
+{% endfor %}
+
+
+{% assign posts = "" | split: "," %}
+{% assign posts = posts | push: post %}
+
+{% include_cached snippets/carousel.html internal="11_scale_mockup" interval=2000 controls="true" indicators="false" %}
+
+It's all coming together! 
+{: .caption}
+
+then this is in the config file:
+
+```yaml
+    scope:
+      path: "assets/img/posts/2024-04-02-sculpting-rough-maquettes/11_scale_mockup"
+    values:
+      image_col         : 11_scale_mockup
+```
+
+which is horrible

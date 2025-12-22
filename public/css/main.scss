@@ -1,0 +1,42 @@
+---
+---
+@charset "utf-8";
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+@import "_colours"; // idk if this will work?
+@import "_fonts";
+
+// // Merge the maps
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// // Remove certain colors
+// $theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+a {
+    text-decoration: none;
+}
+
+// Heading custom styling
+
+
+h3.masthead-title {
+    font-weight: 700;
+    font-size: $font-size-lg;
+    padding-top: $navbar-brand-padding-y;
+    padding-bottom: $navbar-brand-padding-y;
+    small {
+        font-family: $headings-font-family;
+        color: $secondary;
+    }
+    color: $secondary;
+}
+
+// Sidebar custom styling
+
+.sidebar {
+    a.sidebar-social-icon {
+        color: $secondary;
+    }
+}

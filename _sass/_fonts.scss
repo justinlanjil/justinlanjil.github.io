@@ -1,0 +1,29 @@
+$font-family-base: Libre Baskerville, serif !default;
+$headings-font-family: Montserrat, sans-serif !default;
+$headings-font-weight: 600 !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+// custom variables to align nav 
+$line-height-base:            1.5 !default;
+$nav-link-padding-y:          .5rem !default;
+
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
+$navbar-brand-height:               $font-size-lg * $line-height-base !default;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
+
+// set font size variables here too
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+p, span, small {
+    font-family: $font-family-base;
+}
+

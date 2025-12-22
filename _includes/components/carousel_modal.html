@@ -1,0 +1,68 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carouselModal">
+    Carousel gallery test
+  </button>
+  <!-- Modal --> 
+  <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+             <!-- Carousel code-->
+             {%- if include.internal -%}
+              {% assign sort =  include.index_sort | default: 'modified_time' %}
+              {%- assign bricks = site.static_files | where: "image_col", include.internal -%}
+              {% if include.index_sort_asc %}
+                {%- assign bricks = bricks | sort: "{{sort}}" | map: "path" -%}
+              {% else %}
+                {%- assign bricks = bricks | sort: "{{sort}}" | reverse | map: "path" -%}
+              {% endif %}
+            {%- elsif include.external -%}
+              {%- assign bricks = include.external | strip_newlines | replace: " " , "" |split: ","  -%}
+            {%- endif -%}
+            {%- assign interval =   include.interval | default: 5000   -%}
+            {%- assign end =   include.index_items | default: 100   -%}
+
+            {%- if bricks -%}
+              {% if include.random %}
+                {%- assign bricks = bricks | sample: bricks.size -%}
+              {%- endif -%}
+              {% assign id = bricks | join: ""| size %}
+              {% assign id = "Carousel" | append: id %}
+            <div id="{{ id }}" class="carousel slide" data-ride="carousel" data-interval="{{- interval -}}">
+              <div class="carousel-inner">
+              {%- for brick in bricks limit: end -%}
+                {% if forloop.first == true %}
+                    <div class="carousel-item active" itemscope itemtype="https://schema.org/ImageObject">
+                {% else %}
+                    <div class="carousel-item" itemscope itemtype="https://schema.org/ImageObject">
+                {% endif %}
+              <!-- how do I add a caption here? -->
+              <img class="d-block mw-100 chulapa-carousel" src="{{- brick | absolute_url -}}" alt="Carousel Item #{{- forloop.index -}}" itemprop="contentUrl" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Caption label</h5>
+                <p>Caption text</p>
+              </div>  
+              </div>  
+              {%- endfor -%}
+              </div>
+              <a class="carousel-control-prev" href="#{{ id }}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#{{ id }}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            {%- endif -%}
+            <!-- end carousel code -->
+        <div>Working now!</div>
+          </div>
+      </div>
+    </div>
+  </div>

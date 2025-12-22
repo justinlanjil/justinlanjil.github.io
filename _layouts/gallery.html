@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<!-- layout notes
+
+Custom background image/images (room or gallery)
+
+Option 1: across
+1 row
+Max 4/row on desktop
+Max 1/row on mobile
+
+Should open into a carousel/lightbox modal
+
+
+Option 2: Masonry type
+
+Fill div on desktop
+Max 4/row on desktop
+Max 1/row per row on mobile
+
+Use custom frame border image + style
+add color range for css images
+
+-->
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    {% for image in gallery.images %} <!-- need to add this as a variable obviously-->
+    <div class="col col-auto">
+        <!-- COMPONENT clicking image should open carousel, should be a component -->
+        <a href="">
+            <!-- COMPONENT image goes here-->
+             <img src="">
+        </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

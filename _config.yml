@@ -1,22 +1,190 @@
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               Justin Lanjil
+tagline:             'Artist & Storyteller'
+description:         'Collected works and creative blog.'
+url:                 https://justinlanjil.art
 baseurl:             ''
+avatar:              './assets/img/brand_img/brand_logo_social_60x60.png'
 paginate:            5
 permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Justin Lanjil
+  url:               # https://twitter.com/mdo
+  email:             # markdotto@gmail.com
 
-# Gems
-plugins:
-  - jekyll-paginate
+# C. Theme Settings
+# Google Fonts https://fonts.google.com/, add as many as you need
+googlefonts:
+ # - url : # 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+  - url: 'https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'
+  - url: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+
+#Social links to be placed on your site footer
+social:
+  links:
+    - label : Tumblr # Label
+      icon  : fab fa-tumblr # Fontawesome 5 icon
+      url   : https://www.tumblr.com/wickedliltongue # A link or email: https://twitter.com/jack, mail@example.com
+    - label : Instagram
+      icon  : fab fa-instagram
+      url   : https://www.instagram.com/justinlart/
+    - label : Itch
+      icon  : fab fa-itch-io
+      url   : https://wicked-little-tongue.itch.io/
+    - label : Twitter
+      icon  : fab fa-twitter
+      url   : https://twitter.com/wickedliltongue
+
+# not being used atm but define here instead of manually in the sidebar.html file
+nav:
+  - title: Games	
+    child   :
+    - title : Interactive fiction
+      url   : /games/interactive-fiction
+    - title : 20 games challenge
+      url   : /games/20-games-challenge
+  - title: Stories	
+    child   :
+    - title : Standalone
+      url   : /stories/standalone
+    - title : Patron Saints
+      url   : /stories/patron-saints
+  - title   : Blog
+    url     : /blog/
 
 # Custom vars
 version:             1.1.0
 google_analytics_id: #UA-XXXX-Y
+
+
+####
+
+
+#### I need to refactor all this I think but putting it in for the moment
+
+
+
+# Collections https://jekyllrb.com/docs/step-by-step/09-collections/
+collections:
+  pages:
+    output: true
+    permalink: /:path
+  stories:
+    output: true
+    permalink: /stories/:name
+  games:
+    output: true
+  20_games_challenge:
+    output: true
+    permalink: /20-games-challenge/:name
+  interactive_fiction:
+    output: true
+    permalink: /interactive-fiction/:name
+collections_dir     : collections
+permalink           : /:year:month:day_:title/
+
+# Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+      include_on_search   : false
+      cloudtag_url        : /tags #This is where the link on tags would redirect
+      cloudcategory_url   : /categories #This is where the link on categories would redirect
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header_type       : "post"
+      include_on_search : true
+      include_on_feed   : true
+      show_date         : true
+      show_related      : false
+      show_bottomnavs   : true
+      show_sociallinks  : true
+      show_comments     : true
+      show_tags         : false
+      show_categories   : false
+      show_author       : false
+      show_breadcrumb   : false
+      breadcrumb_list   :
+        - label: Blog
+          url: /blog/
+  -
+    scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: "short_story"
+      header_type: "image"
+      include_on_search   : true
+      show_comments       : true
+      show_bottomnavs     : false # would like to add this in but gotta adjust the loop
+      show_tags           : false
+      show_categories     : false
+      sitemap: false #remove from sitemap and crawlers
+  -
+    scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "default"
+      header_type: "hero"
+      include_on_search   : true
+      show_comments       : true
+      show_bottomnavs     : true
+      show_tags           : false
+      show_categories     : false
+      play_url_text       : "play on itch.io "
+      sitemap: false #remove from sitemap and crawlers
+  -
+    scope:
+      path: "assets/img/gallery"
+    values:
+      image_col         : gallery
+  -
+    scope:
+      path: "assets/img/placeholder"
+    values:
+      image_col         : placeholder
+  -
+    scope:
+      path: "assets/img/posts/2024-04-02-sculpting-rough-maquettes/11_scale_mockup"
+    values:
+      image_col         : 11_scale_mockup
+
+#####
+
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# apparently Sass is built in so idk if I need any of this
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - mixed-decls
+    - abs-percent
+    - function-units
+    - color-functions

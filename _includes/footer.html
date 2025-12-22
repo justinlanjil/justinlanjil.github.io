@@ -1,0 +1,18 @@
+<!-- lanyon doesn't have a footer by default. I think I'd just want to add the copyright here? If anything. -->
+<footer class="footer-chulapa text-center mt-0 pt-3">
+	<div class="container">
+		<div class="row">
+			<p class="mt-2 mb-3 chulapa-footer-brand">
+				{%- if site.footer.copyright -%}
+
+				{{ site.footer.copyright }} {{ site.time | date: '%Y'}}
+
+				{%- else -%}
+
+				&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.github.owner_name }}
+
+				{%- endif -%}
+			</p>
+		</div>
+	</div>
+</footer>

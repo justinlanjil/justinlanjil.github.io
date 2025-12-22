@@ -1,0 +1,18 @@
+<div class="masthead">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h3 class="masthead-title font-weight-bold text-center align-middle">
+            <a href="{{ site.baseurl }}/" title="Home">
+                {%- if site.avatar -%}
+                    {% include /snippets/site_avatar.html %}
+                {%- endif -%}
+                {{ site.title }}
+            </a>
+            <small>{{ site.tagline }}</small>
+        </h3>
+        <span aria-label="Dark mode toggle">
+            <a class="nav-link DarkReader_Button">
+                <i id="icon-dark" class="fa fa-moon"></i>
+            </a>
+        </span>
+    </div>
+</div>
