@@ -1,0 +1,5 @@
+---
+const { link } = Astro.props;
+---
+
+<a href={`/${link.toLowerCase().trim().replace(/\s+/g, '-').toLowerCase()}`}>{link}</a>

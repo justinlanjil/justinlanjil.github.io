@@ -1,0 +1,46 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Link from "../components/Link.astro";
+import { SITE_DESCRIPTION, SITE_TITLE, NAV_LINKS } from "../consts";
+---
+
+<!-- landing page -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <img src="/src/assets/site_images/brand_logo_social_60x60.png" width="30px"> <!-- should put this in a snippet I think -->
+                            <a href="/home"><h2>Enter</h2></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1>Page links</h1>
+                        <p>
+                            Note that these will be <em>images</em> later and manually
+                            set in a grid
+                        </p>
+                        <ul>
+                            {
+                                NAV_LINKS.map((l, index) => (
+                                    <li data-key={`link-${index}`}>
+                                        <Link link={l} />
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <Footer />
+    </body>
+</html>

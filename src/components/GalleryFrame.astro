@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+
+const { img_src } = Astro.props;
+---
+
+<!-- 
+ 
+the idea here is to have an image border, and an array of either images or color overlays to create "frames"
+Use inline styling here since this is unique to this page 
+
+-->
+
+<div>
+    <style>
+    img {
+        border: 5px solid #555;
+    }
+    </style>
+    <Image src={img_src}/>
+</div>

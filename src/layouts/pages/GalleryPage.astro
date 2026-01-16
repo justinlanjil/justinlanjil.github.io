@@ -1,0 +1,41 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+
+const GalleryImages = [1, 2, 3, 4];
+
+const n = 4;
+
+("../../assets/blog-placeholder-5.jpg");
+---
+
+<!-- layout for gallery -->
+<DefaultLayout>
+    <main>
+        <div class="container text-center">
+            <div class="row align-items-center justify-content-evenly row-cols-sm-1 row-cols-md-4">
+                <!-- loop through gallery images -->
+                <div>
+                    <img class="border border-5" height="200" src="/src/assets/blog-placeholder-5.jpg" />
+                </div>
+                <div>
+                    <img class="border border-5" src="/src/assets/blog-placeholder-5.jpg" />
+                </div>
+                <div>
+                    <img class="border border-5" src="/src/assets/blog-placeholder-5.jpg" />
+                </div>
+                <div>
+                    <img class="border border-5" src="/src/assets/blog-placeholder-5.jpg" />
+                </div>
+            </div>
+        </div>
+    </main>
+</DefaultLayout>
+
+// {
+    //             GalleryImages.map((i, index) => (
+    //                 <div class="col-md-auto">
+    //                     <img data-key={`link-${index}`} src={`../../assets/blog-placeholder-${i}.jpg`/}>
+    //                 </div>
+    //             ))
+    //         }
+}
