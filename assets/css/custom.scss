@@ -162,7 +162,7 @@ $breadcrumb-active-color: $secondary;
 }
 
 .jumbotron {
-    background-color: transparent;
+    background-color: $body-darken;
 }
 
 .chulapa-gradient {
@@ -344,4 +344,8 @@ em {
 
 .card-header {
     margin-top: 0;
+}
+
+.card-body {
+    background-color: $body-darken;
 }

@@ -1,5 +1,6 @@
 ---
 layout: minimal
+show_comments: true
 ---
 	{% include components/headers.html headertype= page.header_type imghero=page.header_img projects=page.project_links %}
 	<main class="container-lg pb-3 flex-fill">
@@ -37,11 +38,7 @@ layout: minimal
 			{% endif %}
 			{%- if page.show_bottomnavs -%}
 			<hr class="primary">
-			{%- endif -%}
-			{% if page.categories contains "blog" or page.categories contains "20-games-challenge" or page.categories contains "prose" %}
-				{% include welcomments/comments.html website_id = "gximO2v6pxzRkrBuJhqjevOEC" %}
-			{% endif %}
-			
+			{%- endif -%}	
 			</article>
 		</div>
 	</main>

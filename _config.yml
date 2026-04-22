@@ -78,8 +78,8 @@ algolia:
     - desc(subtitle)
     
 comments:
-  provider:         #Enable comments via Disqus, giscus or Cactus.chat
-  disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
+  provider: disqus #Enable comments via Disqus, giscus or Cactus.chat
+  disqus_shortname: "justinlanjil"  #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
   cactus_shortname: #Your site id as registered with Cactus.chat
 
 # add .htaccess file for more scraping control
@@ -119,7 +119,7 @@ footer:
   links:
     - label : Tumblr # Label
       icon  : fab fa-tumblr # Fontawesome 5 icon
-      url   : https://www.tumblr.com/wickedliltongue # A link or email: https://twitter.com/jack, mail@example.com
+      url   : https://www.tumblr.com/wickedliltongue
     - label : Instagram
       icon  : fab fa-instagram
       url   : https://www.instagram.com/justinlart/
@@ -127,8 +127,8 @@ footer:
       icon  : fab fa-itch-io
       url   : https://wicked-little-tongue.itch.io/
     - label : Twitter
-      icon  : fab fa-twitter
-      url   : https://twitter.com/wickedliltongue
+      icon  : fab fa-bluesky
+      url   : https://bsky.app/profile/wickedlittletongue.bsky.social/
   copyright: © <year> Justin Lanjil 
   
 # C. Theme Settings
